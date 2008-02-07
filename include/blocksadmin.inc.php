@@ -65,7 +65,7 @@ if (isset($_POST['previewblock'])) {
   if ( !empty($_POST['bcontent']) ) { $bcontent = $_POST['bcontent']; } else { $bcontent = ""; }
   if ( !empty($_POST['bctype']) ) { $bctype = $_POST['bctype']; } else { $bctype = ""; }
   if ( !empty($_POST['bcachetime']) ) { $bcachetime = intval($_POST['bcachetime']); } else { $bcachetime = 0; }
-  
+
   xoops_cp_header();
   include_once XOOPS_ROOT_PATH.'/class/template.php';
   $xoopsTpl = new XoopsTpl();
@@ -218,7 +218,7 @@ if ( $op == 'order2' ) {
 			}
 
 			$bmodule = (isset($_POST['bmodule'][$i]) && is_array($_POST['bmodule'][$i])) ? $_POST['bmodule'][$i] : array(-1) ;
-	
+
 			myblocksadmin_update_blockinstance($i, $side[$i], $_POST['weight'][$i], $visible[$i], $_POST['title'][$i], null , null , $_POST['bcachetime'][$i], $bmodule, array());
 
 		}
@@ -475,13 +475,14 @@ if ($op == 'clone_ok') {
 		if( isset( $bctype ) ) $myblock->setVar('c_type', $bctype);
 		$myblock->setVar('bcachetime', $bcachetime);
 		if ( isset($options) && (count($options) > 0) ) {
-			
+
 			// Hack by marcan to enabled array type options
 			for ( $i = 0; $i < count($options); $i++ ) {
 				 if (is_array($options[$i])) {
 					$options[$i] = implode(',', $options[$i]);
-				 
-			}			
+				 }
+
+			}
 			$options = implode('|', $options);
 			$myblock->setVar('options', $options);
 		}
