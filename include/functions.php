@@ -762,24 +762,32 @@ function smartsection_userIsAdmin()
 * Checks if a user has access to a selected item. if no item permissions are
 * set, access permission is denied. The user needs to have necessary category
 * permission as well.
+* 
+* Also, the item needs to be Published
 *
 * smartsection_itemAccessGranted()
 *
-* @param integer $itemid : itemid on which we are setting permissions
-* @param integer $ categoryid : categoryid of the item
+* @param object $itemObj SmartSectionItem
 * @return boolean : TRUE if the no errors occured
 */
 
 // TODO : Move this function to SmartsectionItem class
-function smartsection_itemAccessGranted($itemid, $categoryid)
+function smartsection_itemAccessGranted(&$itemObj)
 {
-	Global $xoopsUser;
+	global $xoopsUser;
 
 	if (smartsection_userIsAdmin()) {
 		$result = true;
 	} else {
 		$result = false;
 
+		$categoryid = $itemObj->categoryid();
+		$itemid = $itemObj->itemid();
+		
+		if ($itemObj->status() != _SSECTION_STATUS_PUBLISHED) {
+			return false;
+		}
+		
 		$groups = ($xoopsUser) ? $xoopsUser->getGroups() : XOOPS_GROUP_ANONYMOUS;
 
 		$gperm_handler = &xoops_gethandler('groupperm');

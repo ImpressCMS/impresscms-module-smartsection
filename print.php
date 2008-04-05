@@ -32,7 +32,7 @@ if ($itemObj->notLoaded()) {
 $categoryObj =& $itemObj->category();
 
 // Check user permissions to access that category of the selected ITEM
-if (!(smartsection_itemAccessGranted($itemObj->getVar('itemid'), $itemObj->getVar('categoryid')))) {
+if (!(smartsection_itemAccessGranted($itemObj) {
 	redirect_header("javascript:history.go(-1)", 1, _NOPERM);
 	exit;
 }

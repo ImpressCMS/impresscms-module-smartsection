@@ -36,7 +36,7 @@ include_once("footer.php");
 $categoryObj =& $smartsection_category_handler->get($itemObj->categoryid());
 
 // Check user permissions to access that category of the selected item
-if (!(smartsection_itemAccessGranted($itemObj->itemid(), $itemObj->categoryid()))) {
+if (!(smartsection_itemAccessGranted($itemObj))) {
 	redirect_header("javascript:history.go(-1)", 1, _NOPERM);
 	exit;
 }

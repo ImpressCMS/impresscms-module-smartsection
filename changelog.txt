@@ -11,6 +11,7 @@
 - Fixed : Categories now have pagination thanks to eljkmw and Shine
 - Fixed : No introduction text showen in mainpage thanks to McDonald and Shine
 - Fixed : Upon deleting article tag-entries are not deleted from Tag-module thanks to McDonald and Shine
+- Fixed : Offline articles were still accessible via direct URL (malanciault/shine)
 
 <b><u>=> Version 2.13 Final (2007-02-09)</u></b>
 
