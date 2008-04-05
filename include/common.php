@@ -53,6 +53,12 @@ if (!file_exists($common_lang_file)) {
 }
 include_once($common_lang_file);
 
+// include smartobject framework
+if (!file_exists(XOOPS_ROOT_PATH . '/modules/smartobject/include/common.php')) {
+	trigger_error( 'SmartObject Framework not found.', E_USER_ERROR );
+}
+include_once(XOOPS_ROOT_PATH . '/modules/smartobject/include/common.php');
+
 include_once(SMARTSECTION_ROOT_PATH . "include/functions.php");
 
 // Check XOOPS version to see if we are on XOOPS 2.2.x plateform

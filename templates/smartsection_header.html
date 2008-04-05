@@ -48,7 +48,10 @@
 	<div class="smartsection_headertable">
 		<{if $module_home}>
 			<span class="smartsection_modulename"><{$module_home}></span>
-		<{/if}>
+		<{if $title_and_welcome}> 
+            <span><{$lang_mainintro}></span> 
+        <{/if}> 
+	<{/if}>
 		<{if $categoryPath}>
 			<span class="smartsection_breadcrumb">
 			<{if $module_home}>

@@ -181,6 +181,7 @@ if ($xoopsModuleConfig['displaylastitems']) {
 /// sizeof($items);exit;
 // Language constants
 $xoopsTpl->assign(array('lang_on' => _MD_SSECTION_ON, 'lang_postedby' => _MD_SSECTION_POSTEDBY, 'lang_total' => isset($totalItemsOnPage) ? $totalItemsOnPage : '', 'lang_title' => _MD_SSECTION_TITLE, 'lang_datesub' => _MD_SSECTION_DATESUB, 'lang_hits' => _MD_SSECTION_HITS));
+$xoopsTpl->assign('title_and_welcome', $xoopsModuleConfig['title_and_welcome']); //SHINE ADDED DEBUG mainintro txt
 $xoopsTpl->assign('lang_mainintro', $myts->displayTarea($xoopsModuleConfig['indexwelcomemsg'], 1));
 $xoopsTpl->assign('sectionname', $smartsection_moduleName);
 $xoopsTpl->assign('whereInSection', $smartsection_moduleName);

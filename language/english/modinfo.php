@@ -45,7 +45,7 @@ define("_MI_SSECTION_CATEGORY_ITEM_SUBMITTED_NOTIFY_CAP", "Notify me when a new 
 define("_MI_SSECTION_CATEGORY_ITEM_SUBMITTED_NOTIFY_DSC", "Receive notification when a new article is submitted in the current category.");
 define("_MI_SSECTION_CATEGORY_ITEM_SUBMITTED_NOTIFY_SBJ", "[{X_SITENAME}] {X_MODULE} auto-notify : New article submitted in category");
 define("_MI_SSECTION_CATLIST_IMG_W", "[FORMAT OPTIONS] Category list image width");
-define("_MI_SSECTION_CATLIST_IMG_WDSC", "Specify the witdh of category images when listing the categories.");
+define("_MI_SSECTION_CATLIST_IMG_WDSC", "Specify the width of category images when listing the categories.");
 define("_MI_SSECTION_CATMAINIMG_W", "[FORMAT OPTIONS] Category main image width");
 define("_MI_SSECTION_CATMAINIMG_WDSC", "Specify the width of the category main image.");
 define("_MI_SSECTION_CATPERPAGE", "[FORMAT OPTIONS] Maximum Categories per page (User side)?");

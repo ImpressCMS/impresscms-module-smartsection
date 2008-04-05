@@ -1,3 +1,4 @@
+	<div align="right"><{$catnavbar}></div>
 <table border="0" width="90%" cellspacing="1" cellpadding="0" align="center" class = "outer">
 	<tr>
 		<td align="left" class="itemHead"><b><{$lang_category_column}></b></td>
@@ -13,10 +14,21 @@
 	<{foreach item=category from=$categories}>
 		<tr>
 			<td class="even" align="left">
-				<{if $isAdmin == 1}>
-					<a href="<{$xoops_url}>/modules/smartsection/admin/category.php?op=mod&categoryid=<{$category.categoryid}>"><img src="<{$xoops_url}>/modules/smartsection/images/icon/cat.gif" title="<{$lang_editcategory}>" alt="<{$lang_editcategory}>"/></a>&nbsp;
+				<{if $category.image_path}>
+					<{if $isAdmin == 1}>
+						<a href="<{$xoops_url}>/modules/smartsection/admin/category.php?op=mod&categoryid=<{$category.categoryid}>"><img src="<{$category.image_path}>" title="<{$lang_editcategory}>" alt="<{$lang_editcategory}>"/></a>&nbsp;
+					<{else}>
+						<img src="<{$category.image_path}>" alt="<{$category.name}>" />&nbsp;
+					<{/if}>
+				<!-- End with a selected image path -->
 				<{else}>
-					<img src="<{$xoops_url}>/modules/smartsection/images/icon/cat.gif" alt="" />&nbsp;
+				<!-- Start without a selected image path -->
+					<{if $isAdmin == 1}>
+						<a href="<{$xoops_url}>/modules/smartsection/admin/category.php?op=mod&categoryid=<{$category.categoryid}>"><img src="<{$xoops_url}>/modules/smartsection/images/icon/cat.gif" title="<{$lang_editcategory}>" alt="<{$lang_editcategory}>"/></a>&nbsp;
+					<{else}>
+						<img src="<{$xoops_url}>/modules/smartsection/images/icon/cat.gif" alt="<{$category.name}>" />&nbsp;
+					<{/if}>
+				<!-- End without a selected image path -->
 				<{/if}>
 
 				<{if $selected_category == $category.categoryid}>
@@ -26,10 +38,6 @@
 				<{/if}>
 
 	  		    <br />
-	  		    <{if $category.image_path}>
-		  		    <br />
-					<img src="<{$category.image_path}>" alt="<{$category.name}>"/>
-				<{/if}>
 				<span class="smartsection_category_dsc"><{$category.description}></span>
 				</td>
 			 	<{if $displayarticlescount}>
@@ -48,6 +56,15 @@
 					<tr>
 	  					<td class="odd" align="left">
 	  						<div style="padding-left: 10px;">
+							<{if $subcat.image_path}>
+	  							<{if $isAdmin == 1}>
+	 	 							<a href="<{$xoops_url}>/modules/smartsection/admin/category.php?op=mod&categoryid=<{$subcat.categoryid}>"><img src="<{$subcat.image_path}>" title="<{$lang_editcategory}>" alt="<{$lang_editcategory}>" alt="<{$lang_editcategory}>"/></a>&nbsp;<{$subcat.categorylink}>
+								<{else}>
+			  						<img src="<{$subcat.image_path}>" title="<{$lang_editcategory}>" alt="<{$lang_editcategory}>"/>&nbsp;<{$subcat.categorylink}>
+								<{/if}>
+							<!-- End with a selected image path -->
+							<{else}>
+							<!-- Start without a selected image path -->
 	  							<{if $isAdmin == 1}>
 	 	 							<a href="<{$xoops_url}>/modules/smartsection/admin/category.php?op=mod&categoryid=<{$subcat.categoryid}>"><img src="<{$xoops_url}>/modules/smartsection/images/icon/subcat.gif" title="<{$lang_editcategory}>" alt="<{$lang_editcategory}>" alt="<{$lang_editcategory}>"/></a>&nbsp;<{$subcat.categorylink}>
 								<{else}>
@@ -56,6 +73,7 @@
 								<{if $displaysubcatdsc == 1}>
 									<span class="smartsection_category_dsc"><{$subcat.description}></span>
 								<{/if}>
+							<{/if}>
 							</div>
 						</td>
 						<{if $displayarticlescount}>
@@ -70,4 +88,5 @@
 		<{/foreach}>
 	<!-- End categories loop -->
 </table>
+	<div align="right"><{$catnavbar}></div>
 <!-- End sub categories loop -->
