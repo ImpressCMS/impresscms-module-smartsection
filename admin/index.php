@@ -370,14 +370,6 @@ smartsection_close_collapsable('allitemstable', 'allitemsicon');
 // Close the collapsable div
 
 
-
-echo "</div>";
-
-echo "</div>";
-
-
-smartsection_modFooter();
-
-xoops_cp_footer();
+smart_xoops_cp_footer();
 
 ?>

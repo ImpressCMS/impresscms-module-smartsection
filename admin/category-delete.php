@@ -36,5 +36,5 @@ global $xoopsUser, $xoopsUser, $xoopsConfig, $xoopsDB;
 		$categoryid = (isset($_GET['categoryid'])) ? intval($_GET['categoryid']) : 0;
 		xoops_cp_header();
 		xoops_confirm(array('op' => 'del', 'categoryid' => $categoryObj->categoryid(), 'confirm' => 1, 'name' => $categoryObj->name()), 'category.php', _AM_SSECTION_DELETECOL . " '" . $categoryObj->name() . "'. <br /> <br />" . _AM_SSECTION_DELETE_CAT_CONFIRM, _AM_SSECTION_DELETE);
-		xoops_cp_footer();
+		smart_xoops_cp_footer();
 	}

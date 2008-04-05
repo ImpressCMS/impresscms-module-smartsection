@@ -23,7 +23,7 @@ if ($op == 'start')
 	xoops_cp_header ();
     
 	
-	xoops_cp_footer ();
+	smart_xoops_cp_footer();
 	exit ();
 }
 

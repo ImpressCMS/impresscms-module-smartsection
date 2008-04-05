@@ -154,7 +154,7 @@ if (false != $error) {
 		$counter++;
 	}
 	echo '</tr></table>';
-    xoops_cp_footer();
+    smart_xoops_cp_footer();
 }
 
 ?>

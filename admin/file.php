@@ -204,7 +204,7 @@ switch ($op) {
 
 		smartsection_xoops_cp_header();
 		xoops_confirm(array('op' => 'del', 'fileid' => $fileObj->fileid(), 'confirm' => 1, 'name' => $fileObj->name()), 'file.php', _AM_SSECTION_DELETETHISFILE . " <br />" . $fileObj->name() . " <br /> <br />", _AM_SSECTION_DELETE);
-		xoops_cp_footer();
+		smart_xoops_cp_footer();
 	}
 
 	exit();
@@ -277,6 +277,6 @@ switch ($op) {
 }
 smartsection_modFooter();
 
-xoops_cp_footer();
+smart_xoops_cp_footer();
 
 ?>
