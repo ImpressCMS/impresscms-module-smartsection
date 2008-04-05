@@ -20,6 +20,9 @@ $modversion['help'] = "";
 $modversion['license'] = "GNU General Public License (GPL)";
 $modversion['official'] = 0;
 $modversion['dirname'] = "smartsection";
+$modversion['iconsmall'] = "images/icon_small.gif";
+$modversion['iconbig'] = "images/icon_big.gif";
+
 
 // Settting InBox module image if it is present
 $inbox_logo_filename = $modversion['dirname'] . "_inbox_logo.gif";
