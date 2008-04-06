@@ -12,6 +12,14 @@ $fileid = isset($_GET['fileid']) ? intval($_GET['fileid']) : 0;
 
 // Creating the item object for the selected item
 $fileObj = $smartsection_file_handler->get($fileid);
+$itemObj = $smartsection_item_handler->get($fileObj->getVar('itemid'));
+
+// Check user permissions to access this file
+if (!(smartsection_itemAccessGranted($itemObj))) {
+	redirect_header("javascript:history.go(-1)", 1, _NOPERM);
+	exit;
+}
+
 $fileObj->updateCounter();
 
 if (!preg_match("/^ed2k*:\/\//i", $fileObj->getFileUrl())) {
