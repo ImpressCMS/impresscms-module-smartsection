@@ -14,11 +14,13 @@ function smartsection_items_new_show ($options)
 {
 	include_once(XOOPS_ROOT_PATH."/modules/smartsection/include/common.php");
 
+	$selectedcatids = explode(',', $options[0]);
+	
 	$block = array();
-	if ($options[0] == 0) {
-		$categoryid = -1;
+	if (in_array(0, $selectedcatids)) {
+		$allcats = true;
 	} else {
-		$categoryid = $options[0];
+		$allcats = false;
 	}
 
 	$sort = $options[1];
@@ -28,7 +30,14 @@ function smartsection_items_new_show ($options)
 	$smartsection_item_handler =& smartsection_gethandler('item');
 
 	// creating the ITEM objects that belong to the selected category
-	$itemsObj = $smartsection_item_handler->getAllPublished($limit, 0, $categoryid, $sort, $order);
+	if ($allcats) {
+		$criteria=null;
+	} else {
+		$criteria = new CriteriaCompo();
+		$criteria->add(new Criteria('categoryid', '(' . $options[0] . ')', 'IN'));
+	}	
+	$itemsObj = $smartsection_item_handler->getItems($limit, $start, array(_SSECTION_STATUS_PUBLISHED), -1, $sort, $order, '', true, $criteria, true);
+	
 	$totalitems = count($itemsObj);
 	if ($itemsObj) {
 		for ( $i = 0; $i < $totalitems; $i++ ) {
@@ -56,33 +65,39 @@ function smartsection_items_new_edit($options)
     global $xoopsDB, $xoopsModule, $xoopsUser;
 	include_once(XOOPS_ROOT_PATH."/modules/smartsection/include/functions.php");
 
-	$form = smartsection_createCategorySelect($options[0]);
-
-    $form .= "&nbsp;<br>" . _MB_SSECTION_ORDER . "&nbsp;<select name='options[]'>";
+	$form .= '
+	<table>
+		<tr>
+			<td style="vertical-align: top; width: 150px;">' . _MB_SSECTION_SELECTCAT . '</td>';
+	$form .= '<td>';
+	$form .= smartsection_createCategorySelect($options[0]) . '</td>';
+		
+    $form .= "<tr><td>" . _MB_SSECTION_ORDER . "</td>";
+    $form .= "<td><select name='options[]'>";
 
     $form .= "<option value='datesub'";
     if ($options[1] == "datesub") {
         $form .= " selected='selected'";
     }
-    $form .= ">" . _MB_SSECTION_DATE . "</option>\n";
+    $form .= ">" . _MB_SSECTION_DATE . "</option>";
 
     $form .= "<option value='counter'";
     if ($options[1] == "counter") {
         $form .= " selected='selected'";
     }
-    $form .= ">" . _MB_SSECTION_HITS . "</option>\n";
+    $form .= ">" . _MB_SSECTION_HITS . "</option>";
 
     $form .= "<option value='weight'";
     if ($options[1] == "weight") {
         $form .= " selected='selected'";
     }
-    $form .= ">" . _MB_SSECTION_WEIGHT . "</option>\n";
+    $form .= ">" . _MB_SSECTION_WEIGHT . "</option>";
 
-    $form .= "</select>\n";
+    $form .= "</select></td>";
 
-    $form .= "&nbsp;" . _MB_SSECTION_DISP . "&nbsp;<input type='text' name='options[]' value='" . $options[2] . "' />&nbsp;" . _MB_SSECTION_ITEMS . "<br />";
-    $form .= _MB_SSECTION_CHARS . "&nbsp;<input type='text' name='options[]' value='" . $options[3] . "' />&nbsp;chars";
-
+    $form .= "</tr><tr><td>" . _MB_SSECTION_DISP . "</td><td><input type='text' name='options[]' value='" . $options[2] . "' />&nbsp;" . _MB_SSECTION_ITEMS . "</td></tr>";
+    $form .= "<tr><td>" . _MB_SSECTION_CHARS . "</td><td><input type='text' name='options[]' value='" . $options[3] . "' />&nbsp;chars</td></tr>";
+	$form .= "</table>";
     return $form;
 }
 

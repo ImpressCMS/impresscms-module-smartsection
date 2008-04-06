@@ -1136,7 +1136,7 @@ function smartsection_addCategoryOption($categoryObj, $selectedid=0, $level = 0,
 	}
 
 	$ret .= "<option value='" . $categoryObj->categoryid() . "'";
-	if ($selectedid == $categoryObj->categoryid()) {
+	if (in_array($categoryObj->categoryid(), $selectedid)) {
 		$ret .= " selected='selected'";
 	}
 	$ret .= ">" . $spaces . $categoryObj->name() . "</option>\n";
@@ -1151,12 +1151,17 @@ function smartsection_addCategoryOption($categoryObj, $selectedid=0, $level = 0,
 	return $ret;
 }
 
-function smartsection_createCategorySelect($selectedid=0, $parentcategory=0, $allCatOption=true)
+function smartsection_createCategorySelect($selectedid=0, $parentcategory=0, $allCatOption=true, $selectname='options[0]')
 {
-	$ret = "" . _MB_SSECTION_SELECTCAT . "&nbsp;<select name='options[]'>";
+	$selectedid = explode(',', $selectedid);
+
+	$ret = "<select name='" . $selectname . "[]' multiple='multiple' size='10'>";
 	if ($allCatOption) {
 		$ret .= "<option value='0'";
-		$ret .= ">" . _MB_SSECTION_ALLCAT . "</option>\n";
+		if (in_array(0, $selectedid)) {
+			$ret .= " selected='selected'";
+		}
+		$ret .= ">" . _MB_SSECTION_ALLCAT . "</option>";
 	}
 
 	// Creating the category handler object
@@ -1170,7 +1175,7 @@ function smartsection_createCategorySelect($selectedid=0, $parentcategory=0, $al
 			$ret .= smartsection_addCategoryOption($categoryObj, $selectedid);
 		}
 	}
-	$ret .= "</select>\n";
+	$ret .= "</select>";
 	return $ret;
 }
 
