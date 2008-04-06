@@ -12,6 +12,11 @@ $fileid = isset($_GET['fileid']) ? intval($_GET['fileid']) : 0;
 
 // Creating the item object for the selected item
 $fileObj = $smartsection_file_handler->get($fileid);
+
+if ($fileObj->getVar('status' != _SSECTION_STATUS_FILE_ACTIVE)) {
+	redirect_header("javascript:history.go(-1)", 1, _NOPERM);
+}
+
 $itemObj = $smartsection_item_handler->get($fileObj->getVar('itemid'));
 
 // Check user permissions to access this file
