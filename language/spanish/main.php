@@ -1,5 +1,5 @@
 <?php  // Traducción de www.riosoft.es | www.rioxoops.es. Cambios menores por debianus
-
+//Revisión y actualización por debianus
 /**
 * $Id$
 * Module: SmartSection
@@ -56,7 +56,7 @@ define("_MD_SSECTION_FILE_EDITING_SUCCESS", "El archivo fue modificado satisfact
 define("_MD_SSECTION_FILE_INFORMATIONS", "Detalles del archivo");
 define("_MD_SSECTION_FILE_NAME_DSC", "Nombre que se usará para identificar al archivo.");
 define("_MD_SSECTION_FILE_STATUS", "¿Archivo visible?");
-define("_MD_SSECTION_FILE_STATUS_DSC", "Si elije 'No', el archivo no será visible para los usuarios.");
+define("_MD_SSECTION_FILE_STATUS_DSC", "Si elige 'No', el archivo no será visible para los usuarios.");
 define("_MD_SSECTION_FILE_TO_UPLOAD", "Archivo a subir :");
 define("_MD_SSECTION_FILE_TYPE", "Tipo de archivo");
 define("_MD_SSECTION_FILE_UPLOAD_ANOTHER", "Subir de nuevo");
@@ -75,15 +75,15 @@ define("_MD_SSECTION_IMAGE_UPLOAD", "Subir imagen");
 define("_MD_SSECTION_IMAGE_UPLOAD_DSC", "Elija una imagen en su ordenador. Esta imagen será subida al sitio y configurada como la imagen de la categoría.");
 define("_MD_SSECTION_IMAGE_UPLOAD_ITEM_DSC", "Elija una imagen en su ordenador. <br />Dicha imagen será subida al sitio <br />y configurada como imagen del artículo.");
 define("_MD_SSECTION_INDEX_CATEGORIES_SUMMARY", "Sumario de las categorías");
-define("_MD_SSECTION_INDEX_CATEGORIES_SUMMARY_INFO", "A continuación se muestra una lista de las categorías principales con sus respectivas subcategorías. Elija categoría para tener acceso a los artículos que las conforman.");
+define("_MD_SSECTION_INDEX_CATEGORIES_SUMMARY_INFO", "A continuación se muestra una lista de las categorías principales con sus respectivas subcategorías. Elija una de ellas tener acceso a los artículos que las conforman.");
 define("_MD_SSECTION_INDEX_ITEMS", "Últimos artículos publicados");
 define("_MD_SSECTION_INDEX_ITEMS_INFO", "A continuación se muestra una lista con los últimos artículos publicados.");
 define("_MD_SSECTION_INTITEM", "Eche un vistazo a este artículo en %s");
 define("_MD_SSECTION_INTITEMFOUND", "Le envío un artículo interesante que encontré en %s");
 define("_MD_SSECTION_ITEM", "artículo");
 define("_MD_SSECTION_ITEM_CAP", "Artículo");
-define("_MD_SSECTION_ITEM_RECEIVED_AND_PUBLISHED", "Su artículo ha sido enviado. Será automáticamente publicado. Gracias por su contribución.");
-define("_MD_SSECTION_ITEM_RECEIVED_NEED_APPROVAL", "Su artículo ha sido enviado y será publicado una vez que un moderador lo apruebe.<br /> Gracias por su contribución.");
+define("_MD_SSECTION_ITEM_RECEIVED_AND_PUBLISHED", "Su artículo ha sido enviado y será automáticamente publicado. Gracias por su contribución.");
+define("_MD_SSECTION_ITEM_RECEIVED_NEED_APPROVAL", "Su artículo ha sido enviado y será publicado una vez que un moderador lo apruebe.<br /> Gracias por su colaboración.");
 define("_MD_SSECTION_ITEMCOMEFROM", "Este artículo fue localizado en ");
 define("_MD_SSECTION_ITEMMODIFIED", "El artículo ha sido modificado");
 define("_MD_SSECTION_ITEMS", "Artículos");
@@ -145,6 +145,6 @@ define("_MD_SSECTION_VIEW_MORE", "Leer el artículo completo");
 define("_MD_SSECTION_WEIGHT", "Posición");
 define("_MD_SSECTION_WHO_WHEN", "Publicado por %s el %s");
 define("_MD_SSECTION_YES", "Sí");
-
-
+//Añadido en la versión 2.14
+define('_MD_SSECTION_PRINT_CLOSE', 'Cerrar esta ventana');
 ?>
