@@ -49,7 +49,7 @@ define("_MI_SSECTION_CATLIST_IMG_WDSC", "Indique el ancho de las imágenes de la 
 define("_MI_SSECTION_CATMAINIMG_W", "[OPCIONES DE FORMATO] Ancho de la imagen de la categoría principal"); 
 define("_MI_SSECTION_CATMAINIMG_WDSC", "Indique el ancho de la imagen para la categoría principal."); 
 define("_MI_SSECTION_CATPERPAGE", "[OPCIONES DE FORMATO] Número máximo de categorías por página (Lado del usuario)");
-define("_MI_SSECTION_CATPERPAGEDSC", "Máximo número de categorías princiapels por página para ser mostradas a la vez a los usuarios.");
+define("_MI_SSECTION_CATPERPAGEDSC", "Máximo número de categorías principales por página para ser mostradas a la vez a los usuarios.");
 define("_MI_SSECTION_CLONE", "[PERMISOS] ¿Permitir la duplicación de artículos?");
 define("_MI_SSECTION_CLONEDSC", "Elija 'Sí' para permitir a los usuarios con los premisos necesarios duplicar artículos.");
 define("_MI_SSECTION_COLLHEAD", "[OPCIONES DE FORMATO] ¿Mostrar la barra recogible?");
@@ -138,7 +138,7 @@ define("_MI_SSECTION_ITEMSMENU", "Bloque Menú de categorías");
 define("_MI_SSECTION_ITEMSTREE", "Bloque ramificado");
 //--/bd
 define("_MI_SSECTION_ITEMSNEW", "Lista de elementos recientes");
-define("_MI_SSECTION_ITEMSPOT", "En el titu?ar");
+define("_MI_SSECTION_ITEMSPOT", "Titular");
 define("_MI_SSECTION_ITEMSRANDOM_ITEM", "Elemento al azar");
 define("_MI_SSECTION_LASTITEM", "[OPCIONES DE CONTENIDO] ¿Mostrar columna del último elemento ?");
 define("_MI_SSECTION_LASTITEMDSC", "Elija 'Sí' para mostrar el último elemento en cada una de las categorías en el índice y en la página del módulo.");
