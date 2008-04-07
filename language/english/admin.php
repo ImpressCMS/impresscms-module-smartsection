@@ -350,7 +350,7 @@ define("_AM_SSECTION_RESULTS", "Search results");
 define("_AM_SSECTION_RUSUREDELF", "Are you sure you want to delete this file ?");
 define("_AM_SSECTION_SCATEGORYNAME","Create subcategories<br><br><span style='font-size: xx-small; font-weight: normal; display: block;'>Fill the text box with the names of sub categories to create.<br>Leave blank to not create subcategory. To create more, enter the how much more to create then press 'Add'</span>");
 define("_AM_SSECTION_SEARCH","Search");
-define("_AM_SSECTION_SEARCH_PW","Only HTML, HTM ou XHTML extensions are allowed");
+define("_AM_SSECTION_SEARCH_PW","Only HTML, HTM or XHTML extensions are allowed");
 define("_AM_SSECTION_SELECT_SORT", "Sort order");
 define("_AM_SSECTION_SELECT_STATUS", "Status");
 define("_AM_SSECTION_SELECTFILE","Select a file");
