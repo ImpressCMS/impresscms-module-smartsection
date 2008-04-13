@@ -46,7 +46,7 @@ if (!$smartobject_module) {
 	
 	xoops_cp_header();
 	$tpl = new XoopsTpl();
-	$tpl->display(SMARTSECTION_ROOT_PATH . 'templates/smartsection_smrartobject_required.html');
+	$tpl->display(SMARTSECTION_ROOT_PATH . 'templates/smartsection_smartobject_required.html');
 	xoops_cp_footer();
 	exit;	
 }
