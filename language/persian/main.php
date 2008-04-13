@@ -5,7 +5,7 @@
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
-* Translated by irxoops.org till 2.13 & updated and edited in 2.13 by stranger @ www.impresscms.ir
+* Translated by irxoops.org till 2.13 & updated and edited in 2.13 by stranger <www.impresscms.ir>
 */
 
 define("_MD_SSECTION_ACTION", "عمل");

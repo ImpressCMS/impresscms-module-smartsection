@@ -5,7 +5,7 @@
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
-* Translated by irxoops.org till 2.13 & updated and edited in 2.13 by stranger @ www.impresscms.ir
+* Translated by irxoops.org till 2.13 & updated and edited in 2.13 by stranger <www.impresscms.ir>
 */
 
 /*global $xoopsConfig, $xoopsModule, $xoopsModuleConfig;
@@ -27,14 +27,14 @@ include_once(XOOPS_ROOT_PATH . "/modules/smartsection/language/" . $xoopsConfig[
 */
 // Blocks
 
-define("_MB_SSECTION_ALLCAT", "تمام بخشها");
+define("_MB_SSECTION_ALLCAT", "تمام بخش‌ها");
 define("_MB_SSECTION_AUTO_LAST_ITEMS", "نمایش خودكار آخرین مقالات؟");
 define("_MB_SSECTION_CATEGORY", "بخش");
-define("_MB_SSECTION_CHARS", "طول یک عنوان");
+define("_MB_SSECTION_CHARS", "طول عنوان");
 define("_MB_SSECTION_COMMENTS", "توضیحات");
 define("_MB_SSECTION_DATE", "تاریخ انتشار");
 define("_MB_SSECTION_DISP", "نمایش");
-define("_MB_SSECTION_DISPLAY_CATEGORY", "نمایش اسم بخش?");
+define("_MB_SSECTION_DISPLAY_CATEGORY", "نمایش اسم بخش؟");
 define("_MB_SSECTION_DISPLAY_COMMENTS", "نمایش تعداد نظر ها؟");
 define("_MB_SSECTION_DISPLAY_TYPE", "نمایش نوع :");
 define("_MB_SSECTION_DISPLAY_TYPE_BLOCK", "کدام قسمت مسدود است؟");
