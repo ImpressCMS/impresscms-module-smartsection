@@ -1136,7 +1136,9 @@ function smartsection_addCategoryOption($categoryObj, $selectedid=0, $level = 0,
 	}
 
 	$ret .= "<option value='" . $categoryObj->categoryid() . "'";
-	if (in_array($categoryObj->categoryid(), $selectedid)) {
+	if (is_array($selectedid) && in_array($categoryObj->categoryid(), $selectedid)) {
+		$ret .= " selected='selected'";
+	} elseif($categoryObj->categoryid() == $selectedid) {
 		$ret .= " selected='selected'";
 	}
 	$ret .= ">" . $spaces . $categoryObj->name() . "</option>\n";

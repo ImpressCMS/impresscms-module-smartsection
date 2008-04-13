@@ -112,7 +112,11 @@ function smartsection_items_spot_edit($options)
 
 	// Items Select box
 	// Creating the item handler object
-	$itemsObj = $smartsection_item_handler->getSimpleItemsList();
+	$criteria = new CriteriaCompo();
+	$criteria->setSort('datesub');
+	$criteria->setOrder('DESC');
+	$itemsObj = $smartsection_item_handler->getSimpleItemsList($criteria);
+	unset($criteria);
 
 	if (empty($options[3]) || ($options[3] == 0)) {
 		$sel_items = '0';
