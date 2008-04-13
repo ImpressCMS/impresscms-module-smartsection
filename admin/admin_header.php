@@ -34,4 +34,21 @@ $imagearray = array(
 
 $myts = &MyTextSanitizer::getInstance();
 
+/**
+ * Making sure SmartObject is installed
+ */
+$module_handler = xoops_gethandler('module');
+$smartobject_module = $module_handler->getByDirname('smartobject');
+if (!$smartobject_module) {
+	include_once(XOOPS_ROOT_PATH . '/class/template.php');
+	
+	trigger_error('SmartSection requires SmartObject to be installed. Please installed SmartObject first.');
+	
+	xoops_cp_header();
+	$tpl = new XoopsTpl();
+	$tpl->display(SMARTSECTION_ROOT_PATH . 'templates/smartsection_smrartobject_required.html');
+	xoops_cp_footer();
+	exit;	
+}
+
 ?>
