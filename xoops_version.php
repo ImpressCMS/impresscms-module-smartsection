@@ -12,7 +12,7 @@ if (!defined("XOOPS_ROOT_PATH")) {
 }
 
 $modversion['name'] = _MI_SSECTION_MD_NAME;
-$modversion['version'] = 2.13;
+$modversion['version'] = 2.14;
 $modversion['description'] = _MI_SSECTION_MD_DESC;
 $modversion['author'] = "The SmartFactory [www.smartfactory.ca]";
 $modversion['credits'] = "w4z004, hsalazar, Mithrandir, fx2024, Ackbarr, Mariuss, Marco, Michiel, phppp, outch, Xvitry, Catzwolf, Shine, McDonald";
@@ -41,11 +41,11 @@ $modversion['developer_contributor'] = "w4z004, hsalazar, Mithrandir, fx2024, Ac
 $modversion['developer_website_url'] = "http://www.smartfactory.ca";
 $modversion['developer_website_name'] = "SmartFactory.ca";
 $modversion['developer_email'] = "marcan@smartfactory.ca";
-$modversion['status_version'] = "Final";
-$modversion['status'] = "Final";
-$modversion['date'] = "2007-02-09";
+$modversion['status_version'] = "Beta";
+$modversion['status'] = "Beta";
+$modversion['date'] = "2009-4-13";
 
-$modversion['warning'] = _MI_SSECTION_WARNING_RC;
+$modversion['warning'] = _MI_SSECTION_WARNING_BETA;
 
 $modversion['demo_site_url'] = "http://www.smartfactory.ca/modules/smartsection";
 $modversion['demo_site_name'] = "SmartFactory's Library";

@@ -1,10 +1,11 @@
-<b><u>=> Version 2.14 Beta (unreleased)</u></b>
+<b><u>=> Version 2.14 Beta (2008-04-13)</u></b>
 
 - Added : Addition of a rate feature to rate article
 - Added : Addition of an option in the module preference '[CONTENT OPTIONS] Display sub categories', 'Display sub-categories on index page only' thanks to Mowaffak
 - Added : Config option to display or not the module breadcrumb
 - Added : Addition of a shortcut link to edit the categories' details (only application for those with administrative privilege), thanks to Jason Wong and Shine
 - Added : Addition of the possibility to select multiple categories in the Recent Items List and Recent Items Details block
+- Added : Import script for WF-Section up to until version 2.07
 - Fixed : SmartsectionMetagen was missing under some situation
 - Fixed : The Spotlight block edit form was causing a problem with large number of articles
 - Fixed : Some characters were not supported in makepdf.php. They are now, thanks to ccopen and McDonald
