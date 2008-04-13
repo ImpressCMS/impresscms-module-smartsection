@@ -6,6 +6,7 @@
 - Added : Addition of a shortcut link to edit the categories' details (only application for those with administrative privilege), thanks to Jason Wong and Shine
 - Added : Addition of the possibility to select multiple categories in the Recent Items List and Recent Items Details block
 - Added : Import script for WF-Section up to until version 2.07
+- Added : Verification to be sure SmartObject is installed as this is now a requirement for SmartSection to work
 - Fixed : SmartsectionMetagen was missing under some situation
 - Fixed : The Spotlight block edit form was causing a problem with large number of articles
 - Fixed : Some characters were not supported in makepdf.php. They are now, thanks to ccopen and McDonald
