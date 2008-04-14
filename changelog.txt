@@ -1,3 +1,7 @@
+<b><u>=> Version 2.14 RC (unreleased)</u></b>
+
+-Fixed : Replacing the credits in the templates by a comment instead of an hidden text
+
 <b><u>=> Version 2.14 Beta (2008-04-13)</u></b>
 
 - Added : Addition of a rate feature to rate article
