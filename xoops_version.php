@@ -38,8 +38,8 @@ $modversion['adminMenu'] = "smartsection_adminMenu";
 $modversion['modFooter'] = "smartsection_modFooter";
 $modversion['developer_lead'] = "marcan [Marc-André Lanciault]";
 $modversion['developer_contributor'] = "w4z004, hsalazar, Mithrandir, fx2024, Ackbarr, Mariuss, Marco, Michiel, phppp, outch, Xvitry & Catzwolf";
-$modversion['developer_website_url'] = "http://www.smartfactory.ca";
-$modversion['developer_website_name'] = "SmartFactory.ca";
+$modversion['developer_website_url'] = "http://smartfactory.ca";
+$modversion['developer_website_name'] = "The SmartFactory";
 $modversion['developer_email'] = "marcan@smartfactory.ca";
 $modversion['status_version'] = "RC";
 $modversion['status'] = "Release Candidate";
@@ -47,12 +47,12 @@ $modversion['date'] = "2009-4-13";
 
 $modversion['warning'] = _MI_SSECTION_WARNING_BETA;
 
-$modversion['demo_site_url'] = "http://www.smartfactory.ca/modules/smartsection";
+$modversion['demo_site_url'] = "http://smartfactory.ca/modules/smartsection";
 $modversion['demo_site_name'] = "SmartFactory's Library";
-$modversion['support_site_url'] = "http://dev.xoops.org/modules/xfmod/project/?smartsection";
-$modversion['support_site_name'] = "SmartSection on the Developpers Forge";
-$modversion['submit_bug'] = "http://dev.xoops.org/modules/xfmod/tracker/?func=add&group_id=1102&atid=546";
-$modversion['submit_feature'] = "http://dev.xoops.org/modules/xfmod/tracker/?func=add&group_id=1102&atid=549";
+$modversion['support_site_url'] = "http://smartfactory.ca/modules/newbb/viewforum.php?forum=5";
+$modversion['support_site_name'] = "The SmartFactory";
+$modversion['submit_bug'] = "http://smartfactory.ca/modules/newbb/viewforum.php?forum=5";
+$modversion['submit_feature'] = "http://smartfactory.ca/modules/newbb/viewforum.php?forum=5";
 
 $modversion['author_word'] = "";
 
