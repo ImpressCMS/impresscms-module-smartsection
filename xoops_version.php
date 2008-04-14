@@ -41,8 +41,8 @@ $modversion['developer_contributor'] = "w4z004, hsalazar, Mithrandir, fx2024, Ac
 $modversion['developer_website_url'] = "http://www.smartfactory.ca";
 $modversion['developer_website_name'] = "SmartFactory.ca";
 $modversion['developer_email'] = "marcan@smartfactory.ca";
-$modversion['status_version'] = "Beta";
-$modversion['status'] = "Beta";
+$modversion['status_version'] = "RC";
+$modversion['status'] = "Release Candidate";
 $modversion['date'] = "2009-4-13";
 
 $modversion['warning'] = _MI_SSECTION_WARNING_BETA;
