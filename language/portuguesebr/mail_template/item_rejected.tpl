@@ -1,8 +1,8 @@
-Hello {X_UNAME},
+Olá {X_UNAME},
 
-We are sorry to inform you that the item you submitted at {X_SITENAME} on {SUBDATE} was rejected by a moderator. Should you need more information, please email the webmaster at {X_ADMINMAIL}.
+Pedimos desculpas por informar que o item apresentado no {X_SITENAME} em {SUBDATE} foi rejeitado por um dos nossos moderadores. Caso precise de mais informações, envie um e-mail para o webmaster no endereço {X_ADMINMAIL}.
 
-Content of the item you submitted :
+Conteúdo do item que você enviou :
 
 {ITEM_TITLE}
 
@@ -10,12 +10,12 @@ Content of the item you submitted :
 
 -----------
 
-You are receiving this message because you selected to be notified upon approval of the submitted item.
+Você está recebendo esta mensagem porque você selecionou para ser notificado após aprovação do item apresentado.
 
-if this is an error or you wish not to receive further  notifications, please update your subscriptions by visiting the link below:
+Se isto for um erro ou não desejar receber mais notificações, atualize suas inscrições, acesse o link abaixo:
 {X_UNSUBSCRIBE_URL}
 
-Please do not reply to this message.
+NÃO RESPONDER ESTA MENSAGEM !!!.
 
 -----------
 

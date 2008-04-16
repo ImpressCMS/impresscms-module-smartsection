@@ -1,21 +1,21 @@
-Hello {X_UNAME},
+Olá {X_UNAME},
 
-We are please to inform you that the following item submitted on {DATESUB} at {X_SITENAME} has been approved by a moderator and published in the {MODULE_NAME} of our site.
+Estamos informando que os seguintes itens apresentados na {DATESUB} no site {X_SITENAME} foi aprovado pelos nossos moderadores e publicado na {MODULE_NAME} deste site.
 
 "{ITEM_NAME}"
 
-You can read this item here :
+Você pode ler este item aqui :
 
 {ITEM_URL}
 
 -----------
 
-You are receiving this message because you selected to be notified upon approval of the submitted item.
+Você está recebendo esta mensagem porque você selecionou para ser notificado após aprovação do item apresentado.
 
-if this is an error or you wish not to receive further notifications, please update your subscriptions by visiting the link below:
+Se isto é um erro ou não desejar receber mais notificações, atualize suas inscrições, clique no link abaixo:
 {X_UNSUBSCRIBE_URL}
 
-Please do not reply to this message.
+NÃO RESPONDER ESTA MENSAGEM !!!.
 
 -----------
 

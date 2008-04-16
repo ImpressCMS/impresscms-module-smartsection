@@ -1,20 +1,20 @@
-Hello {X_UNAME},
+Olá {X_UNAME},
 
-The following item has been submitted in the {MODULE_NAME} module of {X_SITENAME} :
+O item seguinte foi apresentado no {MODULE_NAME} do {X_SITENAME} :
 
 "{ITEM_NAME}"
 
-You can review this item here :
+Você pode rever este item aqui :
 {WAITINGFILES_URL}
 
 -----------
 
-You are receiving this message because you selected to be notified when new items are submitted in the {MODULE_NAME} module of our site.
+Você está recebendo esta mensagem porque selecionou para ser notificado quando novos itens forem apresentados no {MODULE_NAME} deste website.
 
-if this is an error or you wish not to receive further notifications, please update your subscriptions by visiting the link below:
+Se isto é um erro ou não desejar receber mais notificações, atualize suas inscrições, acesse o link abaixo:
 {X_UNSUBSCRIBE_URL}
 
-Please do not reply to this message.
+NÃO RESPONDER ESTA MENSAGEM !!!.
 
 -----------
 
