@@ -1,21 +1,21 @@
-Olá {X_UNAME},
+OlÃ¡ {X_UNAME},
 
 Estamos informando que os seguintes itens apresentados na {DATESUB} no site {X_SITENAME} foi aprovado pelos nossos moderadores e publicado na {MODULE_NAME} deste site.
 
 "{ITEM_NAME}"
 
-Você pode ler este item aqui :
+VocÃª pode ler este item aqui :
 
 {ITEM_URL}
 
 -----------
 
-Você está recebendo esta mensagem porque você selecionou para ser notificado após aprovação do item apresentado.
+VocÃª estÃ¡ recebendo esta mensagem porque vocÃª selecionou para ser notificado apÃ³s aprovaÃ§Ã£o do item apresentado.
 
-Se isto é um erro ou não desejar receber mais notificações, atualize suas inscrições, clique no link abaixo:
+Se isto Ã© um erro ou nÃ£o desejar receber mais notificaÃ§Ãµes, atualize suas inscriÃ§Ãµes, clique no link abaixo:
 {X_UNSUBSCRIBE_URL}
 
-NÃO RESPONDER ESTA MENSAGEM !!!.
+NÃƒO RESPONDER ESTA MENSAGEM !!!.
 
 -----------
 

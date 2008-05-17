@@ -1,8 +1,8 @@
-Olá {X_UNAME},
+OlÃ¡ {X_UNAME},
 
-Pedimos desculpas por informar que o item apresentado no {X_SITENAME} em {SUBDATE} foi rejeitado por um dos nossos moderadores. Caso precise de mais informações, envie um e-mail para o webmaster no endereço {X_ADMINMAIL}.
+Pedimos desculpas por informar que o item apresentado no {X_SITENAME} em {SUBDATE} foi rejeitado por um dos nossos moderadores. Caso precise de mais informaÃ§Ãµes, envie um e-mail para o webmaster no endereÃ§o {X_ADMINMAIL}.
 
-Conteúdo do item que você enviou :
+ConteÃºdo do item que vocÃª enviou :
 
 {ITEM_TITLE}
 
@@ -10,12 +10,12 @@ Conteúdo do item que você enviou :
 
 -----------
 
-Você está recebendo esta mensagem porque você selecionou para ser notificado após aprovação do item apresentado.
+VocÃª estÃ¡ recebendo esta mensagem porque vocÃª selecionou para ser notificado apÃ³s aprovaÃ§Ã£o do item apresentado.
 
-Se isto for um erro ou não desejar receber mais notificações, atualize suas inscrições, acesse o link abaixo:
+Se isto for um erro ou nÃ£o desejar receber mais notificaÃ§Ãµes, atualize suas inscriÃ§Ãµes, acesse o link abaixo:
 {X_UNSUBSCRIBE_URL}
 
-NÃO RESPONDER ESTA MENSAGEM !!!.
+NÃƒO RESPONDER ESTA MENSAGEM !!!.
 
 -----------
 
