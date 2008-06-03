@@ -146,5 +146,5 @@ define("_MD_SSECTION_WEIGHT", "Peso");
 define("_MD_SSECTION_WHO_WHEN", "Publicado por %s em %s");
 define("_MD_SSECTION_YES", "Sim");
 
-define('_MD_SSECTION_PRINT_CLOSE', 'Close this window');
+define('_MD_SSECTION_PRINT_CLOSE', 'Fechar esta Janela');
 ?>

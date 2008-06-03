@@ -17,7 +17,7 @@
 ###:==| Data Release....: 2.13
 ###:==| Module..........: SmartContent - Project impresscms.org
 ###:==| Status..........: 
-###:==| Translation.....: beduino [aka joão luis barroca :)] deserto2004[@]hotmail.com
+###:==| Translation.....: beduino [aka joão luis barroca :)] deserto2004[@]hotmail.com | ArtsGeral
 ###:==| Revision........: Team X-trad.org
 ###:===========================================================
 ###:==| Histórico: Team X-Trad.org - Old versions...

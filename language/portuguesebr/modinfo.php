@@ -37,11 +37,11 @@ define("_MI_SSECTION_BY", "por");
 define("_MI_SSECTION_CATEGORY_ITEM_NOTIFY", "Itens da Categoria");
 define("_MI_SSECTION_CATEGORY_ITEM_NOTIFY_DSC", "Opções de notificação que se aplicam a categoria atual.");
 define("_MI_SSECTION_CATEGORY_ITEM_PUBLISHED_NOTIFY", "Novo artigo publicado");
-define("_MI_SSECTION_CATEGORY_ITEM_PUBLISHED_NOTIFY_CAP", "Notifique-me quando um novo artigo for publicado na categoria atual.");   
+define("_MI_SSECTION_CATEGORY_ITEM_PUBLISHED_NOTIFY_CAP", "Avise-me quando um novo artigo for publicado na categoria atual.");   
 define("_MI_SSECTION_CATEGORY_ITEM_PUBLISHED_NOTIFY_DSC", "Receber notificação quando um novo artigo for publicado na categoria atual.");      
 define("_MI_SSECTION_CATEGORY_ITEM_PUBLISHED_NOTIFY_SBJ", "[{X_SITENAME}] {X_MODULE} auto-notificação : Novo artigo publicado em categoria"); 
 define("_MI_SSECTION_CATEGORY_ITEM_SUBMITTED_NOTIFY", "'Artigo submetido");
-define("_MI_SSECTION_CATEGORY_ITEM_SUBMITTED_NOTIFY_CAP", "Notifique-me quando um novo artigo for submetido na categoria atual.");   
+define("_MI_SSECTION_CATEGORY_ITEM_SUBMITTED_NOTIFY_CAP", "Avise-me quando um novo artigo for submetido na categoria atual.");   
 define("_MI_SSECTION_CATEGORY_ITEM_SUBMITTED_NOTIFY_DSC", "Receber notificação quando um novo artigo for submetido na categoria atual.");      
 define("_MI_SSECTION_CATEGORY_ITEM_SUBMITTED_NOTIFY_SBJ", "[{X_SITENAME}] {X_MODULE} auto-notificação : Novo artigo submetido em categoria"); 
 define("_MI_SSECTION_CATLIST_IMG_W", "Lista de Imagens da Categoria width");
@@ -85,17 +85,17 @@ define("_MI_SSECTION_FILEUPLOADDIRDSC", "Pasta de destino para os arquivos anexa
 define("_MI_SSECTION_FOOTERPRINT","Imprimir rodapé da página");
 define("_MI_SSECTION_FOOTERPRINTDSC","Selecionar o rodapé que estará impresso em cada artigo entre aquelas criadas nas opções de preferência/conteúdo");
 define("_MI_SSECTION_GLOBAL_ITEM_CATEGORY_CREATED_NOTIFY", "Nova categoria");
-define("_MI_SSECTION_GLOBAL_ITEM_CATEGORY_CREATED_NOTIFY_CAP", "Notifique-me quando uma nova categoria for criada.");
+define("_MI_SSECTION_GLOBAL_ITEM_CATEGORY_CREATED_NOTIFY_CAP", "Avise-me quando uma nova categoria for criada.");
 define("_MI_SSECTION_GLOBAL_ITEM_CATEGORY_CREATED_NOTIFY_DSC", "Receba notificação quando uma nova categoria for criada.");
 define("_MI_SSECTION_GLOBAL_ITEM_CATEGORY_CREATED_NOTIFY_SBJ", "[{X_SITENAME}] {X_MODULE} auto-notificação : Nova categoria");
 define("_MI_SSECTION_GLOBAL_ITEM_NOTIFY", "Artigos em Geral");
 define("_MI_SSECTION_GLOBAL_ITEM_NOTIFY_DSC", "Opções de notificação que se aplicam a todos os artigos.");
 define("_MI_SSECTION_GLOBAL_ITEM_PUBLISHED_NOTIFY", "Novo artigo publicado");
-define("_MI_SSECTION_GLOBAL_ITEM_PUBLISHED_NOTIFY_CAP", "Notifique-me quando qualquer novo artigo for publicado.");
+define("_MI_SSECTION_GLOBAL_ITEM_PUBLISHED_NOTIFY_CAP", "Avise-me quando qualquer novo artigo for publicado.");
 define("_MI_SSECTION_GLOBAL_ITEM_PUBLISHED_NOTIFY_DSC", "Receber notificação quando qualquer novo artigo for publicado.");
 define("_MI_SSECTION_GLOBAL_ITEM_PUBLISHED_NOTIFY_SBJ", "[{X_SITENAME}] {X_MODULE} auto-notificação : Novo artigo publicado");
 define("_MI_SSECTION_GLOBAL_ITEM_SUBMITTED_NOTIFY", "Artigo submetido");
-define("_MI_SSECTION_GLOBAL_ITEM_SUBMITTED_NOTIFY_CAP", "Notifique-me quando qualquer artigo for submetido e estiver aguardando aprovação.");
+define("_MI_SSECTION_GLOBAL_ITEM_SUBMITTED_NOTIFY_CAP", "Avise-me quando qualquer artigo for submetido e estiver aguardando aprovação.");
 define("_MI_SSECTION_GLOBAL_ITEM_SUBMITTED_NOTIFY_DSC", "Receber notificação quando qualquer artigo for submetido e estiver esperando aprovação.");
 define("_MI_SSECTION_GLOBAL_ITEM_SUBMITTED_NOTIFY_SBJ", "[{X_SITENAME}] {X_MODULE} auto-notificação : Novo artigo submetido");
 define("_MI_SSECTION_HEADERPRINT","Imprimir o cabeçalho da página");
@@ -119,13 +119,13 @@ define("_MI_SSECTION_INDEXMSG", "Mensagem de boas-vindas do Índice");
 define("_MI_SSECTION_INDEXMSGDEF", ""); 
 define("_MI_SSECTION_INDEXMSGDSC", "Mensagem de boas-vindas será exibida na página-índice do módulo.");
 define("_MI_SSECTION_ITEM_APPROVED_NOTIFY", "Artigo aprovado");
-define("_MI_SSECTION_ITEM_APPROVED_NOTIFY_CAP", "Notifique-me quando este artigo for aprovado.");   
+define("_MI_SSECTION_ITEM_APPROVED_NOTIFY_CAP", "Avise-me quando este artigo for aprovado.");   
 define("_MI_SSECTION_ITEM_APPROVED_NOTIFY_DSC", "Receber notificação quando este artigo for aprovado.");      
 define("_MI_SSECTION_ITEM_APPROVED_NOTIFY_SBJ", "[{X_SITENAME}] {X_MODULE} auto-notificação : artigo aprovado"); 
 define("_MI_SSECTION_ITEM_NOTIFY", "Artigo");
 define("_MI_SSECTION_ITEM_NOTIFY_DSC", "Opções de notificação que se aplicam ao artigo atual.");
 define("_MI_SSECTION_ITEM_REJECTED_NOTIFY", "Artigo rejeitado");
-define("_MI_SSECTION_ITEM_REJECTED_NOTIFY_CAP", "Notifique-me se este artigo for rejeitado.");   
+define("_MI_SSECTION_ITEM_REJECTED_NOTIFY_CAP", "Avise-me se este artigo for rejeitado.");   
 define("_MI_SSECTION_ITEM_REJECTED_NOTIFY_DSC", "Receba notificação se este artigo for rejeitado.");      
 define("_MI_SSECTION_ITEM_REJECTED_NOTIFY_SBJ", "[{X_SITENAME}] {X_MODULE} auto-notificação : artigo rejeitado"); 
 define("_MI_SSECTION_ITEM_TYPE", "Tipo de artigo:");
@@ -227,13 +227,13 @@ define("_MI_SSECTION_LATESTFILES", "Últimos arquivos enviados");
 
 define("_MI_SSECTION_PATHSEARCH", "Exposição do trajeto da categoria em resultados da busca");
 define("_MI_SSECTION_PATHSEARCHDSC", "");
-define("_MI_SSECTION_SHOW_SUBCATS_NOMAIN", "Display sub-categories on index page only");
-define("_MI_SSECTION_RATING_ENABLED", "Enable rating system");
-define("_MI_SSECTION_RATING_ENABLEDDSC", "This features requires the SmartObject Framework");
+define("_MI_SSECTION_SHOW_SUBCATS_NOMAIN", "Mostrar sub-categorias no início da página somente");
+define("_MI_SSECTION_RATING_ENABLED", "Habilitar sistema de votação");
+define("_MI_SSECTION_RATING_ENABLEDDSC", "Isso exige recursos do FrameWork SmartObject");
 
-define("_MI_SSECTION_DISPBREAD", "Display the breadcrumb");
+define("_MI_SSECTION_DISPBREAD", "Mostrar um breadcrumb");
 define("_MI_SSECTION_DISPBREADDSC", "");
 
-define('_MI_SSECTION_DATE_TO_DATE', 'Articles from date to date')
+define('_MI_SSECTION_DATE_TO_DATE', 'Artigos da data até à data')
 
 ?>

@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: smartdbupdater.php,v 1.1 2006/09/12 19:00:43 malanciault Exp $
+* $Id: smartdbupdater.php 2635 2008-06-03 20:46:47Z gibaphp $
 * Module: SmartContent
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -24,7 +24,7 @@ define("_SDU_MSG_NEWFIELD_ERR", "Erro - enquando adicionava campo %s");
 define("_SDU_NEEDUPDATE", "Seu banco de dado está desatualizado. Atualizar o seu banco de dados e tabelas!<br><b>Note : O SmartFactory recomenda que você faça um backup de todas as tabelas do SmartSection antes de rodar este script de atualização. Caso não faça isto, vá por sua conta e risco e boa sorte.</b><br>");
 define("_SDU_NOUPDATE", "Seu banco de dados está atualizado. Não é necessário fazer atualizações.");
 define("_SDU_UPDATE_DB", "Atualizando seu banco de dados");
-define("_SDU_UPDATE_ERR", "Error - Enquando atualizava a versão %s");
+define("_SDU_UPDATE_ERR", "Erro - Enquando atualizava a versão %s");
 define("_SDU_UPDATE_NOW", "Atualizar Agora!");
 define("_SDU_UPDATE_OK", "Atualização foi concluida com Sucesso para a versão %s");
 define("_SDU_UPDATE_TO", "Atualizando a versão %s");

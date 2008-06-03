@@ -400,22 +400,22 @@ define("_AM_SSECTION_UPLOADPATH", "Categoria que armazena os arquivos anexados a
 define("_AM_SSECTION_VIEW_CATS", "Selecionar categorias que cada grupo pode visualizar");
 define("_AM_SSECTION_WEIGHT", "Peso");
 define("_AM_SSECTION_YES", "Sim");
-define("_MD_SSECTION_CATEGORY_ITEM", "Categoria<span style='font-size: xx-small; font-weight: normal; display: block;'>Categoria à qual pertence esta categoria.</span>");
+define("_MD_SSECTION_CATEGORY_ITEM", "Categoria<span style='font-size: xx-small; font-weight: normal; display: block;'>Categoria à qual ela pertence.</span>");
 
 define("_AM_SSECTION_PARTIAL_VIEW", "Permitir acesso parcial a estes grupos para visualização");
 define("_AM_SSECTION_PARTIAL_VIEWDSC", "Se um grupo não tiver a permissão para este artigo, você pode ainda poderá dar a esse um acesso parcial utilizando a opinião de grupo clicando no checkbox aqui. Note que estas necessidades dos grupos e suas permissões de acesso estarão sendo regidas pela categoria pai onde todo o controle de permissão irá residir.");
 
 define("_AM_SSECTION_TOOLS", "Ferramentas");
 define("_AM_SSECTION_CONFIGURE_READ_PERMISSIONS", "Cofigurar permissão de leitura");
-define("_AM_SSECTION_CONFIGURE_READ_PERMISSIONS_EXP", "Esta ferramenta permite que você configure rapidamente permissões lidas para TODAS as categorias e TODOS os artigos de uma vez. Todas permissões serão primeiramente apagas e então substituídas pelas opções de sua vontade de acordo com a seleção.<br/><br/><b>Por tome cuidado com esta ferramenta!</b>");
-define("_AM_SSECTION_FULLACCESS", "Teram permissões de leitura as categorias e os artigos");
-define("_AM_SSECTION_PERMISSIONS_UPDATED", "Permissões de updated.");
+define("_AM_SSECTION_CONFIGURE_READ_PERMISSIONS_EXP", "Esta ferramenta permite que você configure rapidamente permissões lidas para TODAS as categorias e TODOS os artigos de uma vez. Todas permissões serão primeiramente apagas e então substituídas pelas opções de sua vontade de acordo com a seleção.<br/><br/><b>Por este motivo, tome cuidado com esta ferramenta!</b>");
+define("_AM_SSECTION_FULLACCESS", "Permissões de leitura nas categorias e nos artigos");
+define("_AM_SSECTION_PERMISSIONS_UPDATED", "Permissões atualizadas.");
 
 define("_AM_SSECTION_ITEM_TAGS", "Tags");
 define("_AM_SSECTION_ITEM_TAGS_DSC", "");
 
-define("_AM_SSECTION_ITEM_UPLOAD_FILE", "Ligar um link a este artigo");
-define("_AM_SSECTION_ITEM_UPLOAD_FILE_DSC", "Selecionar um arquivo de seu computador para uni-lo a este artigo. Você pode adiciona mais arquivo, depois que o artigo foi criado. Editar simplesmente o artigo e rolar no fundo da página para ver a botão do arquivo.<br/><br/> da adição por exemplo, você poderia adicionar um original da palavra ou um original do Excel. Você pode mesmo upload uma arquivo Flash e estará diretamente ligado em seu artigo! ");
+define("_AM_SSECTION_ITEM_UPLOAD_FILE", "Ligar um arquivo a este artigo");
+define("_AM_SSECTION_ITEM_UPLOAD_FILE_DSC", "Selecione um arquivo de seu computador para uni-lo a este artigo. Você poderá adicionar mais de um arquivo, depois que o artigo foi criado. Editar simplesmente o artigo e ir até o final da página para ver o botão do arquivo.<br/><br/> No processo de inclusão por exemplo, você poderia adicionar um arquivo do Word ou do Excel. Você também poderá fazer um upload de um arquivo Flash e poderá estar ligado diretamente ao seu artigo! ");
 
 //define("_AM_SSECTION_XOOPS_PRO", "Você necessita de ajuda com este módulo? <br/>As características novas ainda não disponíveis?");
 

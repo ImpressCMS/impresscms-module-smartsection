@@ -27,7 +27,7 @@ include_once(XOOPS_ROOT_PATH . "/modules/smartsection/language/" . $xoopsConfig[
 // Blocks
 
 define("_MB_SSECTION_ALLCAT", "Todas as categorias");
-define("_MB_SSECTION_AUTO_LAST_ITEMS", "Exibir o(s) último(s) item(ns) automaticamente?");
+define("_MB_SSECTION_AUTO_LAST_ITEMS", "Exibir o(s) último(s) automaticamente?");
 define("_MB_SSECTION_CATEGORY", "Categoria");
 define("_MB_SSECTION_CHARS", "Comprimento do título");
 define("_MB_SSECTION_COMMENTS", "Comentário(s)");
@@ -63,8 +63,8 @@ define("_MB_SSECTION_SHOWITEMS", "Mostrar Items");
 
 define("_MB_SSECTION_FILES", "arquivos");
 define("_MB_SSECTION_DIRECTDOWNLOAD", "Link direto para download do arquivo em vez de uma link para o artigo?");
-define("_MB_SSECTION_FROM", "Select articles <br />from ");
-define("_MB_SSECTION_UNTIL", "&nbsp;&nbsp;to");
-define("_MB_SSECTION_DATE_FORMAT", "Date format must be mm/dd/yyy");
-define("_MB_SSECTION_ARTICLES_FROM_TO", "Articles published between %s and %s");
+define("_MB_SSECTION_FROM", "Selecione Artigos <br />de ");
+define("_MB_SSECTION_UNTIL", "&nbsp;&nbsp;para");
+define("_MB_SSECTION_DATE_FORMAT", "Formato de data deve ser mm/dd/yyy");
+define("_MB_SSECTION_ARTICLES_FROM_TO", "Os artigos publicados entre %s e %s");
 ?>

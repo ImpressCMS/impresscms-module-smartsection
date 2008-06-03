@@ -16,6 +16,6 @@ define("_AM_SSECTION_DOHTML", "Habilitar tags HTML");
 define("_AM_SSECTION_DOIMAGE", " Habilitar imagens");
 define("_AM_SSECTION_DOLINEBREAK", " Habilitar linebreak");
 define("_AM_SSECTION_DOSMILEY", " Habilitar emoticons");
-define("_AM_SSECTION_DOXCODE", " Habilitar XOOPS codes");
+define("_AM_SSECTION_DOXCODE", " Habilitar Xcodes");
 
 ?>
