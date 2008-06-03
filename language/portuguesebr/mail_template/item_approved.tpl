@@ -1,6 +1,6 @@
-Ol· {X_UNAME},
+Ol√° {X_UNAME},
 
-Informamos que o Ìtem abaixo, enviado em {DATESUB} para {X_SITENAME} foi aprovado por um moderador e est· publicado em {MODULE_NAME}. 
+Informamos que o √≠tem abaixo, enviado em {DATESUB} para {X_SITENAME} foi aprovado por um moderador e est√° publicado em {MODULE_NAME}. 
 
 "{ITEM_NAME}"
 
@@ -10,12 +10,12 @@ Clique no link abaixo:
 
 -----------
 
-VocÍ est· recebendo esta mensagem porque optou por ser avisado quando novos Ìtens fossem aprovados.
+Voc√™ est√° recebendo esta mensagem porque optou por ser avisado quando novos √≠tens fossem aprovados.
 
-Se isso for um erro ou caso n„o queira mais receber avisos, altere suas opÁıes de subscriÁ„o no link abaixo:
+Se isso for um erro ou caso n√£o queira mais receber avisos, altere suas op√ß√µes de subscri√ß√£o no link abaixo:
 {X_UNSUBSCRIBE_URL}
 
-N√O RESPONDER ESTA MENSAGEM.
+N√ÉO RESPONDER ESTA MENSAGEM.
 
 Obrigado.
 

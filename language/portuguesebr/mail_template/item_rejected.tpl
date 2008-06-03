@@ -1,8 +1,8 @@
-Olá {X_UNAME},
+OlÃ¡ {X_UNAME},
 
-Sentimos muito em informar que o ítem enviado para {X_SITENAME} em {SUBDATE} foi rejeitado por um moderador. Para maiores informações escreva para {X_ADMINMAIL}.
+Sentimos muito em informar que o Ã­tem enviado para {X_SITENAME} em {SUBDATE} foi rejeitado por um moderador. Para maiores informaÃ§Ãµes escreva para {X_ADMINMAIL}.
 
-Conteúdo do ítem enviado:
+ConteÃºdo do Ã­tem enviado:
 
 {ITEM_TITLE}
 
@@ -10,12 +10,12 @@ Conteúdo do ítem enviado:
 
 -----------
 
-Você está recebendo esta mensagem porque optou por ser avisado sobre uma possível aprovação.
+VocÃª estÃ¡ recebendo esta mensagem porque optou por ser avisado sobre uma possÃ­vel aprovaÃ§Ã£o.
 
-Se isso for um erro ou caso não queira mais receber avisos, altere suas opções de subscrição no link abaixo:
+Se isso for um erro ou caso nÃ£o queira mais receber avisos, altere suas opÃ§Ãµes de subscriÃ§Ã£o no link abaixo:
 {X_UNSUBSCRIBE_URL}
 
-NÃO RESPONDER ESTA MENSAGEM.
+NÃƒO RESPONDER ESTA MENSAGEM.
 
 Obrigado.
 

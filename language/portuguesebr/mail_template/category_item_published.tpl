@@ -1,6 +1,6 @@
-Ol· {X_UNAME},
+Ol√° {X_UNAME},
 
-O Ìtem abaixo foi publicado em {MODULE_NAME} no {X_SITENAME} :
+O √≠tem abaixo foi publicado em {MODULE_NAME} no {X_SITENAME} :
 
 "{ITEM_NAME}"
 
@@ -10,12 +10,12 @@ Clique no link abaixo para ler:
 
 -----------
 
-VocÍ est· recebendo esta mensagem porque selecionou para ser avisado quando novas notÌcias fossem publicadas em "{CATEGORY_NAME}" - {MODULE_NAME} .
+Voc√™ est√° recebendo esta mensagem porque selecionou para ser avisado quando novas not√≠cias fossem publicadas em "{CATEGORY_NAME}" - {MODULE_NAME} .
 
-Se isso for um erro ou se n„o quer mais receber avisos, altere suas opÁıes de subscriÁ„o no link abaixo:
+Se isso for um erro ou se n√£o quer mais receber avisos, altere suas op√ß√µes de subscri√ß√£o no link abaixo:
 {X_UNSUBSCRIBE_URL}
 
-N√O RESPONDER ESTA MENSAGEM.
+N√ÉO RESPONDER ESTA MENSAGEM.
 
 Obrigado.
 

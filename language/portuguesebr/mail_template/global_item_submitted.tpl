@@ -1,20 +1,20 @@
-Ol· {X_UNAME},
+Ol√° {X_UNAME},
 
-O Ìtem abaixo foi enviado para {MODULE_NAME} em {X_SITENAME} :
+O √≠tem abaixo foi enviado para {MODULE_NAME} em {X_SITENAME} :
 
 "{ITEM_NAME}"
 
-Para chec·-lo, clique no link abaixo:
+Para chec√°-lo, clique no link abaixo:
 {WAITINGFILES_URL}
 
 -----------
 
-VocÍ est· recebendo esta mensagem porque optou por ser avisado quando novos Ìtens fossem enviados para {MODULE_NAME} em nosso site.
+Voc√™ est√° recebendo esta mensagem porque optou por ser avisado quando novos √≠tens fossem enviados para {MODULE_NAME} em nosso site.
 
-Se isso for um erro ou caso n„o queira mais receber avisos, altere suas opÁıes de subscriÁ„o no link abaixo:
+Se isso for um erro ou caso n√£o queira mais receber avisos, altere suas op√ß√µes de subscri√ß√£o no link abaixo:
 {X_UNSUBSCRIBE_URL}
 
-N√O RESPONDER ESTA MENSAGEM.
+N√ÉO RESPONDER ESTA MENSAGEM.
 
 Obrigado.
 
