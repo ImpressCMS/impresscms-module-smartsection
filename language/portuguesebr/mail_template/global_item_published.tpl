@@ -1,24 +1,26 @@
-Hello {X_UNAME},
+Olá {X_UNAME},
 
-The following item has been published in the {MODULE_NAME} module of {X_SITENAME} : 
+O ítem abaixo foi publicado em  {MODULE_NAME} no site {X_SITENAME} : 
 
 "{ITEM_NAME}"
 
-You can read this item here:
+Para saber mais, clique no link abaixo:
 
 {ITEM_URL}
 
 -----------
 
-You are receiving this message because you selected to be notified when new items are published in the {MODULE_NAME} module of our site.
+Você está recebendo esta mensagem porque optou por ser avisado quando novos ítens fossem publicados em {MODULE_NAME} . 
 
-if this is an error or you wish not to receive further  notifications, please update your subscriptions by visiting the link below:
+Se isso for um erro ou se não quer mais receber avisos, altere suas opções de subscrição no link abaixo:
 {X_UNSUBSCRIBE_URL}
 
-Please do not reply to this message.
+NÃO RESPONDER ESTA MENSAGEM.
+
+Obrigado.
 
 -----------
 
 {X_SITENAME} ({X_SITEURL}) 
-The Webmaster
+Webmaster
 {X_ADMINMAIL}

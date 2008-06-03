@@ -8,7 +8,7 @@
 */
 
 /*global $xoopsConfig, $xoopsModule, $xoopsModuleConfig;
-if (isset($xoopsModuleConfig) && isset($xoopsModule) && $xoopsModule->getVar('dirname') == 'smartsection') {
+If (isset($xoopsModuleConfig) && isset($xoopsModule) && $xoopsModule->getVar('dirname') == 'smartsection') {
 	$itemType = $xoopsModuleConfig['itemtype'];
 } else {
 	$hModule = &xoops_gethandler('module');
@@ -27,30 +27,44 @@ include_once(XOOPS_ROOT_PATH . "/modules/smartsection/language/" . $xoopsConfig[
 // Blocks
 
 define("_MB_SSECTION_ALLCAT", "Todas as categorias");
-define("_MB_SSECTION_AUTO_LAST_ITEMS", "Exibir o(s) Ãºltimo(s) item(ns) automaticamente?");
+define("_MB_SSECTION_AUTO_LAST_ITEMS", "Exibir o(s) último(s) item(ns) automaticamente?");
 define("_MB_SSECTION_CATEGORY", "Categoria");
-define("_MB_SSECTION_CHARS", "Comprimento do tÃ­tulo");
-define("_MB_SSECTION_COMMENTS", "ComentÃ¡rio(s)");
-define("_MB_SSECTION_DATE", "Data da publicaÃ§Ã£o");
-define("_MB_SSECTION_DISP", "ExibiÃ§Ã£o");
+define("_MB_SSECTION_CHARS", "Comprimento do título");
+define("_MB_SSECTION_COMMENTS", "Comentário(s)");
+define("_MB_SSECTION_DATE", "Data da publicação");
+define("_MB_SSECTION_DISP", "Exibição");
 define("_MB_SSECTION_DISPLAY_CATEGORY", "Exibir o nome de categoria?");
-define("_MB_SSECTION_DISPLAY_COMMENTS", "Exibir contador de comentÃ¡rio?");
+define("_MB_SSECTION_DISPLAY_COMMENTS", "Exibir contador de comentário?");
 define("_MB_SSECTION_DISPLAY_TYPE", "Exibir tipo :");
-define("_MB_SSECTION_DISPLAY_TYPE_BLOCK", "Cada artigo Ã© um bloco");
-define("_MB_SSECTION_DISPLAY_TYPE_BULLET", "Cada artigo Ã© um item");
+define("_MB_SSECTION_DISPLAY_TYPE_BLOCK", "Cada artigo é um bloco");
+define("_MB_SSECTION_DISPLAY_TYPE_BULLET", "Cada artigo é um item");
 define("_MB_SSECTION_DISPLAY_WHO_AND_WHEN", "Exibir o autor e a data?");
 define("_MB_SSECTION_FULLITEM", "Leia o artigo completo");
-define("_MB_SSECTION_HITS", "NÃºmero de cliques");
+define("_MB_SSECTION_HITS", "Número de cliques");
 define("_MB_SSECTION_ITEMS", "Artigos");
 define("_MB_SSECTION_LAST_ITEMS_COUNT", "Se positivo, quantos artigos para exibir?");
 define("_MB_SSECTION_LENGTH", " caracteres");
-define("_MB_SSECTION_ORDER", "Ordem de exibiÃ§Ã£o");
+define("_MB_SSECTION_ORDER", "Ordem de exibição");
 define("_MB_SSECTION_POSTEDBY", "Publicado por");
 define("_MB_SSECTION_READMORE", "Leia mais...");
 define("_MB_SSECTION_READS", "Leituras");
-define("_MB_SSECTION_SELECT_ITEMS", "Se nÃ£o, selecione os artigos para serem exibidos :");
+define("_MB_SSECTION_SELECT_ITEMS", "Se não, selecione os artigos para serem exibidos :");
 define("_MB_SSECTION_SELECTCAT", "Exibir os artigos  :");
 define("_MB_SSECTION_VISITITEM", "Visite o");
 define("_MB_SSECTION_WEIGHT", "Listar por peso");
 define("_MB_SSECTION_WHO_WHEN", "Publicado por %s em %s");
+//bd tree block hack
+define("_MB_SSECTION_LEVELS", "Níveis");
+define("_MB_SSECTION_CURRENTCATEGORY", "Categoria Atual");
+define("_MB_SSECTION_ASC", "ASC");
+define("_MB_SSECTION_DESC", "DESC");
+define("_MB_SSECTION_SHOWITEMS", "Mostrar Items");
+//--/bd
+
+define("_MB_SSECTION_FILES", "arquivos");
+define("_MB_SSECTION_DIRECTDOWNLOAD", "Link direto para download do arquivo em vez de uma link para o artigo?");
+define("_MB_SSECTION_FROM", "Select articles <br />from ");
+define("_MB_SSECTION_UNTIL", "&nbsp;&nbsp;to");
+define("_MB_SSECTION_DATE_FORMAT", "Date format must be mm/dd/yyy");
+define("_MB_SSECTION_ARTICLES_FROM_TO", "Articles published between %s and %s");
 ?>

@@ -1,24 +1,26 @@
-Ol√° {X_UNAME},
+Ol· {X_UNAME},
 
-Estamos informando que os seguintes itens apresentados na {DATESUB} no site {X_SITENAME} foi aprovado pelos nossos moderadores e publicado na {MODULE_NAME} deste site.
+Informamos que o Ìtem abaixo, enviado em {DATESUB} para {X_SITENAME} foi aprovado por um moderador e est· publicado em {MODULE_NAME}. 
 
 "{ITEM_NAME}"
 
-Voc√™ pode ler este item aqui :
+Clique no link abaixo:
 
 {ITEM_URL}
 
 -----------
 
-Voc√™ est√° recebendo esta mensagem porque voc√™ selecionou para ser notificado ap√≥s aprova√ß√£o do item apresentado.
+VocÍ est· recebendo esta mensagem porque optou por ser avisado quando novos Ìtens fossem aprovados.
 
-Se isto √© um erro ou n√£o desejar receber mais notifica√ß√µes, atualize suas inscri√ß√µes, clique no link abaixo:
+Se isso for um erro ou caso n„o queira mais receber avisos, altere suas opÁıes de subscriÁ„o no link abaixo:
 {X_UNSUBSCRIBE_URL}
 
-N√ÉO RESPONDER ESTA MENSAGEM !!!.
+N√O RESPONDER ESTA MENSAGEM.
+
+Obrigado.
 
 -----------
 
 {X_SITENAME} ({X_SITEURL}) 
-The Webmaster
+Webmaster
 {X_ADMINMAIL}

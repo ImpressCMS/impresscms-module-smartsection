@@ -1,23 +1,25 @@
-OlÃ¡ {X_UNAME},
+Olá {X_UNAME},
 
-O item seguinte foi apresentado no {MODULE_NAME} do {X_SITENAME} :
+O ítem abaixo foi enviado para {MODULE_NAME} em {X_SITENAME} :
 
 "{ITEM_NAME}"
 
-VocÃª pode rever este item aqui :
+Para checá-lo, clique no link abaixo:
 {WAITINGFILES_URL}
 
 -----------
 
-VocÃª estÃ¡ recebendo esta mensagem porque selecionou para ser notificado quando novos itens forem apresentados no {MODULE_NAME} deste website.
+Você está recebendo esta mensagem porque optou por ser avisado quando novos ítens fossem enviados para {MODULE_NAME} em nosso site.
 
-Se isto Ã© um erro ou nÃ£o desejar receber mais notificaÃ§Ãµes, atualize suas inscriÃ§Ãµes, acesse o link abaixo:
+Se isso for um erro ou caso não queira mais receber avisos, altere suas opções de subscrição no link abaixo:
 {X_UNSUBSCRIBE_URL}
 
-NÃƒO RESPONDER ESTA MENSAGEM !!!.
+NÃO RESPONDER ESTA MENSAGEM.
+
+Obrigado.
 
 -----------
 
 {X_SITENAME} ({X_SITEURL}) 
-The Webmaster
+Webmaster
 {X_ADMINMAIL}
