@@ -71,7 +71,7 @@ switch ($op) {
 	$moduleObj = $module_handler->getByDirname('news');
 	if ($moduleObj) {
 		$from_module_version = round($moduleObj->getVar('version') / 100, 2);
-		if (($from_module_version == 1.1 || $from_module_version == 1.44)) {
+		if (($from_module_version >= 1.1)) {
 			$importfile_select_array["news"] = "News " . $from_module_version;
 			$news_version = $from_module_version;
 		}

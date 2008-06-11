@@ -144,7 +144,7 @@ define("_MD_SSECTION_UPLOAD", "بارگذاری");
 define("_MD_SSECTION_UPLOAD_FILE", "بارگذاری پرونده");
 define("_MD_SSECTION_VIEW_MORE", "خواندن تمامی مقاله به صورت کامل");
 define("_MD_SSECTION_WEIGHT", "وزن چینش");
-define("_MD_SSECTION_WHO_WHEN", "ا توسط %s در %s در سایت قرار گرفته است");
+define("_MD_SSECTION_WHO_WHEN", "توسط %s در تاریخ %s در سایت قرار گرفته است");
 define("_MD_SSECTION_YES", "بله");
 
 
