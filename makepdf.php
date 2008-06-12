@@ -32,7 +32,7 @@
 error_reporting(0);
 include_once 'header.php';
 $myts =& MyTextSanitizer::getInstance();
-require_once XOOPS_ROOT_PATH.'/modules/smartsection/fpdf/fpdf.inc.php';
+require_once XOOPS_ROOT_PATH.'/modules/smartobject/fpdf/fpdf.inc.php';
 
 global $smartsection_item_handler, $smartsection_category_handler, $xoopsUser, $xoopsConfig, $xoopsModuleConfig, $xoopsModule;
 

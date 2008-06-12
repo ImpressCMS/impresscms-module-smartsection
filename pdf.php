@@ -2,7 +2,7 @@
 /**
 * PDF class
 *
-* System tool that allow's you to generate PDF files from your news articles
+* System tool that allow's you to generate PDF files from your articles
 *
 * @copyright	The ImpressCMS Project http://www.impresscms.org/
 * @license		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
@@ -43,24 +43,24 @@ if (!(smartsection_itemAccessGranted($itemObj))) {
 	exit;
 }
 
-require_once ICMS_PDF_LIB_PATH.'/tcpdf.php';
-$filename = ICMS_ROOT_PATH.'/modules/news/smartsection/'.$xoopsConfig['language'].'/main.php';
+require_once XOOPS_ROOT_PATH.'/modules/smartobject/tcpdf/tcpdf.php';
+$filename = XOOPS_ROOT_PATH.'/modules/smartsection/'.$xoopsConfig['language'].'/main.php';
 if (file_exists( $filename)) {
 	include_once $filename;
 } else {
-	include_once ICMS_ROOT_PATH.'/modules/smartsection/language/english/main.php';
+	include_once XOOPS_ROOT_PATH.'/modules/smartsection/language/english/main.php';
 }
 
-$filename = ICMS_PDF_LIB_PATH.'/config/lang/'._LANGCODE.'.php';
+$filename = XOOPS_ROOT_PATH.'/modules/smartobject/tcpdf/config/lang/'._LANGCODE.'.php';
 if(file_exists($filename)) {
 	include_once $filename;
 } else {
-	include_once ICMS_PDF_LIB_PATH.'/config/lang/en.php';
+	include_once XOOPS_ROOT_PATH.'/modules/smartobject/tcpdf/config/lang/en.php';
 }
 
 $dateformat = $itemObj->datesub();
 $sender_inform = sprintf(_MD_SSECTION_WHO_WHEN, $itemObj->posterName(), $itemObj->datesub());
-$content = '<b><i><u><a href="'.ICMS_URL.'/modules/smartsection/item.php?itemid='.$itemid.'" title="'.$myts->undoHtmlSpecialChars($itemObj->title()).'">'.$myts->undoHtmlSpecialChars($itemObj->title()).'</a></u></i></b><br /><b>'._MD_SSECTION_CATEGORY.' : <a href="'.ICMS_URL.'/modules/smartsection/category.php?categoryid='.$itemObj->categoryid().'" title="'.$myts->undoHtmlSpecialChars($categoryObj->name()).'">'.$myts->undoHtmlSpecialChars($categoryObj->name()).'</a></b><br /><b>'.$sender_inform.'</b><br />'.$myts->undoHtmlSpecialChars($itemObj->plain_maintext()).'';
+$content = '<b><i><u><a href="'.XOOPS_URL.'/modules/smartsection/item.php?itemid='.$itemid.'" title="'.$myts->undoHtmlSpecialChars($itemObj->title()).'">'.$myts->undoHtmlSpecialChars($itemObj->title()).'</a></u></i></b><br /><b>'._MD_SSECTION_CATEGORY.' : <a href="'.XOOPS_URL.'/modules/smartsection/category.php?categoryid='.$itemObj->categoryid().'" title="'.$myts->undoHtmlSpecialChars($categoryObj->name()).'">'.$myts->undoHtmlSpecialChars($categoryObj->name()).'</a></b><br /><b>'.$sender_inform.'</b><br />'.$myts->undoHtmlSpecialChars($itemObj->plain_maintext()).'';
 $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true);
 
 $doc_title = $myts->undoHtmlSpecialChars($itemObj->title());
