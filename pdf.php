@@ -14,7 +14,6 @@
 
 error_reporting(0);
 include_once 'header.php';
-$myts =& MyTextSanitizer::getInstance();
 global $smartsection_item_handler, $smartsection_category_handler, $xoopsUser, $xoopsConfig, $xoopsModuleConfig, $xoopsModule;
 
 $itemid = isset($_GET['itemid']) ? intval($_GET['itemid']) : 0;
@@ -43,7 +42,7 @@ if (!(smartsection_itemAccessGranted($itemObj))) {
 	exit;
 }
 
-require_once XOOPS_ROOT_PATH.'/modules/smartobject/tcpdf/tcpdf.php';
+require_once ICMS_PDF_LIB_PATH.'/tcpdf.php';
 $filename = XOOPS_ROOT_PATH.'/modules/smartsection/'.$xoopsConfig['language'].'/main.php';
 if (file_exists( $filename)) {
 	include_once $filename;
@@ -51,11 +50,11 @@ if (file_exists( $filename)) {
 	include_once XOOPS_ROOT_PATH.'/modules/smartsection/language/english/main.php';
 }
 
-$filename = XOOPS_ROOT_PATH.'/modules/smartobject/tcpdf/config/lang/'._LANGCODE.'.php';
+$filename = ICMS_PDF_LIB_PATH.'/config/lang/'._LANGCODE.'.php';
 if(file_exists($filename)) {
 	include_once $filename;
 } else {
-	include_once XOOPS_ROOT_PATH.'/modules/smartobject/tcpdf/config/lang/en.php';
+	include_once ICMS_PDF_LIB_PATH.'/config/lang/en.php';
 }
 
 $dateformat = $itemObj->datesub();
