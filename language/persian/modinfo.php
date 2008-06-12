@@ -228,4 +228,12 @@ define("_MI_SSECTION_LATESTFILES", "آخرین پرونده های بارگذا�
 
 define("_MI_SSECTION_PATHSEARCH", "[گزینه های فرمت] نمایش آدرس شاخه در نتایج جست و جو");
 define("_MI_SSECTION_PATHSEARCHDSC", "");
+define("_MI_SSECTION_SHOW_SUBCATS_NOMAIN", "نمایش زیرشاخه ها فقط در صفحه فهرست‌ها");
+define("_MI_SSECTION_RATING_ENABLED", "فعال کردن سیستم رای دهی");
+define("_MI_SSECTION_RATING_ENABLEDDSC", "برای استفاده از قابلیت باید ماژول SmartObject را نصب کرده باشید");
+
+define("_MI_SSECTION_DISPBREAD", "نمایش breadcrumb");
+define("_MI_SSECTION_DISPBREADDSC", "");
+
+define('_MI_SSECTION_DATE_TO_DATE', 'مقالات از تاریخ تا تاریخ')
 ?>

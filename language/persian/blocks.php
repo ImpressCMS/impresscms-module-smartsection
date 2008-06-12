@@ -64,5 +64,8 @@ define("_MB_SSECTION_SHOWITEMS", "موارد را نشان بده");
 
 define("_MB_SSECTION_FILES", "پرونده ها");
 define("_MB_SSECTION_DIRECTDOWNLOAD", "لینک مستقیم به پرونده ها به جای لینک به مقالات؟");
-
+define("_MB_SSECTION_FROM", "انتخاب مقالات <br />از ");
+define("_MB_SSECTION_UNTIL", "&nbsp;&nbsp;تا");
+define("_MB_SSECTION_DATE_FORMAT", "نوع تاریخ باید بر اساس mm/dd/yyyy باشد");
+define("_MB_SSECTION_ARTICLES_FROM_TO", "مقالات منتشر شده از تاریخ %s تا %s");
 ?>

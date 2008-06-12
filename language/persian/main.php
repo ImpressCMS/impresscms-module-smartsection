@@ -147,5 +147,5 @@ define("_MD_SSECTION_WEIGHT", "وزن چینش");
 define("_MD_SSECTION_WHO_WHEN", "توسط %s در تاریخ %s در سایت قرار گرفته است");
 define("_MD_SSECTION_YES", "بله");
 
-
+define('_MD_SSECTION_PRINT_CLOSE', 'بستن این پنجره');
 ?>
