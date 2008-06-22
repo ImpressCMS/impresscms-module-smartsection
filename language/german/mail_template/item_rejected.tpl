@@ -1,8 +1,8 @@
-Hallo {X_UNAME},
+Hello {X_UNAME},
 
-Es tut uns sehr leide Ihnen mitteilen zu m&uuml;ssen, dass der von Ihnen auf {X_SITENAME} eingereichte Artikel, von den Moderatoren abgelehnt wurde. Sollten Sie sich f&uuml;r die Genaueren Gr&uuml;nde informieren wollen, kontaktieren sie mitten per elektronischer Post den Webmaster under {X_ADMINMAIL}.
+We are sorry to inform you that the item you submitted at {X_SITENAME} on {SUBDATE} was rejected by a moderator. Should you need more information, please email the webmaster at {X_ADMINMAIL}.
 
-Inhalt des von Ihnen eingereichten Artikels :
+Content of the item you submitted :
 
 {ITEM_TITLE}
 
@@ -10,15 +10,15 @@ Inhalt des von Ihnen eingereichten Artikels :
 
 -----------
 
-Sie haben diese Zuschrift erhalten, da Sie um Benachrichtigung bei Neuver&ouml;ffentlichungen in der Kategorie "{CATEGORY_NAME}" des {MODULE_NAME} Modules unserer Seiten, ausgew&auml;lt haben
+You are receiving this message because you selected to be notified upon approval of the submitted item.
 
-Sollte es sich hierbei um einen Fehlter handeln, und um weitere Zuschriften zu unterbinden, bitte wir Sie, mittels des unten aufge&uuml;hrten Links, Ihre Einstellungen zu ver&auml;ndern:
+If this is an error or you wish not to receive further  notifications, please update your subscriptions by visiting the link below:
 {X_UNSUBSCRIBE_URL}
 
-Bitte diese Nachricht nicht beantworten!
+Please do not reply to this message.
 
 -----------
 
 {X_SITENAME} ({X_SITEURL}) 
-Der Webmaster
+The Webmaster
 {X_ADMINMAIL}

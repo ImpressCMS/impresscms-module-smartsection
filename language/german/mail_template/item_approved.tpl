@@ -1,24 +1,24 @@
-Hallo {X_UNAME},
+Hello {X_UNAME},
 
-Wir sind hocherfreut Ihnen mitteilen zu k&ouml;nnen, dass der am {DATESUB} auf {X-SITENAME} aufgegebene Artikel von den Moderatoren bewilligt und im {MODULE_NAME} unserer Seiten ver&ouml;ffentlicht wurde.
+We are please to inform you that the following item submitted on {DATESUB} at {X_SITENAME} has been approved by a moderator and published in the {MODULE_NAME} of our site.
 
 "{ITEM_NAME}"
 
-Sie k&ouml;nnen den Artikel unter der folgenden Addresse lesen:
+You can read this item here :
 
 {ITEM_URL}
 
 -----------
 
-Sie haben diese Zuschrift erhalten, da Sie um Benachrichtigung bei Neuver&ouml;ffentlichungen in der Kategorie "{CATEGORY_NAME}" des {MODULE_NAME} Modules unserer Seiten, ausgew&auml;lt haben
+You are receiving this message because you selected to be notified upon approval of the submitted item.
 
-Sollte es sich hierbei um einen Fehlter handeln, und um weitere Zuschriften zu unterbinden, bitte wir Sie, mittels des unten aufge&uuml;hrten Links, Ihre Einstellungen zu ver&auml;ndern:
+If this is an error or you wish not to receive further notifications, please update your subscriptions by visiting the link below:
 {X_UNSUBSCRIBE_URL}
 
-Bitte diese Nachricht nicht beantworten!
+Please do not reply to this message.
 
 -----------
 
 {X_SITENAME} ({X_SITEURL}) 
-Der Webmaster
+The Webmaster
 {X_ADMINMAIL}

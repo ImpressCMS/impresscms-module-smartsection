@@ -40,7 +40,7 @@ define("_AM_SSECTION_DELETEITEM", "Artikel L&ouml;schen");
 define("_AM_SSECTION_DELETETHISITEM", "Diesen Atikel l&ouml;schen?");
 define("_AM_SSECTION_DESCRIP", "Kategorie Beschreibung");
 define("_AM_SSECTION_EDITCOL", "Katgorie Aktualisieren");
-define("_AM_SSECTION_EDITITEM", "Diesen Artikel Aktualisieren");
+define("_AM_SSECTION_EDITITEM", "Diesen Artikel Aktualisieren);
 define("_AM_SSECTION_ERROR_ITEM_NOT_SAVED", "Ein Fehler ist aufgetreten. Der Artikel wurde nicht in der Datenbank abgespeichert.");
 define("_AM_SSECTION_FILE_ADDING_DSC", "Bitte f&uum;llen Sie das nachfolgende Formular aus, um eine Datei dem Artikel anzuf&uuml;gen.");
 define("_AM_SSECTION_FILES_LINKED", "Dateien diesem Artikel angef&uuml;gt");
