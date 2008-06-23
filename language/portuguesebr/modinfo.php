@@ -232,7 +232,7 @@ define("_MI_SSECTION_RATING_ENABLED", "Habilitar sistema de votação");
 define("_MI_SSECTION_RATING_ENABLEDDSC", "Isso exige recursos do FrameWork SmartObject");
 
 define("_MI_SSECTION_DISPBREAD", "Mostrar um breadcrumb");
-define("_MI_SSECTION_DISPBREADDSC", "");
+define("_MI_SSECTION_DISPBREADDSC", "Breadcrumb navigation displays the current page's context within the site structure");
 
 define('_MI_SSECTION_DATE_TO_DATE', 'Artigos da data até à data')
 
