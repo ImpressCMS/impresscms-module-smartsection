@@ -30,7 +30,7 @@ define("_MB_SSECTION_ALLCAT", "Alle Kategorien");
 define("_MB_SSECTION_AUTO_LAST_ITEMS", "Automatisch Anzeige des letzten Artikels (s)?");
 define("_MB_SSECTION_CATEGORY", "Kategorie");
 define("_MB_SSECTION_CHARS", "Länge des Titels");
-define("_MB_SSECTION_COMMENTS", "Kommentar(s)");
+define("_MB_SSECTION_COMMENTS", "Kommentar(e)");
 define("_MB_SSECTION_DATE", "Veröffentlicht am");
 define("_MB_SSECTION_DISP", "Anzeige");
 define("_MB_SSECTION_DISPLAY_CATEGORY", "Kategoriename anzeigen?");

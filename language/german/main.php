@@ -27,7 +27,7 @@ define("_MD_SSECTION_CATEGORY_SUMMARY_DESC", "Hier ist eine Auflistung aller Art
 define("_MD_SSECTION_CATEGORY_SUMMARY_INFO", "Unterkategorie innerhalb %s.");
 define("_MD_SSECTION_CLEAR", "Säubern");
 define("_MD_SSECTION_CLONE", "Artikel duplizieren");
-define("_MD_SSECTION_COMMENTS", "Kommentar(s)");
+define("_MD_SSECTION_COMMENTS", "Kommentar(e)");
 define("_MD_SSECTION_CREATE", "Artikel erstellen");
 define("_MD_SSECTION_DATE", "Datum");
 define("_MD_SSECTION_DATESUB", "Veröffentlicht am");

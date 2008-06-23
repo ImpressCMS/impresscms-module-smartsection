@@ -22,15 +22,15 @@ define("_MI_SSECTION_ADMENU7", "Gehe zum Modul");
 
 define("_MI_SSECTION_ADMINHITS", "Zähler für gelesen?");
 define("_MI_SSECTION_ADMINHITSDSC", "Erlaube Admin Zähler für Aufrufe?");
-define("_MI_SSECTION_ALLOWSUBMIT", "[PERMISSIONS] User Einsendungen?");
-define("_MI_SSECTION_ALLOWSUBMITDSC", "Erlaube Usern, einen Artikel einzusenden?");
-define("_MI_SSECTION_ANONPOST", "Erlaube anonymen Usern zu posten?");
+define("_MI_SSECTION_ALLOWSUBMIT", "Mitglieder dürfen Artikel einsenden?");
+define("_MI_SSECTION_ALLOWSUBMITDSC", "Erlaube Mitgliedern, einen Artikel einzusenden?");
+define("_MI_SSECTION_ANONPOST", "Dürfen Gäste auch Artikel einsenden?");
 define("_MI_SSECTION_ANONPOSTDSC", "Erlaube anonymen Usern, einen Artikel einzusenden?");
 define("_MI_SSECTION_AUTHOR_INFO", "Entwickler");
 define("_MI_SSECTION_AUTHOR_WORD", "Worte des Autors");
 define("_MI_SSECTION_AUTOAPP", "Automatische Freigabe von eingesendeten Artikeln?");
 define("_MI_SSECTION_AUTOAPPDSC", "Automatische Freigabe von eingesendeten Artikeln ohne Admin-Intervention?");
-define("_MI_SSECTION_BCRUMB","Zeige Modulname in der breadcrumb?");
+define("_MI_SSECTION_BCRUMB","Zeige Modulname in der breadcrumb-Navigation?");
 define("_MI_SSECTION_BCRUMBDSC","Wenn Sie Ja wählen, wird der breadcrumb anzeigen \"Smartsection > Kategoriename > Artikelname\". <br>Andererseites wird nur \"Kategoriename > Artikelname\" angezeigt.");
 define("_MI_SSECTION_BOTH_FOOTERS","Beide Fusszeilen");
 define("_MI_SSECTION_BY", "von");
@@ -57,7 +57,7 @@ define("_MI_SSECTION_COLLHEADDSC", "Wenn die Option auf 'Yes' setzen, wird die K
 define("_MI_SSECTION_COMMENTS", "Artikelkommentare per Level kontrollieren?");
 define("_MI_SSECTION_COMMENTSDSC", "Wenn die Option auf 'Yes' setzen, werden Kommentare nur für die Artikel, die diese Checkbox markiert haben, angezeigt. <br /><br />Wähle 'Nein', um Kommentare auf globaler Ebene zu managen (sehen Sie auch unter dem Tag 'Komentar Eigenschaften'.");
 define("_MI_SSECTION_DATEFORMAT", "[FORMAT OPTIONS] Datumsformat:");
-define("_MI_SSECTION_DATEFORMATDSC", "Benutze den finalen Teil von language/english/global.php um eine Anzeige-Format zu wählen. Zum Beispiel: \"d-M-Y H:i\" translates to \"30-Mar-2004 22:35\"");
+define("_MI_SSECTION_DATEFORMATDSC", "Benutze den finalen Teil von language/english/global.php um eine Anzeige-Format zu wählen. Zum Beispiel: \"d-M-Y H:i\" wird übersetzt mit \"30-Mar-2004 22:35\"");
 define("_MI_SSECTION_DEMO_SITE", "SmartFactory Demo Seite");
 define("_MI_SSECTION_DEVELOPER_CONTRIBUTOR", "Mitwirkender(s)");
 define("_MI_SSECTION_DEVELOPER_CREDITS", "Gutschriften");
@@ -181,8 +181,8 @@ define("_MI_SSECTION_PERPAGE", "Maximale Anzahl der Artikel pro Seite (Adminseit
 define("_MI_SSECTION_PERPAGEDSC", "Maximale Anzahl der Artikel pro Seite, die auf der Adminseite sofort angezeigt werden sollen.");
 define("_MI_SSECTION_PERPAGEINDEX", "Maximale Anzahl der Artikel pro Seite (Userseite):");
 define("_MI_SSECTION_PERPAGEINDEXDSC", "Maximum number of articles per page to be displayed together in the user side.");
-define("_MI_SSECTION_PRINTLOGOURL","Logo print url");
-define("_MI_SSECTION_PRINTLOGOURLDSC","Url des Logos, oben auf der Seite ausdruckt wird");
+define("_MI_SSECTION_PRINTLOGOURL","URL eines Logos für einen Ausdruck");
+define("_MI_SSECTION_PRINTLOGOURLDSC","Url des Logos, welches oben auf der Seite ausdruckt wird");
 define("_MI_SSECTION_RECENTITEMS", "Neuer Artikel (Details)");
 define("_MI_SSECTION_SHOW_RSS","Zeige Link für RSS feed");
 define("_MI_SSECTION_SHOW_RSSDSC","");
@@ -211,7 +211,7 @@ define("_MI_SSECTION_WELCOMEDSC", "Wenn diese Option auf 'Ja' gesetzt ist, wird 
 define("_MI_SSECTION_WHOWHEN", "Zeige Autor und Datum an?");
 define("_MI_SSECTION_WHOWHENDSC", "Wähle 'Ja', um den Autor und Datuminformationen in dem individuellen Artikel anzuzeigen");
 define("_MI_SSECTION_WYSIWYG", "Editor Typ");
-define("_MI_SSECTION_WYSIWYGDSC", "Welchen Editor möchten Sie benutzen? Bitte beachten Sie, dass wenn Sie einen anderen Editor als den XoopsEditor wählen möchten, auch ein anderer Editor auf Ihrer Seite installiert sein muss.");
+define("_MI_SSECTION_WYSIWYGDSC", "Welchen Editor möchten Sie benutzen? Bitte beachten Sie, dass wenn Sie einen anderen Editor als den DHTML-Editor wählen möchten, auch ein anderer Editor auf Ihrer Seite installiert sein muss.");
 
 define("_MI_SSECTION_PV_TEXT", "Hinweis zur teilweisen Ansicht");
 define("_MI_SSECTION_PV_TEXTDSC", "Hinweis für Artikel die nur teilweise eine Ansicht ermöglichen.");
@@ -231,8 +231,8 @@ define("_MI_SSECTION_SHOW_SUBCATS_NOMAIN", "Zeige Unterkategorien nur in der Mod
 define("_MI_SSECTION_RATING_ENABLED", "Bewertungssystem einschalten");
 define("_MI_SSECTION_RATING_ENABLEDDSC", "Dieses Feature benötigt das 'SmartObject Framework'");
 
-define("_MI_SSECTION_DISPBREAD", "Zeige breadcrumb");
-define("_MI_SSECTION_DISPBREADDSC", "");
+define("_MI_SSECTION_DISPBREAD", "Zeige 'breadcrumb Navigation'");
+define("_MI_SSECTION_DISPBREADDSC", "Das ist eine kontextuelle Anzeige der Inhaltsseite innerhalb einer Website durch Angabe eines Navigationspfades");
 
 define('_MI_SSECTION_DATE_TO_DATE', 'Artikel vom Datum bis Datum')
 ?>
