@@ -232,7 +232,7 @@ define("_MI_SSECTION_RATING_ENABLED", "Enable rating system");
 define("_MI_SSECTION_RATING_ENABLEDDSC", "This features requires the SmartObject Framework");
 
 define("_MI_SSECTION_DISPBREAD", "Display the breadcrumb");
-define("_MI_SSECTION_DISPBREADDSC", "");
+define("_MI_SSECTION_DISPBREADDSC", "Breadcrumb navigation displays the current page's context within the site structure.");
 
 define('_MI_SSECTION_DATE_TO_DATE', 'Articles from date to date')
 ?>
