@@ -36,7 +36,7 @@ if (file_exists(XOOPS_ROOT_PATH . "/modules/" . $modversion['dirname'] . "/image
 // Added by marcan for the About page in admin section
 $modversion['adminMenu'] = "smartsection_adminMenu";
 $modversion['modFooter'] = "smartsection_modFooter";
-$modversion['developer_lead'] = "marcan [Marc-André Lanciault]";
+$modversion['developer_lead'] = "marcan [Marc-Andrï¿½ Lanciault]";
 $modversion['developer_contributor'] = "w4z004, hsalazar, Mithrandir, fx2024, Ackbarr, Mariuss, Marco, Michiel, phppp, outch, Xvitry & Catzwolf";
 $modversion['developer_website_url'] = "http://smartfactory.ca";
 $modversion['developer_website_name'] = "The SmartFactory";
@@ -454,7 +454,7 @@ $modversion['config'][$i]['title'] = '_MI_SSECTION_WYSIWYG';
 $modversion['config'][$i]['description'] = '_MI_SSECTION_WYSIWYGDSC';
 $modversion['config'][$i]['formtype'] = 'select';
 $modversion['config'][$i]['valuetype'] = 'text';
-$modversion['config'][$i]['options'] = array('XoopsEditor'  => 'default',
+$modversion['config'][$i]['options'] = array('DHTML-Editor'  => 'default',
                                    		'Koivi Editor'   => 'koivi',
                                   		 'TinyEditor' => 'tiny',
                                   		 'FCKEditor' => 'fckeditor',

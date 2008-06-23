@@ -211,7 +211,7 @@ define("_MI_SSECTION_WELCOMEDSC", "if this option is set to 'Yes', the module in
 define("_MI_SSECTION_WHOWHEN", "[CONTENT OPTIONS] Display the poster and date?");
 define("_MI_SSECTION_WHOWHENDSC", "Set to 'Yes' to display the poster and date information in the individual article");
 define("_MI_SSECTION_WYSIWYG", "[FORMAT OPTIONS] Editor type");
-define("_MI_SSECTION_WYSIWYGDSC", "What kind of editor would you like  to use. Please note that of you choose any other editor than the XoopsEditor, it must be installed on your site.");
+define("_MI_SSECTION_WYSIWYGDSC", "What kind of editor would you like  to use. Please note that of you choose any other editor than the DHTML-Editor, it must be installed on your site.");
 
 define("_MI_SSECTION_PV_TEXT", "Partial view message");
 define("_MI_SSECTION_PV_TEXTDSC", "Message for articles that allows only partial view.");
