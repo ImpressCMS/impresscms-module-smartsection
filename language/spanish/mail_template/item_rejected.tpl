@@ -1,6 +1,6 @@
 Hola {X_UNAME},
 
-Desafortunadamente le informamos que el elemento enviado a {X_SITENAME} el {SUBDATE} fue rechazado por un moderador. S&iacute; necesita más información, favor de enviar un correo electr&oacute;nico al administrador del portal a la siguiente direcci&oacute;n {X_ADMINMAIL}.
+Desafortunadamente le informamos que el elemento enviado a {X_SITENAME} el {SUBDATE} fue rechazado por un moderador. S&iacute; necesita mï¿½s informaciï¿½n, favor de enviar un correo electr&oacute;nico al administrador del portal a la siguiente direcci&oacute;n {X_ADMINMAIL}.
 
 Contenido del elemento que envi&ocute;:
 
@@ -15,7 +15,7 @@ Esta recibiendo este mensaje porque escogi&oacute; ser notificado cuando fuera a
 S&iacute; esto es un error o no desea recibir m&aacute;s notificaciones, favor de actualizar su subscripciones visitando la siguiente liga:
 {X_UNSUBSCRIBE_URL}
 
-Favor de no responder a este mensaje.
+Por favor, no responda a este mensaje.
 
 -----------
 

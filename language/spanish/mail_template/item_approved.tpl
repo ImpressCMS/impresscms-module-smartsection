@@ -15,7 +15,7 @@ Esta recibiendo este mensaje porque escogi&oacute; ser notificado cuando fuera a
 S&iacute; esto es un error o no desea recibir m&aacute;s notificaciones, favor de actualizar su subscripciones visitando la siguiente liga:
 {X_UNSUBSCRIBE_URL}
 
-Favor de no responder a este mensaje.
+Por favor, no responda a este mensaje.
 
 -----------
 

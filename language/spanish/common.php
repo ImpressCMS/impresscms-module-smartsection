@@ -1,4 +1,4 @@
-<?php // Traducción de www.riosoft.es | www.rioxoops.es
+<?php // TraducciÃ³n de www.riosoft.es | www.rioxoops.es
 
 /**
 * $Id$
@@ -8,12 +8,12 @@
 */
 
 define("_SMARTSECTION_MESSAGE_FILE_ERROR", "Error: fue imposible almacenar el documento subido por las siguientes razones:<br />%s");
-define("_SMARTSECTION_MESSAGE_WRONG_MIMETYPE", "Error: el tipo de archivo no está permitido. Por favor, vuelva a subirlo.");
+define("_SMARTSECTION_MESSAGE_WRONG_MIMETYPE", "Error: el tipo de archivo no estÃ¡ permitido. Por favor, vuelva a subirlo.");
 
 define("_AM_SSECTION_OPTIONS", "Opciones");
-define("_AM_SSECTION_DISPLAY_SUMMARY", "¿Mostrar sumario en la página del artículo?");
+define("_AM_SSECTION_DISPLAY_SUMMARY", "Â¿Mostrar sumario en la pÃ¡gina del artÃ­culo?");
 define("_AM_SSECTION_DOHTML", " Permitir etiquetas HTML");
-define("_AM_SSECTION_DOIMAGE", " Permitir imágenes");
+define("_AM_SSECTION_DOIMAGE", " Permitir imÃ¡genes");
 define("_AM_SSECTION_DOLINEBREAK", " Permitir 'linebreak'");
 define("_AM_SSECTION_DOSMILEY", " Permitir caritas");
 define("_AM_SSECTION_DOXCODE", " Permitir ImpressCMS codes");
