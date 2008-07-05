@@ -5,8 +5,7 @@ L'item suivant a été soumis dans la section {MODULE_NAME} de {X_SITENAME} :
 "{ITEM_NAME}"
 
 Vous pouvez modérer cet item ici :
-
-{ITEM_URL}
+{WAITINGFILES_URL}
 
 -----------
 

@@ -168,11 +168,12 @@ define("_AM_SSECTION_IMAGE_UPLOAD", "Chargement d'images");
 define("_AM_SSECTION_IMAGE_UPLOAD_DSC", "Choisissez une image sur votre ordinateur. Cette image sera charg&eacute;e sur le site et d&eacute;sign&eacute;e comme &eacute;tant l'image de la cat&eacute;gorie.");
 define("_AM_SSECTION_IMAGE_UPLOAD_ITEM_DSC", "Choisissez une image sur votre ordinateur. Cette image sera charg&eacute;e sur le site et d&eacute;sign&eacute;e comme &eacute;tant l'image de l'article.");
 define("_AM_SSECTION_IMAGEPATH", "Emplacement du fichier contenant les images des cat&eacute;gories: ");
+
 define("_AM_SSECTION_IMPORT", "Importer");
-define("_AM_SSECTION_IMPORT_ALL_PARTNERS", "Tous les articles");
 define("_AM_SSECTION_IMPORTED_COMMENT", "Commentaire '%s' importé.");
 define("_AM_SSECTION_IMPORTED_COMMENT_ERROR", "Erreur durant l'importation du commentaire '%s'");
 define("_AM_SSECTION_IMPORT_COMMENTS", "Importation des commentaires du module");
+define("_AM_SSECTION_IMPORT_ALL_PARTNERS", "Tous les articles");
 define("_AM_SSECTION_IMPORTED_ARTICLE_FILE", "Le fichier lié %s a &eacute;t&eacute; import&eacute;");
 define("_AM_SSECTION_IMPORT_ARTICLE_ERROR", "Erreur &agrave; l'importation de l'article <em>%s</em>");
 define("_AM_SSECTION_IMPORT_ARTICLE_WRAP", "Le fichier %s a &eacute;t&eacute; copi&eacute; dans le r&eacute;pertoire 'content' du module.");
@@ -205,6 +206,7 @@ define("_AM_SSECTION_IMPORTED_CATEGORIES", "Catégories importées : <em>%s</em>")
 define("_AM_SSECTION_IMPORT_SELECTION", "Selection d'importation");
 define("_AM_SSECTION_IMPORT_SELECT_FILE", "Articles");
 define("_AM_SSECTION_IMPORT_SELECT_FILE_DSC", "Choisissez le module duquel vous désirez importer les articles.");
+
 define("_AM_SSECTION_INACTIVEUSERS", "Utilisateur inactif: %s");
 define("_AM_SSECTION_INDEX", "Index");
 define("_AM_SSECTION_INVENTORY", "Sommaire du module");
@@ -407,15 +409,17 @@ define("_AM_SSECTION_TOOLS", "Outils");
 define("_AM_SSECTION_CONFIGURE_READ_PERMISSIONS", "Configurer les permissions de lectures");
 define("_AM_SSECTION_CONFIGURE_READ_PERMISSIONS_EXP", "Cet outil vous permettra de configurer les permissions de lectures de TOUTES Les catégories et de TOUS les articles de façon uniformes. Toutes les permissions seront tout d'abord supprimées pour être remplacées par les options que vous aurez choisies.<br /><br /><b>Veuillez utiliser cet outil avec soin!</b>");
 define("_AM_SSECTION_FULLACCESS", "Permissions de lectures des catégories et des articles");
-define("_AM_SSECTION_REPLACE_PERMISSIONS", "Remplacer les permissions");
 define("_AM_SSECTION_PERMISSIONS_UPDATED", "Permissions mises à jour.");
+//define("_AM_SSECTION_REPLACE_PERMISSIONS", "Remplacer les permissions");
 
 define("_AM_SSECTION_ITEM_TAGS", "Tags");
 define("_AM_SSECTION_ITEM_TAGS_DSC", "");
 
 define("_AM_SSECTION_ITEM_UPLOAD_FILE", "Lié un fichier à cet article");
 define("_AM_SSECTION_ITEM_UPLOAD_FILE_DSC", "Choisissez un article à partir de votre ordinateur pour l'attacher à cet article. Vous pourrez ajouter d'autres fichiers une fois que l'article aura été créé. Modifier simplement l'article et rendez-vous à la fin de la page où vous trouverez un bouton pour Ajouter un fichier.<br/><br />Par exemple vous pouvez uploader un fichier Word ou Excel. Vous pouvez même uploader un clip Flash qui sera automatiquement affiché à la fin de votre article !");
+
 define("_AM_SSECTION_XOOPS_PRO", "Avez-vous besoin d'aide avec ce module ?<br />Avez-vous besoin de nouvelles fonctionnalités encore absentes ?");
 
 define("_AM_SSECTION_NEW_FEATURE", "Nouveauté !!!");
+
 ?>

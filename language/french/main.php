@@ -145,8 +145,8 @@ define("_MD_SSECTION_VIEW_MORE", "Lire l'article complet");
 define("_MD_SSECTION_WEIGHT", "Poids");
 define("_MD_SSECTION_WHO_WHEN", "Publi&eacute; par %s le %s");
 define("_MD_SSECTION_YES", "Oui");
-define("_MI_SSECTION_RATING_ENABLED", "Activer le système de vote");
-define("_MI_SSECTION_RATING_ENABLEDDSC", "Cette fonctionnalité requierty le SmartObject Framework");
+//define("_MI_SSECTION_RATING_ENABLED", "Activer le système de vote");
+//define("_MI_SSECTION_RATING_ENABLEDDSC", "Cette fonctionnalité requierty le SmartObject Framework");
 
 define('_MD_SSECTION_PRINT_CLOSE', 'Fermer cette fenêtre');
 ?>

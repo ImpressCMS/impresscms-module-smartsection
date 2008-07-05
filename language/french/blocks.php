@@ -6,14 +6,14 @@
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
 */
-/*
-global $xoopsConfig, $xoopsModule, $xoopsModuleConfig;
+
+/*global $xoopsConfig, $xoopsModule, $xoopsModuleConfig;
 if (isset($xoopsModuleConfig) && isset($xoopsModule) && $xoopsModule->getVar('dirname') == 'smartsection') {
 	$itemType = $xoopsModuleConfig['itemtype'];
 } else {
 	$hModule = &xoops_gethandler('module');
 	$hModConfig = &xoops_gethandler('config');
-	if ($smartsection_Module = &$hModule->getByDirname ('smartsection')) {
+	if ($smartsection_Module = &$hModule->getByDirname('smartsection')) {
 		$module_id = $smartsection_Module->getVar('mid');
 		$smartsection_Config = &$hModConfig->getConfigsByCat(0, $smartsection_Module->getVar('mid'));
 		$itemType = $smartsection_Config['itemtype'];
@@ -22,7 +22,7 @@ if (isset($xoopsModuleConfig) && isset($xoopsModule) && $xoopsModule->getVar('di
 	}
 }
 
-include_once (XOOPS_ROOT_PATH . "/modules/smartsection/language/" . $xoopsConfig['language'] . "/plugin/" . $itemType . "/blocks.php");
+include_once(XOOPS_ROOT_PATH . "/modules/smartsection/language/" . $xoopsConfig['language'] . "/plugin/" . $itemType . "/blocks.php");
 */
 // Blocks
 
@@ -53,17 +53,18 @@ define ("_MB_SSECTION_SELECTCAT", "Afficher les articles concernant:");
 define ("_MB_SSECTION_VISITITEM", "Visitez le");
 define ("_MB_SSECTION_WEIGHT", "Listage par poids");
 define ("_MB_SSECTION_WHO_WHEN", "Affich&eacute; par %s le %s");
+//bd tree block hack
 define("_MB_SSECTION_LEVELS", "Niveaux");
 define("_MB_SSECTION_CURRENTCATEGORY", "Catégorie courante");
 define("_MB_SSECTION_ASC", "ASC");
 define("_MB_SSECTION_DESC", "DESC");
 define("_MB_SSECTION_SHOWITEMS", "Afficher les Items");
+//--/bd
 
 define("_MB_SSECTION_FILES", "fichiers");
 define("_MB_SSECTION_DIRECTDOWNLOAD", "Lien direct pour télécharger le fichier au lieu d'un lien vers l'article?");
 define("_MB_SSECTION_FROM", "Afficher les articles <br />à partir de");
 define("_MB_SSECTION_UNTIL", "jusqu'à");
-define("_MB_SSECTION_ARTICLES_FROM_TO", "Articles publiées entre %s et %s");
 define("_MB_SSECTION_DATE_FORMAT", "Le format de la date doit être mm/dd/yyy");
-
+define("_MB_SSECTION_ARTICLES_FROM_TO", "Articles publiées entre %s et %s");
 ?>

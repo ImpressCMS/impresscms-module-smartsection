@@ -9,6 +9,7 @@
 
 // Module Info
 // The name of this module
+
 global $xoopsModule;
 
 define("_MI_SSECTION_ADMENU1", "Accueil");
@@ -18,6 +19,7 @@ define("_MI_SSECTION_ADMENU4", "Permissions");
 define("_MI_SSECTION_ADMENU5", "Blocs et groupes");
 define("_MI_SSECTION_ADMENU6", "Mimetypes");
 define("_MI_SSECTION_ADMENU7", "Aller au module");
+
 define("_MI_SSECTION_ADMINHITS", "[OPTIONS DE CONTENU] Compter les lectures de l'administrateur:");
 define("_MI_SSECTION_ADMINHITSDSC", "Compiler le nombre de lectures de l'administrateur dans les statistiques?");
 define("_MI_SSECTION_ALLOWSUBMIT", "[PERMISSIONS] Propositions des utilisateurs:");
@@ -225,9 +227,12 @@ define("_MI_SSECTION_LATESTFILES", "Derniers fichiers uploadés");
 
 define("_MI_SSECTION_PATHSEARCH", "[OPTIONS DE FORMAT] Afficher le chemin de la catégorie dans les résultats de recherche");
 define("_MI_SSECTION_PATHSEARCHDSC", "");
-
-define("_MI_SSECTION_DATE_TO_DATE", "D'une date à une autre");
+define("_MI_SSECTION_SHOW_SUBCATS_NOMAIN", "Display sub-categories on index page only");
+define("_MI_SSECTION_RATING_ENABLED", "Enable rating system");
+define("_MI_SSECTION_RATING_ENABLEDDSC", "This features requires the SmartObject Framework");
 
 define("_MI_SSECTION_DISPBREAD", "Afficher le fil d'ariane");
-define("_MI_SSECTION_DISPBREADDSC", "");
+define("_MI_SSECTION_DISPBREADDSC", "Breadcrumb navigation displays the current page's context within the site structure.");
+
+define("_MI_SSECTION_DATE_TO_DATE", "D'une date à une autre");
 ?>
