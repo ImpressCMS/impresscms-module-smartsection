@@ -54,6 +54,16 @@ $modversion['support_site_name'] = "The ImpressCMS Community";
 $modversion['submit_bug'] = "http://community.impresscms.org/modules/newbb/viewforum.php?forum=71";
 $modversion['submit_feature'] = "http://community.impresscms.org/modules/newbb/viewforum.php?forum=71";
 
+$modversion['people']['developers'][] = "marcan (Marc-André Lanciault)";
+$modversion['people']['developers'][] = "Mithrandir (Jan Keller Pedersen)";
+$modversion['people']['developers'][] = "Sudhaker (Sudhaker Raj)";
+$modversion['people']['developers'][] = "stranger";
+
+$modversion['people']['testers'][] = "Andy Cleff";
+$modversion['people']['testers'][] = "Félix Tousignant";
+$modversion['people']['testers'][] = "Frédéric Tousignant";
+$modversion['people']['testers'][] = "Pier-André Roy";
+
 $modversion['author_word'] = "";
 
 // Admin things

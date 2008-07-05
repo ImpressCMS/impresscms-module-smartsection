@@ -9,8 +9,11 @@
 //
 include_once("admin_header.php");
 
-include_once(SMARTSECTION_ROOT_PATH . "class/about.php");
-$aboutObj = new SmartsectionAbout(_AM_SSECTION_ABOUT);
+include_once(SMARTOBJECT_ROOT_PATH . "class/smartobjectabout.php");
+smart_loadCommonLanguageFile();
+
+$aboutObj = new SmartobjectAbout();
 $aboutObj->render();
+
 
 ?>
