@@ -1,0 +1,23 @@
+Pozdravljeni {X_UNAME},
+
+Naslednji èlanek je bil poslan modulu {MODULE_NAME} na strani {X_SITENAME} : 
+
+"{ITEM_NAME}"
+
+Pregledate ga lahko tukaj :
+{WAITINGFILES_URL}
+
+-----------
+
+To sporoèilo ste prejeli, ker ste tako oznaèili v obve¹èanjih.
+
+Èe je to napaka in nebi radi veè prejemali sporoèil, sledite spodnji povezavi ter posodobite nastavitve:
+{X_UNSUBSCRIBE_URL}
+
+Prosim, da ne odgovorite na to sporoèilo.
+
+-----------
+
+{X_SITENAME} ({X_SITEURL}) 
+Administracija
+{X_ADMINMAIL}
