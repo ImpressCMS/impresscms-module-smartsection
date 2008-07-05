@@ -7,7 +7,7 @@
 * Licence: GNU
 */
 if (!defined("XOOPS_ROOT_PATH")) { 
- 	die("XOOPS root path not defined");
+ 	die("Root path not defined");
 }
 
 define("_SDU_IMPORT", "Import");
