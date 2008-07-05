@@ -127,6 +127,7 @@ define("_MD_SSECTION_SUB_CLONE", "Bir Makale Çoðalt");
 define("_MD_SSECTION_SUB_INTRO", "Makalenizi göndermek için formu doldurunuz. Site yöneticisi tarafýndan kýsa sürede incelenerek yayýnlanacaktýr. Katkýnýz için þimdiden teþekkür ederiz.");
 define("_MD_SSECTION_SUB_SMNAME", "Makale Gönder");
 define("_MD_SSECTION_SUB_SNEWNAME", "BÝr Makale Ekle");
+define("_MD_SSECTION_SUBCATEGORIES_INFO", "Subcategories within <em>%s</em> :");
 define("_MD_SSECTION_SUBMIT", "Bir Makale Ekle");
 define("_MD_SSECTION_SUBMIT_ERROR", "Bir hata oluþtu. Makaleniz eklenemedi.");
 define("_MD_SSECTION_SUBMITITEM", "Bir makale ekle");
@@ -145,5 +146,5 @@ define("_MD_SSECTION_WEIGHT", "Yükseklik");
 define("_MD_SSECTION_WHO_WHEN", "Yayýnlayan %s %s");
 define("_MD_SSECTION_YES", "Evet");
 
-
+define('_MD_SSECTION_PRINT_CLOSE', 'Close this window');
 ?>

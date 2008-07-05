@@ -35,7 +35,6 @@ define("_AM_SSECTION_BLOCKSGROUPSADMIN", "Blok ve  Grup Yönetimi");
 define("_AM_SSECTION_BLOCKSTXT", "Bu modül aþaðýdaki bloklarý içermektedir. Ýstediklerinizle ilgili ayarlarý deðiþtirebilirsiniz.");
 define("_AM_SSECTION_BODY", "Makale Metni");
 define("_AM_SSECTION_BODY_DSC", "Makalenin ana metni<br><b>Giriþ Seçenekleri</b><span style='font-size: xx-small; font-weight: normal; display: block;'><p>1-Usual text & images with formatting</p>2- Pagewrap as follows<p>[pagewrap=filename.html]</p><p>Or</p>[pagewrap=filename_1.html]<br>[pagebreak] <i>this paginates</i><br>[pagewrap=filename_2.html]<br>etc ... <p>Or</p><p>[pagewrap=filename_1.html]<br>[pagewrap=filename_2.html]<br><i>this combines pages</i><p>In order to Pagewrap, upload the necessary html page(s) in yoursite.com/uploads/smartsection/content, or simply use the pagewrap uploader at the bottom of the page.</p><p>Note that just below the body field, you will fin a list of available pages that you can insert in the body by simply clicking on the desired page.</p></span>");
-//define("_AM_SSECTION_BODY_DSC", "Main body of the article<br><b>Input Options</b><span style='font-size: xx-small; font-weight: normal; display: block;'><p>1-Usual text & images with formatting</p>2- Pagewrap as follows<p>[pagewrap=filename.html]</p><p>Or</p>[pagewrap=filename_1.html]<br>[pagebreak] <i>this paginates</i><br>[pagewrap=filename_2.html]<br>etc ... <p>Or</p><p>[pagewrap=filename_1.html]<br>[pagewrap=filename_2.html]<br><i>this combines pages</i><p>In order to Pagewrap, upload the necessary html page(s) in yoursite.com/uploads/smartsection/content, or simply use the upload form in the pagewrap tab.</p></span><br /><a href=\"javascript:openWithSelfMain('%s', 'lookup',400, 300);\" title=\"Find User\">Find User</a>");
 define("_AM_SSECTION_BODY_REQ", "Body*");
 define("_AM_SSECTION_BODY_SELECTFILE", "Body : pagewrap");
 define("_AM_SSECTION_BODY_SELECTFILE_DSC", "Select the file that this article will use as its body.");
@@ -59,8 +58,16 @@ define("_AM_SSECTION_CATEGORY_CREATE", "Bir kategori oluþtur");
 define("_AM_SSECTION_CATEGORY_CREATE_INFO", "Yeni bir kategori oluþturmak için aþaðýdaki boþluklarý doldurunuz. Yeni oluþturulan kategori üyelere yansýyacaktýr");
 define("_AM_SSECTION_CATEGORY_DSC", "Makalenin Kategorisi.");
 define("_AM_SSECTION_CATEGORY_EDIT_INFO", "Bu kategoriyi düzenleyebilirsiniz. Deðiþiklikler kullanýcýlara yansýyacaktýr.");
+define("_AM_SSECTION_CATEGORY_HEADER", "Category header");
+define("_AM_SSECTION_CATEGORY_HEADER_DSC", "");
+define("_AM_SSECTION_CATEGORY_META_DESCRIPTION", "Meta Description");
+define("_AM_SSECTION_CATEGORY_META_DESCRIPTION_DSC", "In order to help Search Engines, you can customize the meta description you would like to use for this category. if you leave this field empty when creating a category, it will automatically be populated with the Description field of this category.");
+define("_AM_SSECTION_CATEGORY_META_KEYWORDS", "Meta Keywords");
+define("_AM_SSECTION_CATEGORY_META_KEYWORDS_DSC", "In order to help Search Engines, you can customize the keywords you would like to use for this category. if you leave this field empty when creating a category, it will automatically be populated with words from the Description field of this category.");
 define("_AM_SSECTION_CATEGORY_REQ", "Kategori*");
 define("_AM_SSECTION_CATEGORY_SAVE_ERROR", "Bu kategori kaydedilirken bir hata gerçekleþti. Hatalarýn listesi þu þekilde :");
+define("_AM_SSECTION_CATEGORY_SHORT_URL", "Short URL");
+define("_AM_SSECTION_CATEGORY_SHORT_URL_DSC", "When using the SEO features of this module, you can specify a Short URL for this category. This field is optional.");
 define("_AM_SSECTION_CATHEADER", "Kategori Yönetimi");
 define("_AM_SSECTION_CATID","ID");
 define("_AM_SSECTION_CLEAR", "Temizle");
@@ -92,6 +99,7 @@ define("_AM_SSECTION_DB_MSG_CREATE_TABLE_ERR", "%s tablo deðikliðinde hata");
 define("_AM_SSECTION_DB_MSG_NEWFIELD", "%s alaný baþarýyla eklendi");
 define("_AM_SSECTION_DB_MSG_NEWFIELD_ERR", "% alaný eklenmesinde hata");
 define("_AM_SSECTION_DB_NEEDUPDATE", "Veri tabanýnýzýn tarihi çok eski. Lüften veri tabaný tablolarýný güncelleyin!<br><b>Note : The SmartFactory strongly recommends you to backup all SmartSection tables before running this upgrade script.</b><br>");
+define("_AM_SSECTION_DB_NEEDUPDATE_WARNING", "WARNING : The SmartFactory strongly recommends you to backup all SmartSection tables before running this upgrade script.");
 define("_AM_SSECTION_DB_NOUPDATE", "Veri tabanýnýz güncel. Güncelleyemeye gerek yok.");
 define("_AM_SSECTION_DB_UPDATE_DB", "Veri tabaný güncelleniyor");
 define("_AM_SSECTION_DB_UPDATE_ERR", "%s versiyon güncellemesinde hatalar var");
@@ -210,8 +218,14 @@ define("_AM_SSECTION_ITEM_DUPLICATING", "Bir Makaleyi Çoðalt");
 define("_AM_SSECTION_ITEM_DUPLICATING_DSC", "Çoðaltýlmýþ orjinal bir makaleyi düzenleyerek yeni bir makale oluþturabilirsiniz.");
 define("_AM_SSECTION_ITEM_EDIT", "Bu makaleyi düzenle");
 define("_AM_SSECTION_ITEM_INFORMATIONS", "Class action suit informations");
+define("_AM_SSECTION_ITEM_META_DESCRIPTION", "Meta Description");
+define("_AM_SSECTION_ITEM_META_DESCRIPTION_DSC", "In order to help Search Engines, you can customize the meta description you would like to use for this article. if you leave this field empty when creating a category, it will automatically be populated with the Summary field of this article.");
+define("_AM_SSECTION_ITEM_META_KEYWORDS", "Meta Keywords");
+define("_AM_SSECTION_ITEM_META_KEYWORDS_DSC", "In order to help Search Engines, you can customize the keywords you would like to use for this article. if you leave this field empty when creating an article, it will automatically be populated with words from the Summary field of this article.");
 define("_AM_SSECTION_ITEM_RECEIVED_NEED_APPROVAL", "Makaleniz yayýnlanmak üzere yöneticiye gönderildi.<br />Katkýnýz için teþekkür ederiz !");
 define("_AM_SSECTION_ITEM_REJECTED", "Bu makale reddedilmiþ.");
+define("_AM_SSECTION_ITEM_SHORT_URL", "Short URL");
+define("_AM_SSECTION_ITEM_SHORT_URL_DSC", "When using the SEO features of this module, you can specify a Short URL for this article. This field is optional.");
 define("_AM_SSECTION_ITEMCAT", "Kategori");
 define("_AM_SSECTION_ITEMCATEGORYNAME", "Kategori");
 define("_AM_SSECTION_ITEMCOLNAME", "Baþlýk");
@@ -361,6 +375,7 @@ define("_AM_SSECTION_SUMMARY", "");
 define("_AM_SSECTION_SUMMARY_DSC", "Makalenin ");
 define("_AM_SSECTION_TEXT_ASCENDING", "Artan");
 define("_AM_SSECTION_TEXT_DESCENDING", "Azalan");
+define("_AM_SSECTION_TEXT_NO_RECORDS", "No records found");
 define("_AM_SSECTION_TEXT_NUMBER_PER_PAGE", "Sayfada Gösterim Sayýsý:");
 define("_AM_SSECTION_TEXT_ORDER_BY", "Düzenleyen:");
 define("_AM_SSECTION_TEXT_SEARCH_BY", "Arayan:");
@@ -386,5 +401,24 @@ define("_AM_SSECTION_VIEW_CATS", "Görünüm izinleri için seçim yapýn");
 define("_AM_SSECTION_WEIGHT", "Geniþlik");
 define("_AM_SSECTION_YES", "Evet");
 define("_MD_SSECTION_CATEGORY_ITEM", "Kategori<span style='font-size: xx-small; font-weight: normal; display: block;'>Category to which belong category.</span>");
+
+define("_AM_SSECTION_PARTIAL_VIEW", "Give partial view access to these groups");
+define("_AM_SSECTION_PARTIAL_VIEWDSC", "if a group does not have read permission for this article, you can still give to that group partial view access by checking its checkbox here. Please note that these groups also needs to have module access permission as well as parent category read permission.");
+
+define("_AM_SSECTION_TOOLS", "Tools");
+define("_AM_SSECTION_CONFIGURE_READ_PERMISSIONS", "Configure read permissions");
+define("_AM_SSECTION_CONFIGURE_READ_PERMISSIONS_EXP", "This tool allows you to quickly configure read permissions for ALL categories and ALL articles at once. ALl permissions will first be deleted and then replaced by the options your will have selected.<br /><br /><b>Please use this tool with care !</b>");
+define("_AM_SSECTION_FULLACCESS", "Categories and articles read permissions");
+define("_AM_SSECTION_PERMISSIONS_UPDATED", "Permissions updated.");
+
+define("_AM_SSECTION_ITEM_TAGS", "Tags");
+define("_AM_SSECTION_ITEM_TAGS_DSC", "");
+
+define("_AM_SSECTION_ITEM_UPLOAD_FILE", "Link a file to this article");
+define("_AM_SSECTION_ITEM_UPLOAD_FILE_DSC", "Select a file from your computer to attach it to this article. You will be able to add more files once the article has been created. Simply edit the article and scroll at the bottom of the page to see the Add file button.<br /><br /> For example, you could add a Word document or an Excel document. You can even upload a Flash file and it will be directly embeded into your article ! ");
+
+define("_AM_SSECTION_XOOPS_PRO", "Do you need help with this module ?<br />Do you need new features not yet available ?");
+
+define("_AM_SSECTION_NEW_FEATURE", "New feature !!!");
 
 ?>
