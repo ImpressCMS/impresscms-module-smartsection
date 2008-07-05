@@ -19,13 +19,13 @@ SmartSection is installed as a regular XOOPS/ImpressCMS module, which means you 
 Support and Feedback
 ====================
 
-We encourage you to visit The SmartFactory's Community Forums to get and offer support for this module. Feedback as also always appreciated. A dedicated forum for this module is available here:
-http://smartfactory.ca/modules/newbb/viewforum.php?forum=5
+We encourage you to visit The ImpressCMS Community forums to get and offer support for this module. Feedback as also always appreciated. A dedicated forum for The SmartFactory modules is available here:
+http://community.impresscms.org/modules/newbb/viewforum.php?forum=71
 
 SmartSection on ImpressCMS
 ==========================
 
-SmartSection is fully functionnal on both XOOPS and ImpressCMS. Support for SmartSection on ImpressCMS is also offered on the SmartFactory's forum. We also encourage you to visit the ImpressCMS Community at http://community.impresscms.org for any questions or requests regarding ImpressCMS. 
+SmartSection is fully functionnal on both XOOPS and ImpressCMS. Enjoy !
 
 
 .:: The SmartFactory ::.
