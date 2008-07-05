@@ -7,15 +7,6 @@
 * Licence: GNU
 */
 
-/**
- *
- * Specific config
- */
- $smartsection_using_wysiwyg_editor = true;
- $smartsection_display_breadcrumb = false;
- $smartsection_climat2050 = true;
-
-
 if (!defined("XOOPS_ROOT_PATH")) {
  	die("XOOPS root path not defined");
 }
@@ -52,7 +43,7 @@ if (!file_exists($common_lang_file)) {
 	$common_lang_file = SMARTSECTION_ROOT_PATH . "language/english/common.php";
 }
 include_once($common_lang_file);
-
+;
 // include smartobject framework
 if (!file_exists(XOOPS_ROOT_PATH . '/modules/smartobject/include/common.php')) {
 	trigger_error( 'SmartObject Framework not found.', E_USER_ERROR );

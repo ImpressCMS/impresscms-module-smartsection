@@ -36,23 +36,23 @@ if (file_exists(XOOPS_ROOT_PATH . "/modules/" . $modversion['dirname'] . "/image
 // Added by marcan for the About page in admin section
 $modversion['adminMenu'] = "smartsection_adminMenu";
 $modversion['modFooter'] = "smartsection_modFooter";
-$modversion['developer_lead'] = "marcan [Marc-Andr� Lanciault]";
+$modversion['developer_lead'] = "marcan [Marc-André Lanciault]";
 $modversion['developer_contributor'] = "w4z004, hsalazar, Mithrandir, fx2024, Ackbarr, Mariuss, Marco, Michiel, phppp, outch, Xvitry & Catzwolf";
 $modversion['developer_website_url'] = "http://smartfactory.ca";
 $modversion['developer_website_name'] = "The SmartFactory";
 $modversion['developer_email'] = "marcan@smartfactory.ca";
-$modversion['status_version'] = "RC";
-$modversion['status'] = "Release Candidate";
-$modversion['date'] = "2009-4-13";
+$modversion['status_version'] = "Final";
+$modversion['status'] = "Final";
+$modversion['date'] = "2008-07-05";
 
-$modversion['warning'] = _MI_SSECTION_WARNING_BETA;
+$modversion['warning'] = _MI_SSECTION_WARNING_FINAL;
 
 $modversion['demo_site_url'] = "http://smartfactory.ca/modules/smartsection";
 $modversion['demo_site_name'] = "SmartFactory's Library";
-$modversion['support_site_url'] = "http://smartfactory.ca/modules/newbb/viewforum.php?forum=5";
-$modversion['support_site_name'] = "The SmartFactory";
-$modversion['submit_bug'] = "http://smartfactory.ca/modules/newbb/viewforum.php?forum=5";
-$modversion['submit_feature'] = "http://smartfactory.ca/modules/newbb/viewforum.php?forum=5";
+$modversion['support_site_url'] = "http://community.impresscms.org/modules/newbb/viewforum.php?forum=71";
+$modversion['support_site_name'] = "The ImpressCMS Community";
+$modversion['submit_bug'] = "http://community.impresscms.org/modules/newbb/viewforum.php?forum=71";
+$modversion['submit_feature'] = "http://community.impresscms.org/modules/newbb/viewforum.php?forum=71";
 
 $modversion['author_word'] = "";
 

@@ -362,7 +362,7 @@ class SmartsectionCategory extends XoopsObject
 	}
 
 	function toArray($category = array()) {
-		global $smartsection_using_wysiwyg_editor, $myts;
+		global $myts;
 
 		$category['categoryid'] = $this->categoryid();
 		$category['name'] = $this->name();
@@ -370,11 +370,7 @@ class SmartsectionCategory extends XoopsObject
 		$category['total'] = ($this->getVar('itemcount') > 0) ? $this->getVar('itemcount') : '';
 		$category['description'] = $this->description();
 
-		if ($smartsection_using_wysiwyg_editor) {
-			$category['header'] = $myts->displayTarea($this->header('n'), true, true, true, true, false);
-		} else {
-			$category['header'] = $this->header();
-		}
+		$category['header'] = $this->header();
 		$category['meta_keywords'] = $this->meta_keywords();
 		$category['meta_description'] = $this->meta_description();
 		$category['short_url'] = $this->short_url();
