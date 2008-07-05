@@ -145,6 +145,6 @@ define("_MD_SSECTION_VIEW_MORE", "Leer el artículo completo");
 define("_MD_SSECTION_WEIGHT", "Posición");
 define("_MD_SSECTION_WHO_WHEN", "Publicado por %s el %s");
 define("_MD_SSECTION_YES", "Sí");
-//Añadido en la versión 2.14
+
 define('_MD_SSECTION_PRINT_CLOSE', 'Cerrar esta ventana');
 ?>

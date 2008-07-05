@@ -404,7 +404,7 @@ define("_MD_SSECTION_CATEGORY_ITEM", "Categoría<span style='font-size: xx-small
 
 define("_AM_SSECTION_PARTIAL_VIEW", "Asignar acceso parcial al artículo a estos grupos");
 define("_AM_SSECTION_PARTIAL_VIEWDSC", "Si un grupo no tuviera permiso de acceso a este artículo, podría asignar permiso de acceso parcial marcando la casilla correspondiente. Considere que dichos grupos necesitarán también permiso de acceso al módulo así como a la categoría padre.");
-//Añadido en 2.13
+
 define("_AM_SSECTION_TOOLS", "Herramientas");
 define("_AM_SSECTION_CONFIGURE_READ_PERMISSIONS", "Configurar permisos de lectura");
 define("_AM_SSECTION_CONFIGURE_READ_PERMISSIONS_EXP", "Esta herramienta le permite configurar rápidamente los permisos de lectura para todas las categorías y todos los artículos a la vez. Todos los permisos serán eliminados en primer lugar y luego reemplazados por las opciones que haya seleccionado.<br /><br /><b>Por favor, use esta posibilidad con cuidado.</b>");

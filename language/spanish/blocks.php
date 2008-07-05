@@ -63,9 +63,6 @@ define("_MB_SSECTION_SHOWITEMS", "Mostrar Elementos");
 
 define("_MB_SSECTION_FILES", "archivos");
 define("_MB_SSECTION_DIRECTDOWNLOAD", "¿Enlace directo al archivo en lugar de al artículo?");
-
-//Añadido en la versión 2.14
-
 define("_MB_SSECTION_FROM", "Seleccionar artículos <br />desde ");
 define("_MB_SSECTION_UNTIL", "&nbsp;&nbsp;a");
 define("_MB_SSECTION_DATE_FORMAT", "El formato de la fecha debe ser mm/dd/yyy");

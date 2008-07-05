@@ -74,7 +74,7 @@ define("_MI_SSECTION_DISPLAY_CATEGORY", "¿Mostrar el nombre de la categoría?")
 define("_MI_SSECTION_DISPLAY_CATEGORY_DSC", "Elija 'Sí' para mostrar el enlace de la categoría en el artículo individual");
 define("_MI_SSECTION_DISPLAYTYPE_FULL", "Vista Completa");
 define("_MI_SSECTION_DISPLAYTYPE_LIST", "Lista");  
- define("_MI_SSECTION_DISPLAYTYPE_WFSECTION", "Estilo WFSection");
+define("_MI_SSECTION_DISPLAYTYPE_WFSECTION", "Estilo WFSection");
 define("_MI_SSECTION_DISPLAYTYPE_SUMMARY", "Vista Sumarial");
 define("_MI_SSECTION_DISSBCATDSC", "[OPCIONES DE CONTENIDO] ¿Mostrar descripción de las su-categorías?");
 define("_MI_SSECTION_DISSBCATDSCDSC", "Elija 'Sí' para mostrar la descripción de las sub-categorías en el índice y la página de la categoría.");
@@ -212,24 +212,29 @@ define("_MI_SSECTION_WHOWHEN", "[OPCIONES DE CONTENIDO] ¿Mostrar autor y fecha?
 define("_MI_SSECTION_WHOWHENDSC", "Indique 'Sí' si desea mostrar el autor y la fecha en la página individual del artículo");
 define("_MI_SSECTION_WYSIWYG", "[OPCIONES DE FORMATO] Tipo de editor");
 define("_MI_SSECTION_WYSIWYGDSC", "¿Qué clase de editor le gustaría usar? Por favor, considere que si elige cualquier otro editor que no sea el incluido por defecto en ImpressCMS requerirá que sea instalado previamente por usted.");
+
 define("_MI_SSECTION_PV_TEXT", "Vista parcial del mensaje");
 define("_MI_SSECTION_PV_TEXTDSC", "Mensaje para los artículos que sólo permiten lectura parcial.");
 define("_MI_SSECTION_PV_TEXT_DEF", "Para consultar el artículo completo ha de registrarse.");
+
 define("_MI_SSECTION_SEOMODNAME", "Nombre del módulo para el 'URL Rewriting'");
 define("_MI_SSECTION_SEOMODNAMEDSC", "Si el 'URL Rewriting' está activado para el módulo, este será el nombre del módulo usado. Por ej:_http://misitio.com/smartection/...");
+
 define("_MI_SSECTION_ARTCOUNT", "Mostrar número de artículos");
 define("_MI_SSECTION_ARTCOUNTDSC", "Elija 'Sí' para mostrar el número de artículos de cada categoría en la tabla de sumario. Considere que el módulo actualmente sólo cuenta artículos dentro de cada categoría y no de las subcategorías.");
+
 define("_MI_SSECTION_LATESTFILES", "Últimos archivos subidos");
-//Añadido en 2.13
+
 define("_MI_SSECTION_PATHSEARCH", "[OPCIONES DE FORMATO] Mostrar la ruta de la categoría en los resultados de la búsqueda");
 define("_MI_SSECTION_PATHSEARCHDSC", "");
-//Añadido en la versión 2.14
 define("_MI_SSECTION_SHOW_SUBCATS_NOMAIN", "Mostrar las subcategorías solo en la página índice");
 define("_MI_SSECTION_RATING_ENABLED", "Activar el sistema de valoraciones");
 define("_MI_SSECTION_RATING_ENABLEDDSC", "Esta característica requiere la instalación de 'SmartObject Framework'");
+
 define("_MI_SSECTION_DISPBREAD", "Mostrar los 'breadcrumb'");
 define("_MI_SSECTION_DISPBREADDSC", "");
-define('_MI_SSECTION_DATE_TO_DATE', 'Artículos de fecha a fecha')
-define("_MI_SSECTION_PV_TEXT", "Mensaje para la vista parcial");
-define("_MI_SSECTION_PV_TEXTDSC", "Mensaje a mostrar en los artículos con respecto a los cuales sólo está admitida la visualización parcial de su contenido.");
+
+define('_MI_SSECTION_DATE_TO_DATE', 'Artículos de fecha a fecha');
+//define("_MI_SSECTION_PV_TEXT", "Mensaje para la vista parcial");
+//define("_MI_SSECTION_PV_TEXTDSC", "Mensaje a mostrar en los artículos con respecto a los cuales sólo está admitida la visualización parcial de su contenido.");
 ?>
