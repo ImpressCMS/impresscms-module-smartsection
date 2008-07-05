@@ -22,7 +22,7 @@ switch ($op) {
     default:
         global $xoopsDB, $xoopsModule;
 
-        smartsection_xoops_cp_h
+		smartsection_xoops_cp_header();
         smartsection_adminMenu(3, _AM_SSECTION_PERMISSIONS);
         // View Categories permissions
         $item_list_view = array();
