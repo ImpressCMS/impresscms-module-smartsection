@@ -420,4 +420,5 @@ define("_AM_SSECTION_ITEM_UPLOAD_FILE_DSC", "Wählen Sie eine Datei von Ihrem Co
 define("_AM_SSECTION_XOOPS_PRO", "Benötigen Sie Hilfe?<br />Brauchen Sie neue Features?");
 
 define("_AM_SSECTION_NEW_FEATURE", "Neue Funktion!!!");
+
 ?>
