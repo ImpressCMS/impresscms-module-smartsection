@@ -417,7 +417,8 @@ define("_AM_SSECTION_ITEM_TAGS_DSC", "");
 define("_AM_SSECTION_ITEM_UPLOAD_FILE", "Ligar um arquivo a este artigo");
 define("_AM_SSECTION_ITEM_UPLOAD_FILE_DSC", "Selecione um arquivo de seu computador para uni-lo a este artigo. Você poderá adicionar mais de um arquivo, depois que o artigo foi criado. Editar simplesmente o artigo e ir até o final da página para ver o botão do arquivo.<br/><br/> No processo de inclusão por exemplo, você poderia adicionar um arquivo do Word ou do Excel. Você também poderá fazer um upload de um arquivo Flash e poderá estar ligado diretamente ao seu artigo! ");
 
-//define("_AM_SSECTION_XOOPS_PRO", "Você necessita de ajuda com este módulo? <br/>As características novas ainda não disponíveis?");
+define("_AM_SSECTION_XOOPS_PRO", "Você necessita de ajuda com este módulo? <br/>As características novas ainda não disponíveis?");
 
-//define("_AM_SSECTION_NEW_FEATURE", "Nova característica  !!!");
+define("_AM_SSECTION_NEW_FEATURE", "Nova característica  !!!");
+
 ?>
