@@ -146,5 +146,5 @@ define('_MD_SSECTION_WEIGHT', 'Vægt');
 define('_MD_SSECTION_WHO_WHEN', 'Udgivet af %s den %s');
 define('_MD_SSECTION_YES', 'Ja');
 
-
+define('_MD_SSECTION_PRINT_CLOSE', 'Close this window');
 ?>

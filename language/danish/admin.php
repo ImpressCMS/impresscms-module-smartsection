@@ -225,8 +225,7 @@ define('_AM_SSECTION_ITEM_META_KEYWORDS_DSC', 'For at hjælpe søgemaskiner kan du
 define('_AM_SSECTION_ITEM_RECEIVED_NEED_APPROVAL', 'Din artikel er indsendt, og vil blive vist når godkendt af en moderator.<br />Mange tak for dit bidrag !');
 define('_AM_SSECTION_ITEM_REJECTED', 'Denne artikel er afvist.');
 define('_AM_SSECTION_ITEM_SHORT_URL', 'Kort URL');
-define('_AM_SSECTION_ITEM_SHORT_URL_DSC', 'Når du bruger søgeoptimeringen i dette modul, kan du angive en kort URL til denne artikel.
-Feltet er valgfrit.');
+define('_AM_SSECTION_ITEM_SHORT_URL_DSC', 'Når du bruger søgeoptimeringen i dette modul, kan du angive en kort URL til denne artikel. Feltet er valgfrit.');
 define('_AM_SSECTION_ITEMCAT', 'Kategori');
 define('_AM_SSECTION_ITEMCATEGORYNAME', 'Kategori');
 define('_AM_SSECTION_ITEMCOLNAME', 'Titel');
@@ -412,8 +411,8 @@ define('_AM_SSECTION_CONFIGURE_READ_PERMISSIONS_EXP', 'This tool allows you to q
 define('_AM_SSECTION_FULLACCESS', 'Categories and articles read permissions');
 define('_AM_SSECTION_PERMISSIONS_UPDATED', 'Permissions updated.');
 
-define('_AM_SSECTION_ITEM_TAGS', 'Tags');
-define('_AM_SSECTION_ITEM_TAGS_DSC', '');
+define("_AM_SSECTION_ITEM_TAGS", "Tags");
+define("_AM_SSECTION_ITEM_TAGS_DSC", "");
 
 define('_AM_SSECTION_ITEM_UPLOAD_FILE', 'Link a file to this article');
 define('_AM_SSECTION_ITEM_UPLOAD_FILE_DSC', 'Select a file from your computer to attach it to this article. You will be able to add more files once the article has been created. Simply edit the article and scroll at the bottom of the page to see the Add file button.<br /><br /> For example, you could add a Word document or an Excel document. You can even upload a Flash file and it will be directly embeded into your article ! ');

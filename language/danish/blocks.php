@@ -63,5 +63,8 @@ define('_MB_SSECTION_SHOWITEMS', 'Vis poster');
 
 define('_MB_SSECTION_FILES', 'filer');
 define('_MB_SSECTION_DIRECTDOWNLOAD', 'Direkte link til download af fil, i stedet for et link til artiklen?');
-
+define("_MB_SSECTION_FROM", "Select articles <br />from ");
+define("_MB_SSECTION_UNTIL", "&nbsp;&nbsp;to");
+define("_MB_SSECTION_DATE_FORMAT", "Date format must be mm/dd/yyy");
+define("_MB_SSECTION_ARTICLES_FROM_TO", "Articles published between %s and %s");
 ?>

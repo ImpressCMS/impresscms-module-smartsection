@@ -55,8 +55,7 @@ define('_MI_SSECTION_CLONEDSC', 'Vælg \'Ja\' for at tillade brugere med gyldige 
 define('_MI_SSECTION_COLLHEAD', '[FORMATERINGS MULIGHEDER] Vis den sammenfoldelige menubar?');
 define('_MI_SSECTION_COLLHEADDSC', 'Hvis du sætter denne mulighed til \'Ja\', vil kategoriernes the Categories resumé blive vist i en sammenfoldet menu, som selve artiklerne. Hvis du sætter muligheden til  \'Nej\', vil den sammenfoldede bar ikke blive vist.');
 define('_MI_SSECTION_COMMENTS', '[RETTIGHEDER] Kontroller kommentar i artikel niveau?');
-define('_MI_SSECTION_COMMENTSDSC', 'Hvis du sætter denne mulighed til  \'Ja\', vil du kun se kommentar på de artikler, der tillader kommentar.
-<br /><br />Vælg \'Nej\' for at have kommentar vedligeholdt globalt. (Kig under \'Kommentar regler\'.');
+define('_MI_SSECTION_COMMENTSDSC', 'Hvis du sætter denne mulighed til  \'Ja\', vil du kun se kommentar på de artikler, der tillader kommentar.<br /><br />Vælg \'Nej\' for at have kommentar vedligeholdt globalt. (Kig under \'Kommentar regler\'.');
 define('_MI_SSECTION_DATEFORMAT', '[FORMAT MULIGHEDER] Dato format:');
 define('_MI_SSECTION_DATEFORMATDSC', 'Brug den sidste del af language/english/global.php for at vise den stil du vil vise. F.eks: "d-M-Y H:i" Skriver "30-Mar-2004 22:35"');
 define('_MI_SSECTION_DEMO_SITE', 'SmartFactory Demo Side');
@@ -106,7 +105,6 @@ define('_MI_SSECTION_HELP_INSIDE', 'Indeni modulet');
 define('_MI_SSECTION_HELP_PATH_CUSTOM', 'Brugerdefineret sti til SmartSections hjælpefiler');
 define('_MI_SSECTION_HELP_PATH_CUSTOM_DSC', 'if you selected \'Custom path\' in the previous option \'Path of SmartSection\'s help files\', please specify the URL of SmartSection\'s help files, in that format : http:
 define("_MI_SSECTION_HELP_PATH_SELECT", "Path of SmartSection\'s help files');
-define('_MI_SSECTION_HELP_PATH_SELECT', 'Path of SmartSection\'s help files');
 define('_MI_SSECTION_HELP_PATH_SELECT_DSC', 'Vælg hvorfra du gerne vil ha adgang til smartsections hjælpesider. Hvis du har downloaded pakken med \'SmartSections\'s Help Package\' og oploadedet det til \'modules/smartsection/doc/\', så kan du vælge \'Inside the module\'. Du kan også få adgang til modulets hjælpefiler direkte fra docs.xoops.org ved at vælge denne i valgfeltet. Du kan også vælge \'brugerbestemt sti\' og selv specificere adressen i det næste konfigurations felt \'Brugerbestemt sti til SmartSection\'s hjælpe filer\'');
 define('_MI_SSECTION_HITSCOL', '[INDHOLDS MULIGHEDER] Vis \'Hits\' rækken');
 define('_MI_SSECTION_HITSCOLDSC', 'Når \'Resume\' visning er valgt, vælg \'Ja\' for at vise \'Hits\' column in the items table on the index and category page.');
@@ -135,7 +133,7 @@ define('_MI_SSECTION_ITEM_TYPEDSC', 'Vælg det element som dette modul skal håndt
 define('_MI_SSECTION_ITEMFOOTER', '[INDHOLDS MULIGHEDER] Element fod');
 define('_MI_SSECTION_ITEMFOOTER_SEL', 'Element fod');
 define('_MI_SSECTION_ITEMFOOTERDSC', 'Fod som vises for hver artikel');
-define('_MI_SSECTION_ITEMSMENU', 'Kategoriers Menu block');
+define("_MI_SSECTION_ITEMSMENU", "Kategoriers Menu block");
 //bd tree block hack
 define('_MI_SSECTION_ITEMSTREE', 'Tree blok');
 //--/bd
@@ -205,10 +203,8 @@ define('_MI_SSECTION_UPLOADDSC', 'Tillad brugere at oploade filer vedhæftet arti
 define('_MI_SSECTION_USEREALNAME', '[FORMAT MULIGHEDER] Anvend brugers rigtige navne');
 define('_MI_SSECTION_USEREALNAMEDSC', 'Når der vises brugernavne så anvend brugerens rigtige navn hvis han har angivet et');
 define('_MI_SSECTION_VERSION_HISTORY', 'Versions historik');
-define('_MI_SSECTION_WARNING_BETA', 'Dette modul er som det er, uden nogen somhelst garantier. Dette modul er BETA, hvilket betyder det stadig undergår aktiv udvikling.
-Denne udgivelses anvendelse er sigtet <b>Test formål alene</b> og vi foreslår på det <b>kraftigste</b> at du ikke anvender det på en offentliggjort side elelr i et produktions miljø.');
-define('_MI_SSECTION_WARNING_FINAL', 'Dette modul er som det er, uden nogen som helts garanti. Selvom modulet ikke er beta, så er det stadig under aktiv udvikling.
-Denne udgivelse kan anvendes på en offentliggjort side, men det er stadig på dit eget ansvar, hvilket betyder at forfatteren ikke kan blive gjort ansvarlig.');
+define('_MI_SSECTION_WARNING_BETA', 'Dette modul er som det er, uden nogen somhelst garantier. Dette modul er BETA, hvilket betyder det stadig undergår aktiv udvikling. Denne udgivelses anvendelse er sigtet <b>Test formål alene</b> og vi foreslår på det <b>kraftigste</b> at du ikke anvender det på en offentliggjort side elelr i et produktions miljø.');
+define('_MI_SSECTION_WARNING_FINAL', 'Dette modul er som det er, uden nogen som helts garanti. Selvom modulet ikke er beta, så er det stadig under aktiv udvikling. Denne udgivelse kan anvendes på en offentliggjort side, men det er stadig på dit eget ansvar, hvilket betyder at forfatteren ikke kan blive gjort ansvarlig.');
 define('_MI_SSECTION_WARNING_RC', 'Dette modul er som det er, uden nogen som helst garanti. Dette modul er kandidat til udgivelse og burde ikke anvendes på en offentliggjort side. Modulet er stadig under aktiv udvikling og anvendelsen er dit eget ansvar. Dette betyder at forfatteren ikke kan blive gjort ansvarlig.');
 define('_MI_SSECTION_WELCOME', '[INDHOLDS MULIGHEDER] Vis velkomst titel og bested:');
 define('_MI_SSECTION_WELCOMEDSC', 'hvis denne mulighed er sat til \'JA\', vil modulets hovedside vise titlen \'Velkommen til SmartSections på...\', efterfult af understående velkomstbesked. Hvis muligheden er sat til \'Nej\', vil ingen af linjerne blive vist.');
@@ -222,17 +218,21 @@ define('_MI_SSECTION_PV_TEXTDSC', 'Besked til artikler der tillader kun delvis v
 define('_MI_SSECTION_PV_TEXT_DEF', 'For at se den komplette side skal du være registreret bruger');
 
 define('_MI_SSECTION_SEOMODNAME', 'Url omskrivnings modulnavn');
-define('_MI_SSECTION_SEOMODNAMEDSC', 'Hvis URL omskrivning er tilladt for dette modul, er dette navnet på modulet der anvendes.
-F.eks. :Http:
+define('_MI_SSECTION_SEOMODNAMEDSC', 'Hvis URL omskrivning er tilladt for dette modul, er dette navnet på modulet der anvendes. F.eks. :Http:
 
 define("_MI_SSECTION_ARTCOUNT", "Vis antal atikler');
-
-define('_MI_SSECTION_ARTCOUNT', 'Display articles count');
-define('_MI_SSECTION_ARTCOUNTDSC', 'Vælg \'Ja\' for at vise antal af artikler i hver kategori på kategori resumesiden.
-Vær opmærksom på at modulet nuværende kun tæller artikler fra hver kategori og tæller ikke underkategorier');
+define('_MI_SSECTION_ARTCOUNTDSC', 'Vælg \'Ja\' for at vise antal af artikler i hver kategori på kategori resumesiden. Vær opmærksom på at modulet nuværende kun tæller artikler fra hver kategori og tæller ikke underkategorier');
 
 define('_MI_SSECTION_LATESTFILES', 'Seneste oploadet filer');
 
 define('_MI_SSECTION_PATHSEARCH', '[FORMAT MULIGHEDER] Vis kategori sti i søge resultaterne');
 define('_MI_SSECTION_PATHSEARCHDSC', '');
+define("_MI_SSECTION_SHOW_SUBCATS_NOMAIN", "Display sub-categories on index page only");
+define("_MI_SSECTION_RATING_ENABLED", "Enable rating system");
+define("_MI_SSECTION_RATING_ENABLEDDSC", "This features requires the SmartObject Framework");
+
+define("_MI_SSECTION_DISPBREAD", "Display the breadcrumb");
+define("_MI_SSECTION_DISPBREADDSC", "Breadcrumb navigation displays the current page's context within the site structure.");
+
+define('_MI_SSECTION_DATE_TO_DATE', 'Articles from date to date')
 ?>
