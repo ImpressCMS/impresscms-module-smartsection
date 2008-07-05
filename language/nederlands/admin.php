@@ -36,7 +36,6 @@ define("_AM_SSECTION_BLOCKSGROUPSADMIN", "Management van Blokken en Groepen");
 define("_AM_SSECTION_BLOCKSTXT", "Deze module bevat de volgende blokken, die u hier of in de systeemmodule kunt configureren.");
 define("_AM_SSECTION_BODY", "Inhoud");
 define("_AM_SSECTION_BODY_DSC", "Inhoud van het artikel<br><b>Invoeroptie's</b><span style='font-size: xx-small; font-weight: normal; display: block;'><p>1-Gebruikelijke tekst & afbeeldingen met opmaak</p>2- Maak als volgt een omslag<p>[pagewrap=bestandsnaam.html]</p><p>Of</p>[pagewrap=bestandsnaam_1.html]<br>[pagebreak] <i>Hiermee kunt u pagineren</i><br>[pagewrap=bestandsnaam_2.html]<br>etc ... <p>Of</p><p>[pagewrap=bestandsnaam_1.html]<br>[pagewrap=bestandsnaam_2.html]<br><i>dit combineert pagina's</i><p>Om Paginaomslag te gebruiken, zet de benodigde html-pagina('s) in yoursite.com/uploads/smartsection/content, of gebruik eenvoudigweg het paginaomslag-opstuurformulier onder aan deze pagina.</p><p>Merk op dat net onder het inhoudsveld u een lijst met beschikbare pagina's aantreft die u in de inhoud kunt invoegen door eenvoudigweg de gewenste pagina aan te klikken.</p></span>");
-//define("_AM_SSECTION_BODY_DSC", "Main body of the article<br><b>Input Options</b><span style='font-size: xx-small; font-weight: normal; display: block;'><p>1-Usual text & images with formatting</p>2- Pagewrap as follows<p>[pagewrap=filename.html]</p><p>Or</p>[pagewrap=filename_1.html]<br>[pagebreak] <i>this paginates</i><br>[pagewrap=filename_2.html]<br>etc ... <p>Or</p><p>[pagewrap=filename_1.html]<br>[pagewrap=filename_2.html]<br><i>this combines pages</i><p>In order to Pagewrap, upload the necessary html page(s) in yoursite.com/uploads/smartsection/content, or simply use the upload form in the pagewrap tab.</p></span><br /><a href=\"javascript:openWithSelfMain('%s', 'lookup',400, 300);\" title=\"Find User\">Find User</a>");
 define("_AM_SSECTION_BODY_REQ", "Inhoud*");
 define("_AM_SSECTION_BODY_SELECTFILE", "Inhoud : paginaomslag");
 define("_AM_SSECTION_BODY_SELECTFILE_DSC", "Kies het bestand dat de inhoud van het artikel zal vormen.");
@@ -60,9 +59,16 @@ define("_AM_SSECTION_CATEGORY_CREATE", "Maak een nieuwe categorie aan");
 define("_AM_SSECTION_CATEGORY_CREATE_INFO", "Vul het volgende formulier in om een nieuwe categorie aan te maken. De nieuwe categorie zal onmiddelijk zichtbaar zijn aan de kant van de gebruiker.");
 define("_AM_SSECTION_CATEGORY_DSC", "Categorie behorend bij dit artikel.");
 define("_AM_SSECTION_CATEGORY_EDIT_INFO", "U kunt deze categorie bewerken. Veranderingen worden onmiddelijk zichtbaar aan de kant van de gebruiker.");
-define("_MD_SS_CATEGORY_ITEM", "Categorie<span style='font-size: xx-small; font-weight: normal; display: block;'>Categorie behorend bij deze categorie.</span>");
+define("_AM_SSECTION_CATEGORY_HEADER", "Category header");
+define("_AM_SSECTION_CATEGORY_HEADER_DSC", "");
+define("_AM_SSECTION_CATEGORY_META_DESCRIPTION", "Meta Description");
+define("_AM_SSECTION_CATEGORY_META_DESCRIPTION_DSC", "In order to help Search Engines, you can customize the meta description you would like to use for this category. if you leave this field empty when creating a category, it will automatically be populated with the Description field of this category.");
+define("_AM_SSECTION_CATEGORY_META_KEYWORDS", "Meta Keywords");
+define("_AM_SSECTION_CATEGORY_META_KEYWORDS_DSC", "In order to help Search Engines, you can customize the keywords you would like to use for this category. if you leave this field empty when creating a category, it will automatically be populated with words from the Description field of this category.");
 define("_AM_SSECTION_CATEGORY_REQ", "Categorie*");
 define("_AM_SSECTION_CATEGORY_SAVE_ERROR", "Er is een fout opgetreden tijdens het opslaan van deze categorie. Hier volgt een lijst van fouten :");
+define("_AM_SSECTION_CATEGORY_SHORT_URL", "Short URL");
+define("_AM_SSECTION_CATEGORY_SHORT_URL_DSC", "When using the SEO features of this module, you can specify a Short URL for this category. This field is optional.");
 define("_AM_SSECTION_CATHEADER", "Categorie-management");
 define("_AM_SSECTION_CATID","ID");
 define("_AM_SSECTION_CLEAR", "Leegmaken");
@@ -94,6 +100,7 @@ define('_AM_SSECTION_DB_MSG_CREATE_TABLE_ERR', 'Fout bij het aanmaken van tabel 
 define("_AM_SSECTION_DB_MSG_NEWFIELD", "Veld %s met succes toegevoegd");
 define("_AM_SSECTION_DB_MSG_NEWFIELD_ERR", "Fout bij het toevoegen van het veld %s");
 define("_AM_SSECTION_DB_NEEDUPDATE", "Uw database is out-of-date. Werk uw databasetabellen bij!<br><b>NB : SmartFactory raad u zeer dringend aan reservekopieën te maken van alle SmartSection tabellen vóór het uitvoeren van dit bijwerk-script.</b><br>");
+define("_AM_SSECTION_DB_NEEDUPDATE_WARNING", "WARNING : The SmartFactory strongly recommends you to backup all SmartSection tables before running this upgrade script.");
 define('_AM_SSECTION_DB_NOUPDATE', 'Uw database is voldoende recent. Opwaarderen is niet nodig.');
 define("_AM_SSECTION_DB_UPDATE_DB", "Bezig met het opwaarderen van de database");
 define('_AM_SSECTION_DB_UPDATE_ERR', 'Fouten bij het opwaarderen naar versie %s');
@@ -162,6 +169,7 @@ define("_AM_SSECTION_IMAGE_UPLOAD", "Afbeelding insturen");
 define("_AM_SSECTION_IMAGE_UPLOAD_DSC", "Kies een afbeelding op uw computer. Deze afbeelding zal worden verzonden naar de site en als categorie-afbeelding worden ingesteld.");
 define("_AM_SSECTION_IMAGE_UPLOAD_ITEM_DSC", "Kies een afbeelding op uw computer. Deze afbeelding zal worden verzonden naar de site en als artikelafbeelding worden ingesteld.");
 define("_AM_SSECTION_IMAGEPATH", "Categorie die de categorie-afbeeldingen bevat : ");
+
 define("_AM_SSECTION_IMPORT", "Importeren");
 define("_AM_SSECTION_IMPORTED_COMMENT", "Commentaar '%s' geïmporteerd.");
 define("_AM_SSECTION_IMPORTED_COMMENT_ERROR", "Fout bij het importeren van commentaar '%s'");
@@ -199,6 +207,7 @@ define("_AM_SSECTION_IMPORTED_CATEGORIES", "Geïmporteerde categorieën : <em>%s</
 define("_AM_SSECTION_IMPORT_SELECTION", "Import Selectie");
 define("_AM_SSECTION_IMPORT_SELECT_FILE", "Artikelen");
 define("_AM_SSECTION_IMPORT_SELECT_FILE_DSC", "Kies de module waarvandaan de artikelen moeten worden geïmporteerd.");
+
 define("_AM_SSECTION_INACTIVEUSERS", "Inactieve gebruikers: %s");
 define("_AM_SSECTION_INDEX", "Index");
 define("_AM_SSECTION_INVENTORY", "Module overzicht");
@@ -210,8 +219,14 @@ define("_AM_SSECTION_ITEM_DUPLICATING", "Een artikel vermenigvuldigen");
 define("_AM_SSECTION_ITEM_DUPLICATING_DSC", "Bewerk de huidige vorm om een nieuw artikel aan te maken dat gebaseerd is op het orginele artikel.");
 define("_AM_SSECTION_ITEM_EDIT", "Bewerk dit artikel");
 define("_AM_SSECTION_ITEM_INFORMATIONS", "Informatie voor een gezamelijke rechtszaak (class action suit)");
+define("_AM_SSECTION_ITEM_META_DESCRIPTION", "Meta Description");
+define("_AM_SSECTION_ITEM_META_DESCRIPTION_DSC", "In order to help Search Engines, you can customize the meta description you would like to use for this article. if you leave this field empty when creating a category, it will automatically be populated with the Summary field of this article.");
+define("_AM_SSECTION_ITEM_META_KEYWORDS", "Meta Keywords");
+define("_AM_SSECTION_ITEM_META_KEYWORDS_DSC", "In order to help Search Engines, you can customize the keywords you would like to use for this article. if you leave this field empty when creating an article, it will automatically be populated with words from the Summary field of this article.");
 define("_AM_SSECTION_ITEM_RECEIVED_NEED_APPROVAL", "Uw artikel is verzonden en zal worden gepubliceerd zodra een moderator het artikel heeft goedgekeurd.<br />Hartelijk dank voor uw bijdrage !");
 define("_AM_SSECTION_ITEM_REJECTED", "Dit artikel is gemarkeerd als afgekeurd.");
+define("_AM_SSECTION_ITEM_SHORT_URL", "Short URL");
+define("_AM_SSECTION_ITEM_SHORT_URL_DSC", "When using the SEO features of this module, you can specify a Short URL for this article. This field is optional.");
 define("_AM_SSECTION_ITEMCAT", "Categorie");
 define("_AM_SSECTION_ITEMCATEGORYNAME", "Categorie");
 define("_AM_SSECTION_ITEMCOLNAME", "Titel");
@@ -224,7 +239,6 @@ define("_AM_SSECTION_ITEMNOTCREATED", "Sorry. Het was niet mogelijk dit artikel 
 define("_AM_SSECTION_ITEMNOTUPDATED", "Sorry. Het was niet mogelijk dit artikel bij te werken!");
 define("_AM_SSECTION_ITEMS", "Artikelen");
 define("_AM_SSECTION_LIMIT", "Gebruikers per pagina");
-
 define("_AM_SSECTION_MESSAGE_ADD_MIME_ERROR", "Fout: het mimetype is niet toegevoegd.");
 define("_AM_SSECTION_MESSAGE_DELETE_MIME_ERROR", "Fout: het mimetype is niet verwijderd.");
 define("_AM_SSECTION_MESSAGE_EDIT_MIME_ERROR", "Fout: het mimetype is niet bijgewerkt.");
@@ -386,7 +400,25 @@ define("_AM_SSECTION_UPLOADPATH", "Categorie die de ingestuurde bestanden bevat 
 define("_AM_SSECTION_VIEW_CATS", "Kies de categorieën die elke groep kan zien");
 define("_AM_SSECTION_WEIGHT", "Gewicht");
 define("_AM_SSECTION_YES", "Ja");
-
 define("_MD_SSECTION_CATEGORY_ITEM", "Categorie<span style='font-size: xx-small; font-weight: normal; display: block;'>Categorie tot welke deze categorie behoort.</span>");
+
+define("_AM_SSECTION_PARTIAL_VIEW", "Give partial view access to these groups");
+define("_AM_SSECTION_PARTIAL_VIEWDSC", "if a group does not have read permission for this article, you can still give to that group partial view access by checking its checkbox here. Please note that these groups also needs to have module access permission as well as parent category read permission.");
+
+define("_AM_SSECTION_TOOLS", "Tools");
+define("_AM_SSECTION_CONFIGURE_READ_PERMISSIONS", "Configure read permissions");
+define("_AM_SSECTION_CONFIGURE_READ_PERMISSIONS_EXP", "This tool allows you to quickly configure read permissions for ALL categories and ALL articles at once. ALl permissions will first be deleted and then replaced by the options your will have selected.<br /><br /><b>Please use this tool with care !</b>");
+define("_AM_SSECTION_FULLACCESS", "Categories and articles read permissions");
+define("_AM_SSECTION_PERMISSIONS_UPDATED", "Permissions updated.");
+
+define("_AM_SSECTION_ITEM_TAGS", "Tags");
+define("_AM_SSECTION_ITEM_TAGS_DSC", "");
+
+define("_AM_SSECTION_ITEM_UPLOAD_FILE", "Link a file to this article");
+define("_AM_SSECTION_ITEM_UPLOAD_FILE_DSC", "Select a file from your computer to attach it to this article. You will be able to add more files once the article has been created. Simply edit the article and scroll at the bottom of the page to see the Add file button.<br /><br /> For example, you could add a Word document or an Excel document. You can even upload a Flash file and it will be directly embeded into your article ! ");
+
+define("_AM_SSECTION_XOOPS_PRO", "Do you need help with this module ?<br />Do you need new features not yet available ?");
+
+define("_AM_SSECTION_NEW_FEATURE", "New feature !!!");
 
 ?>

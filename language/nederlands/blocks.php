@@ -54,7 +54,6 @@ define("_MB_SSECTION_SELECTCAT", "Laat de artikelen zien van :");
 define("_MB_SSECTION_VISITITEM", "Bezoek de");
 define("_MB_SSECTION_WEIGHT", "Sorteer op gewicht");
 define("_MB_SSECTION_WHO_WHEN", "Gepubliceerd door %s op %s");
-
 //bd tree block hack
 define("_MB_SSECTION_LEVELS", "niveau's");
 define("_MB_SSECTION_CURRENTCATEGORY", "Huidige Categorie");
@@ -62,4 +61,11 @@ define("_MB_SSECTION_ASC", "Opl");
 define("_MB_SSECTION_DESC", "Afl");
 define("_MB_SSECTION_SHOWITEMS", "Toon Items");
 //--/bd
+
+define("_MB_SSECTION_FILES", "files");
+define("_MB_SSECTION_DIRECTDOWNLOAD", "Direct link to dowload the file instead of a link to the article?");
+define("_MB_SSECTION_FROM", "Select articles <br />from ");
+define("_MB_SSECTION_UNTIL", "&nbsp;&nbsp;to");
+define("_MB_SSECTION_DATE_FORMAT", "Date format must be mm/dd/yyy");
+define("_MB_SSECTION_ARTICLES_FROM_TO", "Articles published between %s and %s");
 ?>

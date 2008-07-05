@@ -128,6 +128,7 @@ define("_MD_SSECTION_SUB_CLONE", "Vermenigvuldig een artikel");
 define("_MD_SSECTION_SUB_INTRO", "vul dit formulier in om uw artikel te versturen. De webmaster zal het bekijken en daarna zo snel mogelijk publiceren. Bij voorbaat dank voor uw bijdrage.");
 define("_MD_SSECTION_SUB_SMNAME", "Stuur een artikel in");
 define("_MD_SSECTION_SUB_SNEWNAME", "Stuur een artikel in");
+define("_MD_SSECTION_SUBCATEGORIES_INFO", "Subcategories within <em>%s</em> :");
 define("_MD_SSECTION_SUBMIT", "Stuur een artikel in");
 define("_MD_SSECTION_SUBMIT_ERROR", "Er is een fout opgetreden. Uw artikel is niet verstuurd.");
 define("_MD_SSECTION_SUBMITITEM", "Verstuur een een artikel");
@@ -146,5 +147,5 @@ define("_MD_SSECTION_WEIGHT", "Gewicht");
 define("_MD_SSECTION_WHO_WHEN", "Gepubliceerd door %s op %s");
 define("_MD_SSECTION_YES", "Ja");
 
-
+define('_MD_SSECTION_PRINT_CLOSE', 'Close this window');
 ?>

@@ -21,7 +21,6 @@ define("_MI_SSECTION_ADMENU5", "Blokken en Groepen");
 define("_MI_SSECTION_ADMENU6", "Mimetypes");
 define("_MI_SSECTION_ADMENU7", "Ga naar de module");
 
-
 define("_MI_SSECTION_ADMINHITS", "[INHOUD OPTIES] Admin teller staat op:");
 define("_MI_SSECTION_ADMINHITSDSC", "Beheerderbezoek meetellen in de teller statistieken?");
 define("_MI_SSECTION_ALLOWSUBMIT", "[BEVOEGDHEDEN] Inzendingen van de gebruiker:");
@@ -46,6 +45,10 @@ define('_MI_SSECTION_CATEGORY_ITEM_SUBMITTED_NOTIFY', "'Artikel ingestuurd");
 define('_MI_SSECTION_CATEGORY_ITEM_SUBMITTED_NOTIFY_CAP', "Stel me op de hoogte als er een nieuw artikel is ingestuurd in deze categorie.");   
 define('_MI_SSECTION_CATEGORY_ITEM_SUBMITTED_NOTIFY_DSC', "Ontvang een bericht als er een nieuw artikel is ingestuurd in deze categorie.");      
 define('_MI_SSECTION_CATEGORY_ITEM_SUBMITTED_NOTIFY_SBJ', "[{X_SITENAME}] {X_MODULE} Systeembericht : Nieuw artikel ingestuurd in de categorie"); 
+define("_MI_SSECTION_CATLIST_IMG_W", "[FORMAT OPTIONS] Category list image width");
+define("_MI_SSECTION_CATLIST_IMG_WDSC", "Specify the width of category images when listing the categories.");
+define("_MI_SSECTION_CATMAINIMG_W", "[FORMAT OPTIONS] Category main image width");
+define("_MI_SSECTION_CATMAINIMG_WDSC", "Specify the width of the category main image.");
 define('_MI_SSECTION_CATPERPAGE', '[OPMAAKOPTIES] Maximaal aantal categorieën per pagina (Gebruikerskant):');
 define('_MI_SSECTION_CATPERPAGEDSC', 'Maximaal aantal tegelijk te tonen topcategorieën per pagina aan de gebruikerskant.');
 define("_MI_SSECTION_CLONE", "[BEVOEGDHEDEN] Artikelduplicatie toestaan ?");
@@ -73,6 +76,7 @@ define("_MI_SSECTION_DISPLAY_CATEGORY_DSC", "Kies 'Ja' om een link naar de categ
 define('_MI_SSECTION_DISPLAYTYPE_FULL', 'Volledige weergave');
 define('_MI_SSECTION_DISPLAYTYPE_LIST', 'Gemarkeerde lijst');
 define('_MI_SSECTION_DISPLAYTYPE_SUMMARY', 'Overzicht');
+define("_MI_SSECTION_DISPLAYTYPE_SUMMARY", "Summary View");
 define('_MI_SSECTION_DISSBCATDSC', '[INHOUDOPTIES] Omschrijvingen subcategorieën weergeven ?');
 define('_MI_SSECTION_DISSBCATDSCDSC', "Kies 'Ja' om een beschrijving weer te geven van de subcategorieën in de index- en categoriepagina.");
 define('_MI_SSECTION_DISTYPE', "[OPMAAKOPTIES] Weergavetype voor artikelen:");
@@ -131,7 +135,6 @@ define('_MI_SSECTION_ITEMFOOTER', '[INHOUDOPTIES] Item voettekst');
 define('_MI_SSECTION_ITEMFOOTER_SEL', 'Item voettekst');
 define('_MI_SSECTION_ITEMFOOTERDSC', 'Voettekst die zal worden gebruikt voor elk artikel');
 define("_MI_SSECTION_ITEMSMENU", "Categorie Menu blok");
-
 //bd tree block hack
 define("_MI_SSECTION_ITEMSTREE", "Blok met boomstructuur");
 //--/bd
@@ -152,8 +155,6 @@ define("_MI_SSECTION_MAX_SIZE", "[BEVOEGDHEDEN] Maximale bestandsgrootte");
 define("_MI_SSECTION_MAX_SIZEDSC", "Maximale bestandsgrootte (in bytes) van een te uploaden bestand.");
 define("_MI_SSECTION_MAX_WIDTH", "[BEVOEGDHEDEN] Maximale breedte van de geuploade afbeelding");
 define("_MI_SSECTION_MAX_WIDTHDSC", "Maximale breedte van een te uploaden afbeelding.");
-
-
 define("_MI_SSECTION_MD_DESC", "Sectie Management Systeem voor uw XOOPS Site");
 define("_MI_SSECTION_MD_NAME", "SmartSection");
 define('_MI_SSECTION_MODULE_BUG', "Rapporteer een bug in deze module");
@@ -167,13 +168,11 @@ define('_MI_SSECTION_MODULE_SUBMIT_BUG', "Stuur een bug in");
 define('_MI_SSECTION_MODULE_SUBMIT_FEATURE', "Stuur een verzoek voor een functie in");
 define('_MI_SSECTION_MODULE_SUPPORT', "Officiële ondersteuningssite");
 define('_MI_SSECTION_NO_FOOTERS', 'Geen');
-
 define("_MI_SSECTION_ORDERBY", "[OPMAAKOPTIES] Sorteervolgorde");
 define("_MI_SSECTION_ORDERBY_DATE", "Datum Aflopend");
 define("_MI_SSECTION_ORDERBY_TITLE", "Titel Oplopend");
 define("_MI_SSECTION_ORDERBY_WEIGHT", "Gewicht Oplopend");
 define("_MI_SSECTION_ORDERBYDSC", "Kies de standaard sorteervolgorde van de items voor heel de module.");
-
 define('_MI_SSECTION_OTHER_ITEMS_TYPE_ALL', "Alle artikelen");
 define('_MI_SSECTION_OTHER_ITEMS_TYPE_NONE', "Geen");
 define('_MI_SSECTION_OTHER_ITEMS_TYPE_PREVIOUS_NEXT', "Vorige en volgend artikel");
@@ -186,10 +185,8 @@ define('_MI_SSECTION_PERPAGEINDEXDSC', "[PRINT OPTIES] Maximum aantal artikelen 
 define('_MI_SSECTION_PRINTLOGOURL', "[PRINT OPTIES] Logo print url");
 define('_MI_SSECTION_PRINTLOGOURLDSC', 'Url van het logo dat boven aan de pagina zal worden geprint');
 define("_MI_SSECTION_RECENTITEMS", "Recente items (Detail)");
-
 define("_MI_SSECTION_SHOW_RSS","[INHOUDOPTIONS] Weergave link voor RSS feed");
 define("_MI_SSECTION_SHOW_RSSDSC","");
-
 define("_MI_SSECTION_SHOW_SUBCATS", "[INHOUDOPTIES] Weergave subcategorieën");
 define("_MI_SSECTION_SHOW_SUBCATS_ALL", "Geef alle subcategorieën weer");
 define("_MI_SSECTION_SHOW_SUBCATS_DSC", "Kies dit indien u de subcategorieën wilt weergeven in de categorielijst op de indexpagina van de module");
@@ -210,7 +207,6 @@ define('_MI_SSECTION_VERSION_HISTORY', "Versiegeschiedenis");
 define('_MI_SSECTION_WARNING_BETA', "Deze module wordt geleverd zoals hij is, zonder enige vorm van garantie. Deze module is BETA, wat betekent dat hij nog steeds in actieve ontwikkeling is. Het vrijgeven van deze versie heeft <b>slechts testen tot doel</b> en wij raden u dan ook <b>zeer dringend aan</b> dat u het niet gebruikt op een actieve server of in een productieomgeving.");
 define('_MI_SSECTION_WARNING_FINAL', "Deze module wordt geleverd zoals hij is, zonder enige vorm van garantie. Alhoewel deze module geen beta-status meer heeft, is hij nog altijd in actieve ontwikkeling. Deze versie kan gebruikt worden op een actieve website of een productieomgeving, maar het gebruik ervan valt onder uw eigen verantwoordelijkheid, wat betekent dat de auteur niet verantwoordelijk is.");
 define('_MI_SSECTION_WARNING_RC', "Deze module wordt geleverd zoals hij is, zonder enige vorm van garantie. Deze module is een vrijgave-kandidaat en zou niet gebruikt mogen worden op een actieve website of productieomgeving. De module is nog steeds in actieve ontwikkeling en het gebruik ervan is strict uw eigen verantwoordelijkheid, wat betekent dat de auteur niet verantwoordelijk is.");
-
 define("_MI_SSECTION_WELCOME", "[INHOUDOPTIES] Weergave van de welkomsttitel en welkomstbericht:");
 define("_MI_SSECTION_WELCOMEDSC", "Indien deze optie ingesteld is op 'Ja' zal de indexpagina van de module de welkomsttitel 'Welkom in de SmartSection van...', gevolgd door het welkomstbericht dat hieronder gedefinieerd wordt. Indien deze optie ingesteld is op 'Nee', zal geen van deze twee teksten weergegeven worden.");
 define("_MI_SSECTION_WHOWHEN", "[INHOUDOPTIES] Weergave van afzender en datum?");
@@ -218,5 +214,26 @@ define("_MI_SSECTION_WHOWHENDSC", "Kies 'Ja' om de afzender- en datuminformatie 
 define("_MI_SSECTION_WYSIWYG", "[OPMAAKOPTIES] Editor type");
 define("_MI_SSECTION_WYSIWYGDSC", "Kies hier welke editor u graag wilt gebruiken. Hou er rekening mee dat, indien u een andere editor dan de XoopsEditor kiest, deze geïnstalleerd moet zijn op uw site.");
 
+define("_MI_SSECTION_PV_TEXT", "Partial view message");
+define("_MI_SSECTION_PV_TEXTDSC", "Message for articles that allows only partial view.");
+define("_MI_SSECTION_PV_TEXT_DEF", "To view the complete article, you must register.");
 
+define("_MI_SSECTION_SEOMODNAME", "URL Rewriting module name");
+define("_MI_SSECTION_SEOMODNAMEDSC", "if URL Rewriting is enabled for the module, this is the name of the module that will be used. For example : http://yoursite.com/smartection/...");
+
+define("_MI_SSECTION_ARTCOUNT", "Display articles count");
+define("_MI_SSECTION_ARTCOUNTDSC", "Select 'Yes' to display the article count within each category in the Category summary table. Please note that the module currently only count articles within each category and does not count within subcategoies.");
+
+define("_MI_SSECTION_LATESTFILES", "Latest uploaded files");
+
+define("_MI_SSECTION_PATHSEARCH", "[FORMAT OPTIONS] Display category path in search results");
+define("_MI_SSECTION_PATHSEARCHDSC", "");
+define("_MI_SSECTION_SHOW_SUBCATS_NOMAIN", "Display sub-categories on index page only");
+define("_MI_SSECTION_RATING_ENABLED", "Enable rating system");
+define("_MI_SSECTION_RATING_ENABLEDDSC", "This features requires the SmartObject Framework");
+
+define("_MI_SSECTION_DISPBREAD", "Display the breadcrumb");
+define("_MI_SSECTION_DISPBREADDSC", "Breadcrumb navigation displays the current page's context within the site structure.");
+
+define('_MI_SSECTION_DATE_TO_DATE', 'Articles from date to date')
 ?>
