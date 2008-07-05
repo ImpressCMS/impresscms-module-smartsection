@@ -22,8 +22,10 @@
 			<div style="clear: both"> </div>
 				<{if $item.showline}>
 					<div style="font-size: 10px; text-align: right; border-bottom: 1px dotted #000000;">
+				<{else}>
+					<div style="font-size: 10px; text-align: right;">
 				<{/if}>
-				<div style="font-size: 10px; text-align: right;"><a href="<{$item.itemurl}>"><{$block.lang_readmore}></a></div>
+			<a href="<{$item.itemurl}>"><{$block.lang_readmore}></a>
 			</div>
 
 		<{/if}>
