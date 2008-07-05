@@ -127,6 +127,7 @@ define("_MD_SSECTION_SUB_CLONE", "Κλωνοποίηση ενός άρθρου");
 define("_MD_SSECTION_SUB_INTRO", "παρακαλούμε συμπληρώστε αυτή την φόρμα για να στείλετε το άρθρο σας. Ο διαχειριστής του ιστοχώρου θα το επιθεωρήσει και μετά θα το δημοσιεύσει όσο το δυνατόν ταχύτερα. Σας ευχαριστούμε εκ των προτέρων για την συνεισφορά σας.");
 define("_MD_SSECTION_SUB_SMNAME", "Αποστολή ενός άρθρου");
 define("_MD_SSECTION_SUB_SNEWNAME", "Αποστολή ενός άρθρου");
+define("_MD_SSECTION_SUBCATEGORIES_INFO", "Subcategories within <em>%s</em> :");
 define("_MD_SSECTION_SUBMIT", "Αποστολή ενός άρθρου");
 define("_MD_SSECTION_SUBMIT_ERROR", "Συνέβη σφάλμα. Το άρθρο σας δεν εστάλει.");
 define("_MD_SSECTION_SUBMITITEM", "Στείλτε ένα άρθρο");
@@ -145,5 +146,5 @@ define("_MD_SSECTION_WEIGHT", "Βάρος");
 define("_MD_SSECTION_WHO_WHEN", "Δημοσιεύτηκε από τον %s στις %s");
 define("_MD_SSECTION_YES", "Ναι");
 
-
+define('_MD_SSECTION_PRINT_CLOSE', 'Close this window');
 ?>

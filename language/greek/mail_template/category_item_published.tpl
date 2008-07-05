@@ -21,4 +21,4 @@
 
 {X_SITENAME} ({X_SITEURL}) 
 Ο Διαχειριστής
-{X_ADMINMAIL}26/11/2005
+{X_ADMINMAIL}

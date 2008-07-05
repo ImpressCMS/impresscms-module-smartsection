@@ -59,8 +59,16 @@ define("_AM_SSECTION_CATEGORY_CREATE", "Create a category");
 define("_AM_SSECTION_CATEGORY_CREATE_INFO", "Fill the following form in order to create a new category. The newly created category will be automatically displayed in the user side.");
 define("_AM_SSECTION_CATEGORY_DSC", "Article's Category.");
 define("_AM_SSECTION_CATEGORY_EDIT_INFO", "You can edit this category. Modifications will immediatly take effect in the user side.");
+define("_AM_SSECTION_CATEGORY_HEADER", "Category header");
+define("_AM_SSECTION_CATEGORY_HEADER_DSC", "");
+define("_AM_SSECTION_CATEGORY_META_DESCRIPTION", "Meta Description");
+define("_AM_SSECTION_CATEGORY_META_DESCRIPTION_DSC", "In order to help Search Engines, you can customize the meta description you would like to use for this category. if you leave this field empty when creating a category, it will automatically be populated with the Description field of this category.");
+define("_AM_SSECTION_CATEGORY_META_KEYWORDS", "Meta Keywords");
+define("_AM_SSECTION_CATEGORY_META_KEYWORDS_DSC", "In order to help Search Engines, you can customize the keywords you would like to use for this category. if you leave this field empty when creating a category, it will automatically be populated with words from the Description field of this category.");
 define("_AM_SSECTION_CATEGORY_REQ", "Category*");
 define("_AM_SSECTION_CATEGORY_SAVE_ERROR", "An error occured while saving the category. Here is a list of error(s) :");
+define("_AM_SSECTION_CATEGORY_SHORT_URL", "Short URL");
+define("_AM_SSECTION_CATEGORY_SHORT_URL_DSC", "When using the SEO features of this module, you can specify a Short URL for this category. This field is optional.");
 define("_AM_SSECTION_CATHEADER", "Categories Management");
 define("_AM_SSECTION_CATID","ID");
 define("_AM_SSECTION_CLEAR", "Clear");
@@ -92,6 +100,7 @@ define("_AM_SSECTION_DB_MSG_CREATE_TABLE_ERR", "Error creating table %s");
 define("_AM_SSECTION_DB_MSG_NEWFIELD", "Successfully added field %s");
 define("_AM_SSECTION_DB_MSG_NEWFIELD_ERR", "Error adding field %s");
 define("_AM_SSECTION_DB_NEEDUPDATE", "Your database is out-of-date. Please upgrade your database tables!<br><b>Note : The SmartFactory strongly recommends you to backup all SmartSection tables before running this upgrade script.</b><br>");
+define("_AM_SSECTION_DB_NEEDUPDATE_WARNING", "WARNING : The SmartFactory strongly recommends you to backup all SmartSection tables before running this upgrade script.");
 define("_AM_SSECTION_DB_NOUPDATE", "Your database is up-to-date. No updates are necessary.");
 define("_AM_SSECTION_DB_UPDATE_DB", "Updating Database");
 define("_AM_SSECTION_DB_UPDATE_ERR", "Errors updating to version %s");
@@ -167,6 +176,7 @@ define("_AM_SSECTION_IMPORTED_COMMENT_ERROR", "Error while importing comment '%s
 define("_AM_SSECTION_IMPORT_COMMENTS", "Importing comments of the module");
 define("_AM_SSECTION_IMPORT_ALL_PARTNERS", "All articles");
 define("_AM_SSECTION_IMPORTED_ARTICLE_FILE", "Linked file %s was imported");
+define("_AM_SSECTION_IMPORT_ARTICLE_ERROR", "Error while importing article <em>%s</em>");
 define("_AM_SSECTION_IMPORT_ARTICLE_WRAP", "The pagewraped file %s has been copied in the module's content folder.");
 define("_AM_SSECTION_IMPORT_AUTOAPPROVE", "Auto-approve");
 define("_AM_SSECTION_IMPORT_BACK", "Back to the import page");
@@ -209,8 +219,14 @@ define("_AM_SSECTION_ITEM_DUPLICATING", "Duplicating an article");
 define("_AM_SSECTION_ITEM_DUPLICATING_DSC", "Edit the present form in order to create a new article based on the original article.");
 define("_AM_SSECTION_ITEM_EDIT", "Edit this article");
 define("_AM_SSECTION_ITEM_INFORMATIONS", "Class action suit informations");
+define("_AM_SSECTION_ITEM_META_DESCRIPTION", "Meta Description");
+define("_AM_SSECTION_ITEM_META_DESCRIPTION_DSC", "In order to help Search Engines, you can customize the meta description you would like to use for this article. if you leave this field empty when creating a category, it will automatically be populated with the Summary field of this article.");
+define("_AM_SSECTION_ITEM_META_KEYWORDS", "Meta Keywords");
+define("_AM_SSECTION_ITEM_META_KEYWORDS_DSC", "In order to help Search Engines, you can customize the keywords you would like to use for this article. if you leave this field empty when creating an article, it will automatically be populated with words from the Summary field of this article.");
 define("_AM_SSECTION_ITEM_RECEIVED_NEED_APPROVAL", "Your article has been sent and will be published upon approval by a moderator.<br />Thank you for your contribution !");
 define("_AM_SSECTION_ITEM_REJECTED", "This article as been set as rejected.");
+define("_AM_SSECTION_ITEM_SHORT_URL", "Short URL");
+define("_AM_SSECTION_ITEM_SHORT_URL_DSC", "When using the SEO features of this module, you can specify a Short URL for this article. This field is optional.");
 define("_AM_SSECTION_ITEMCAT", "Category");
 define("_AM_SSECTION_ITEMCATEGORYNAME", "Category");
 define("_AM_SSECTION_ITEMCOLNAME", "Title");
@@ -360,6 +376,7 @@ define("_AM_SSECTION_SUMMARY", "Introduction");
 define("_AM_SSECTION_SUMMARY_DSC", "Article's introduction");
 define("_AM_SSECTION_TEXT_ASCENDING", "Ascending");
 define("_AM_SSECTION_TEXT_DESCENDING", "Descending");
+define("_AM_SSECTION_TEXT_NO_RECORDS", "No records found");
 define("_AM_SSECTION_TEXT_NUMBER_PER_PAGE", "Number Per Page:");
 define("_AM_SSECTION_TEXT_ORDER_BY", "Order By:");
 define("_AM_SSECTION_TEXT_SEARCH_BY", "Search By:");
@@ -385,5 +402,24 @@ define("_AM_SSECTION_VIEW_CATS", "Select categories that each group can view");
 define("_AM_SSECTION_WEIGHT", "Weight");
 define("_AM_SSECTION_YES", "Yes");
 define("_MD_SSECTION_CATEGORY_ITEM", "Categorie<span style='font-size: xx-small; font-weight: normal; display: block;'>Category to which belong category.</span>");
+
+define("_AM_SSECTION_PARTIAL_VIEW", "Give partial view access to these groups");
+define("_AM_SSECTION_PARTIAL_VIEWDSC", "if a group does not have read permission for this article, you can still give to that group partial view access by checking its checkbox here. Please note that these groups also needs to have module access permission as well as parent category read permission.");
+
+define("_AM_SSECTION_TOOLS", "Tools");
+define("_AM_SSECTION_CONFIGURE_READ_PERMISSIONS", "Configure read permissions");
+define("_AM_SSECTION_CONFIGURE_READ_PERMISSIONS_EXP", "This tool allows you to quickly configure read permissions for ALL categories and ALL articles at once. ALl permissions will first be deleted and then replaced by the options your will have selected.<br /><br /><b>Please use this tool with care !</b>");
+define("_AM_SSECTION_FULLACCESS", "Categories and articles read permissions");
+define("_AM_SSECTION_PERMISSIONS_UPDATED", "Permissions updated.");
+
+define("_AM_SSECTION_ITEM_TAGS", "Tags");
+define("_AM_SSECTION_ITEM_TAGS_DSC", "");
+
+define("_AM_SSECTION_ITEM_UPLOAD_FILE", "Link a file to this article");
+define("_AM_SSECTION_ITEM_UPLOAD_FILE_DSC", "Select a file from your computer to attach it to this article. You will be able to add more files once the article has been created. Simply edit the article and scroll at the bottom of the page to see the Add file button.<br /><br /> For example, you could add a Word document or an Excel document. You can even upload a Flash file and it will be directly embeded into your article ! ");
+
+define("_AM_SSECTION_XOOPS_PRO", "Do you need help with this module ?<br />Do you need new features not yet available ?");
+
+define("_AM_SSECTION_NEW_FEATURE", "New feature !!!");
 
 ?>

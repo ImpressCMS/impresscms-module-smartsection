@@ -20,8 +20,6 @@ define("_MI_SSECTION_ADMENU5", "Blocks and Groups");
 define("_MI_SSECTION_ADMENU6", "Mimetypes");
 define("_MI_SSECTION_ADMENU7", "Go to module");
 
-
-
 define("_MI_SSECTION_ADMINHITS", "[CONTENT OPTIONS] Admin counter reads?");
 define("_MI_SSECTION_ADMINHITSDSC", "Allow admin hits for counter stats?");
 define("_MI_SSECTION_ALLOWSUBMIT", "[PERMISSIONS] User submissions?");
@@ -46,6 +44,10 @@ define("_MI_SSECTION_CATEGORY_ITEM_SUBMITTED_NOTIFY", "'Article submitted");
 define("_MI_SSECTION_CATEGORY_ITEM_SUBMITTED_NOTIFY_CAP", "Notify me when a new article is submitted in the current category.");   
 define("_MI_SSECTION_CATEGORY_ITEM_SUBMITTED_NOTIFY_DSC", "Receive notification when a new article is submitted in the current category.");      
 define("_MI_SSECTION_CATEGORY_ITEM_SUBMITTED_NOTIFY_SBJ", "[{X_SITENAME}] {X_MODULE} auto-notify : New article submitted in category"); 
+define("_MI_SSECTION_CATLIST_IMG_W", "[FORMAT OPTIONS] Category list image width");
+define("_MI_SSECTION_CATLIST_IMG_WDSC", "Specify the width of category images when listing the categories.");
+define("_MI_SSECTION_CATMAINIMG_W", "[FORMAT OPTIONS] Category main image width");
+define("_MI_SSECTION_CATMAINIMG_WDSC", "Specify the width of the category main image.");
 define("_MI_SSECTION_CATPERPAGE", "[FORMAT OPTIONS] Maximum Categories per page (User side)?");
 define("_MI_SSECTION_CATPERPAGEDSC", "Maximum number of top categories per page to be displayed at once in the user side?");
 define("_MI_SSECTION_CLONE", "[PERMISSIONS] Allow article duplication ?");
@@ -72,6 +74,7 @@ define("_MI_SSECTION_DISPLAY_CATEGORY", "Display the category name?");
 define("_MI_SSECTION_DISPLAY_CATEGORY_DSC", "Set to 'Yes' to display the category link in the individual article");
 define("_MI_SSECTION_DISPLAYTYPE_FULL", "Full View");
 define("_MI_SSECTION_DISPLAYTYPE_LIST", "Bullet list");
+define("_MI_SSECTION_DISPLAYTYPE_WFSECTION", "WFSection style");
 define("_MI_SSECTION_DISPLAYTYPE_SUMMARY", "Summary View");
 define("_MI_SSECTION_DISSBCATDSC", "[CONTENT OPTIONS] Display sub-categories description?");
 define("_MI_SSECTION_DISSBCATDSCDSC", "Select 'Yes' to display the description of sub-categories in the index and category page.");
@@ -131,6 +134,9 @@ define("_MI_SSECTION_ITEMFOOTER", "[CONTENT OPTIONS] Item footer");
 define("_MI_SSECTION_ITEMFOOTER_SEL", "Item footer");
 define("_MI_SSECTION_ITEMFOOTERDSC","Footer that will be displayed for each article");
 define("_MI_SSECTION_ITEMSMENU", "Categories Menu block");
+//bd tree block hack
+define("_MI_SSECTION_ITEMSTREE", "Tree block");
+//--/bd
 define("_MI_SSECTION_ITEMSNEW", "Recent items List");
 define("_MI_SSECTION_ITEMSPOT", "In the Spotlight !");
 define("_MI_SSECTION_ITEMSRANDOM_ITEM", "Random item !");
@@ -207,7 +213,26 @@ define("_MI_SSECTION_WHOWHENDSC", "Set to 'Yes' to display the poster and date i
 define("_MI_SSECTION_WYSIWYG", "[FORMAT OPTIONS] Editor type");
 define("_MI_SSECTION_WYSIWYGDSC", "What kind of editor would you like  to use. Please note that of you choose any other editor than the XoopsEditor, it must be installed on your site.");
 
+define("_MI_SSECTION_PV_TEXT", "Partial view message");
+define("_MI_SSECTION_PV_TEXTDSC", "Message for articles that allows only partial view.");
+define("_MI_SSECTION_PV_TEXT_DEF", "To view the complete article, you must register.");
 
+define("_MI_SSECTION_SEOMODNAME", "URL Rewriting module name");
+define("_MI_SSECTION_SEOMODNAMEDSC", "if URL Rewriting is enabled for the module, this is the name of the module that will be used. For example : http://yoursite.com/smartection/...");
 
+define("_MI_SSECTION_ARTCOUNT", "Display articles count");
+define("_MI_SSECTION_ARTCOUNTDSC", "Select 'Yes' to display the article count within each category in the Category summary table. Please note that the module currently only count articles within each category and does not count within subcategoies.");
 
+define("_MI_SSECTION_LATESTFILES", "Latest uploaded files");
+
+define("_MI_SSECTION_PATHSEARCH", "[FORMAT OPTIONS] Display category path in search results");
+define("_MI_SSECTION_PATHSEARCHDSC", "");
+define("_MI_SSECTION_SHOW_SUBCATS_NOMAIN", "Display sub-categories on index page only");
+define("_MI_SSECTION_RATING_ENABLED", "Enable rating system");
+define("_MI_SSECTION_RATING_ENABLEDDSC", "This features requires the SmartObject Framework");
+
+define("_MI_SSECTION_DISPBREAD", "Display the breadcrumb");
+define("_MI_SSECTION_DISPBREADDSC", "Breadcrumb navigation displays the current page's context within the site structure.");
+
+define('_MI_SSECTION_DATE_TO_DATE', 'Articles from date to date')
 ?>
