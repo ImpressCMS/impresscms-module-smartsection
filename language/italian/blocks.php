@@ -53,4 +53,18 @@ define("_MB_SSECTION_SELECTCAT", "Mostra gli articoli di:");
 define("_MB_SSECTION_VISITITEM", "Visita il");
 define("_MB_SSECTION_WEIGHT", "Elenca in base al peso");
 define("_MB_SSECTION_WHO_WHEN", "Pubblicato da %s il %s");
+//bd tree block hack
+define("_MB_SSECTION_LEVELS", "levels");
+define("_MB_SSECTION_CURRENTCATEGORY", "Current Category");
+define("_MB_SSECTION_ASC", "ASC");
+define("_MB_SSECTION_DESC", "DESC");
+define("_MB_SSECTION_SHOWITEMS", "Show Items");
+//--/bd
+
+define("_MB_SSECTION_FILES", "files");
+define("_MB_SSECTION_DIRECTDOWNLOAD", "Direct link to dowload the file instead of a link to the article?");
+define("_MB_SSECTION_FROM", "Select articles <br />from ");
+define("_MB_SSECTION_UNTIL", "&nbsp;&nbsp;to");
+define("_MB_SSECTION_DATE_FORMAT", "Date format must be mm/dd/yyy");
+define("_MB_SSECTION_ARTICLES_FROM_TO", "Articles published between %s and %s");
 ?>

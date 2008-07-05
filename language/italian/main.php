@@ -7,24 +7,6 @@
 * Licence: GNU
 */
 
-/*global $xoopsConfig, $xoopsModule, $xoopsModuleConfig;
-if (isset($xoopsModuleConfig) && isset($xoopsModule) && $xoopsModule->getVar('dirname') == 'smartsection') {
-	$itemType = $xoopsModuleConfig['itemtype'];
-} else {
-	$hModule = &xoops_gethandler('module');
-	$hModConfig = &xoops_gethandler('config');
-	if ($smartsection_Module = &$hModule->getByDirname('smartsection')) {
-		$module_id = $smartsection_Module->getVar('mid');
-		$smartsection_Config = &$hModConfig->getConfigsByCat(0, $smartsection_Module->getVar('mid'));
-		$itemType = $smartsection_Config['itemtype'];
-	} else {
-		$itemType = 'article';
-	}	
-}
-
-include_once(XOOPS_ROOT_PATH . "/modules/smartsection/language/" . $xoopsConfig['language'] . "/plugin/" . $itemType . "/main.php");
-*/
-
 define("_MD_SSECTION_ACTION", "Azione");
 define("_MD_SSECTION_ADD_FILE", "Aggiungi un file");
 define("_MD_SSECTION_ADD_FILE_INTRO", "Compila il modulo seguente per allegare un file a questo articolo : '%s'.");
@@ -44,6 +26,7 @@ define("_MD_SSECTION_CATEGORY_SUMMARY", "Sommario di %s");
 define("_MD_SSECTION_CATEGORY_SUMMARY_DESC", "Elenco di tutti gli articoli associati a questa categoria. Clicca sul titolo per vedere l'articolo completo.");
 define("_MD_SSECTION_CATEGORY_SUMMARY_INFO", "Sub categorie associate %s.");
 define("_MD_SSECTION_CLEAR", "Pulisci");
+define("_MD_SSECTION_CLONE", "Dupplicate article");
 define("_MD_SSECTION_COMMENTS", "Commento(i)");
 define("_MD_SSECTION_CREATE", "Crea un articolo");
 define("_MD_SSECTION_DATE", "Data");
@@ -57,6 +40,7 @@ define("_MD_SSECTION_DOSMILEY", "Abilita le faccine");
 define("_MD_SSECTION_DOWNLOAD_FILE", "Download questo file");
 define("_MD_SSECTION_DOXCODE", "Abilita codici XOOPS");
 define("_MD_SSECTION_EDIT", "Modifica questo articolo");
+define("_MD_SSECTION_EDIT_ARTICLE", "Edit an article");
 define("_MD_SSECTION_EMPTY", "In questa categoria non ci sono articoli o sub categorie");
 define("_MD_SSECTION_ERROR_ITEM_NOT_SAVED", "Si è verificato un errore. L'articolo non è stato salvato nel database.");
 define("_MD_SSECTION_FILE", "Files");
@@ -71,8 +55,11 @@ define("_MD_SSECTION_FILE_EDITING_ERROR", "Si è verificato un errore nel tentati
 define("_MD_SSECTION_FILE_EDITING_SUCCESS", "Il file è stato modificato con successo.");
 define("_MD_SSECTION_FILE_INFORMATIONS", "Informazioni del file");
 define("_MD_SSECTION_FILE_NAME_DSC", "Nome che sarà usato per identificare il file.");
+define("_MD_SSECTION_FILE_STATUS", "File visible ?");
+define("_MD_SSECTION_FILE_STATUS_DSC", "if you select no, the file will not be visible from the user side.");
 define("_MD_SSECTION_FILE_TO_UPLOAD", "File da caricare :");
 define("_MD_SSECTION_FILE_TYPE", "Tipo di file");
+define("_MD_SSECTION_FILE_UPLOAD_ANOTHER", "Upload again");
 define("_MD_SSECTION_FILENAME", "Nome file");
 define("_MD_SSECTION_FILES_LINKED", "Files allegati");
 define("_MD_SSECTION_FILEUPLOAD_ERROR", "Si è verificato un errore durante l'upload del file.");
@@ -82,6 +69,11 @@ define("_MD_SSECTION_GOODDAY", "Buon giorno, ");
 define("_MD_SSECTION_HITS", "Letture");
 define("_MD_SSECTION_HITSDETAIL", "" . "Questo articolo è stato letto");
 define("_MD_SSECTION_HOME", "Home");
+define("_MD_SSECTION_IMAGE_ITEM", "Article image");
+define("_MD_SSECTION_IMAGE_ITEM_DSC", "Image representing the article");
+define("_MD_SSECTION_IMAGE_UPLOAD", "Image upload");
+define("_MD_SSECTION_IMAGE_UPLOAD_DSC", "Select an image on your computer. This image will be uploaded to the site and set as the category image.");
+define("_MD_SSECTION_IMAGE_UPLOAD_ITEM_DSC", "Select an image on your computer. <br />This image will be uploaded to the site <br />and set as the article image.");
 define("_MD_SSECTION_INDEX_CATEGORIES_SUMMARY", "Sommario delle categorie");
 define("_MD_SSECTION_INDEX_CATEGORIES_SUMMARY_INFO", "Elenco delle categorie principali e delle sub categorie. Seleziona una categoria per vedere gli articoli collegati.");
 define("_MD_SSECTION_INDEX_ITEMS", "Ultime pubblicazioni");
@@ -93,6 +85,7 @@ define("_MD_SSECTION_ITEM_CAP", "Articolo");
 define("_MD_SSECTION_ITEM_RECEIVED_AND_PUBLISHED", "Articolo inviato e pubblicato. Grazie per il contributo!");
 define("_MD_SSECTION_ITEM_RECEIVED_NEED_APPROVAL", "Articolo inviato, sarà pubblicato non un moderatore lo approverà.<br />Grazie per il contributo!");
 define("_MD_SSECTION_ITEMCOMEFROM", "Questo articolo proviene da ");
+define("_MD_SSECTION_ITEMMODIFIED", "The article was successfully modified!");
 define("_MD_SSECTION_ITEMS", "Articoli");
 define("_MD_SSECTION_ITEMS_INFO", "Altri articoli in questa categoria.");
 define("_MD_SSECTION_ITEMS_LINKS", "Precedente-Successivo");
@@ -103,6 +96,7 @@ define("_MD_SSECTION_MAINHEAD", "Benvenuto in");
 define("_MD_SSECTION_MAINNOITEMS", "Nessuno articolo in questa categoria");
 define("_MD_SSECTION_MAINNOSELECTCAT", "Non hai selezionato una categoria valida");
 define("_MD_SSECTION_NAME", "Nome");
+define("_MD_SSECTION_NEED_CATEGORY_ITEM", "To create an article, you must have appropriate permission in at least one category.");
 define("_MD_SSECTION_NEXT_ITEM", "Successivo");
 define("_MD_SSECTION_NO", "No");
 define("_MD_SSECTION_NO_CAT_EXISTS", "Spiacente nessuna categoria è stata ancora creata.<br />Contatta l'amministratore del sito e richiedi informazioni.");
@@ -118,6 +112,7 @@ define("_MD_SSECTION_ON", "il");
 define("_MD_SSECTION_OPTIONS", "Opzioni");
 define("_MD_SSECTION_OTHER_ITEMS", "Altri articoli in questa categoria");
 define("_MD_SSECTION_PAGE", "Pagina");
+define("_MD_SSECTION_PDF", "View this article in PDF format");
 define("_MD_SSECTION_POSTEDBY", "Pubblicato da %s il %s");
 define("_MD_SSECTION_PREVIEW", "Anteprima");
 define("_MD_SSECTION_PREVIOUS_ITEM", "Precedente");
@@ -125,11 +120,14 @@ define("_MD_SSECTION_PRINT", "Versione per la stampa");
 define("_MD_SSECTION_PRINTERFRIENDLY", "Versione per la stampa");
 define("_MD_SSECTION_READMORE", "Leggi tutto...");
 define("_MD_SSECTION_READS", "letture");
+define("_MD_SSECTION_RSSFEED","RSS Feed");
 define("_MD_SSECTION_SENDSTORY", "Invia a un amico...");
 define("_MD_SSECTION_SMARTITEMS_INFO", "Qui trovi gli articoli pubblicati in questa categoria.");
+define("_MD_SSECTION_SUB_CLONE", "Dupplicate an article");
 define("_MD_SSECTION_SUB_INTRO", "compila il modulo per inviare il tuo articolo. L'amministratore del sito provvederà a revisionarlo e a disporne la pubblicazione quanto prima. Grazie per il contributo.");
 define("_MD_SSECTION_SUB_SMNAME", "Invia un articolo");
 define("_MD_SSECTION_SUB_SNEWNAME", "Invia un articolo");
+define("_MD_SSECTION_SUBCATEGORIES_INFO", "Subcategories within <em>%s</em> :");
 define("_MD_SSECTION_SUBMIT", "Invia un articolo");
 define("_MD_SSECTION_SUBMIT_ERROR", "Si è verificato un errore. L'articolo non è stato inviato.");
 define("_MD_SSECTION_SUBMITITEM", "Invia un articolo");
@@ -148,4 +146,5 @@ define("_MD_SSECTION_WEIGHT", "Peso");
 define("_MD_SSECTION_WHO_WHEN", "Pubblicato da %s il %s");
 define("_MD_SSECTION_YES", "Si");
 
+define('_MD_SSECTION_PRINT_CLOSE', 'Close this window');
 ?>
