@@ -8,8 +8,8 @@
 * Licence: GNU
 */
 
-include_once('admin_header.php'); 
-include_once(SMARTSECTION_ROOT_PATH . "class/dbupdater.php");      
+include_once('admin_header.php');
+include_once(SMARTSECTION_ROOT_PATH . "class/dbupdater.php");
 
 $dbupdater = new SmartsectionDbupdater();
 
@@ -28,11 +28,11 @@ switch ( $op )
     case "checkTables":
         checkTables();
         break;
-    
+
     case "upgradeDB":
         upgradeDB();
         break;
-    
+
     default:
         header("Location: ".SMARTSECTION_URL."admin/index.php");
         break;
@@ -52,33 +52,32 @@ function checkTables()
             echo('Unable to determine previous version.');
         }
     }
-    
+
     $currentVer = round($xoopsModule->getVar('version') / 100, 2);
     printf('<h2>'._AM_SSECTION_DB_CURRENTVER.'</h2>', $currentVer);
     printf('<h2>'._AM_SSECTION_DB_DBVER.'</h2>', $ver);
 
-    
+
     if ($ver == $currentVer) {
         //No updates are necessary
         echo '<div>'._AM_SSECTION_DB_NOUPDATE.'</div>';
-        
+
     } elseif ( $ver < $currentVer) {
         //Needs to upgrade
         echo '<div>'._AM_SSECTION_DB_NEEDUPDATE.'</div>';
-        echo '<div style="line-height: 20px; font-size: 16px; padding-bottom: 10px; padding-top:10px; color: red; font-weight: bold;">' . _AM_SSECTION_DB_NEEDUPDATE_WARNING . '</div>';        
+        echo '<div style="line-height: 20px; font-size: 16px; padding-bottom: 10px; padding-top:10px; color: red; font-weight: bold;">' . _AM_SSECTION_DB_NEEDUPDATE_WARNING . '</div>';
         echo "<form method=\"post\" action=\"upgrade.php\"><input type=\"hidden\" name=\"op\" value=\"upgradeDB\" /><input type=\"submit\" value=\"". _AM_SSECTION_DB_UPDATE_NOW . "\" /></form>";
     } else {
         //Tried to downgrade
         echo '<div>'._AM_SSECTION_DB_NEEDINSTALL.'</div>';
     }
-    
-    smartsection_modFooter();
-    xoops_cp_footer();
-} 
+
+	smart_xoops_cp_footer();
+}
 
 function upgradeDB()
 {
-    
+
     global $xoopsModule, $dbupdater;
     $xoopsDB =& Database::getInstance();
     //1. Determine previous release
@@ -90,7 +89,7 @@ function upgradeDB()
             exit(_AM_SSECTION_DB_VERSION_ERR);
         }
     }
-    
+
     $mid = $xoopsModule->getVar('mid');
 
     xoops_cp_header();
@@ -100,67 +99,67 @@ function upgradeDB()
     //2. Do All Upgrades necessary to make current
     //   Break statements are omitted on purpose
 
-    switch($ver) {  
-/// SMARTSECTION 0.93 ////////////////////////////////////////////////   
+    switch($ver) {
+/// SMARTSECTION 0.93 ////////////////////////////////////////////////
     case '0.93':
         set_time_limit(60);
         printf("<h3>". _AM_SSECTION_DB_UPDATE_TO."</h3>", '1.0' );
         echo "<ul>";
-        
+
         // Create table smartsection_meta
         $table = new SmartsectionTable('smartsection_meta');
         $table->setStructure(	"CREATE TABLE %s (
-        						metakey varchar(50) NOT NULL default '', 
-        						metavalue varchar(255) NOT NULL default '', 
-        						PRIMARY KEY (metakey)) 
+        						metakey varchar(50) NOT NULL default '',
+        						metavalue varchar(255) NOT NULL default '',
+        						PRIMARY KEY (metakey))
         						TYPE=MyISAM;");
 
         $table->setData(sprintf("'version', %s", $xoopsDB->quoteString($ver)));
        	$ret = $ret && $dbupdater->updateTable($table);
         unset($table);
-        
+
         // Edit fields in smartsection_categories
         $table = new SmartsectionTable('smartsection_categories');
         $table->addAlteredField('categoryid', "`categoryid` INT( 11 ) NOT NULL AUTO_INCREMENT");
         $table->addAlteredField('parentid', "`parentid` INT( 11 ) DEFAULT '0' NOT NULL");
        	$ret = $dbupdater->updateTable($table) && $ret;
-        unset($table); 
-        
+        unset($table);
+
         // Edit fields in smartsection_items
         $table = new SmartsectionTable('smartsection_items');
         $table->addAlteredField('categoryid', "`categoryid` INT( 11 ) DEFAULT '0' NOT NULL");
         $table->addAlteredField('itemid', "`itemid` INT( 11 ) NOT NULL AUTO_INCREMENT");
        	$ret = $dbupdater->updateTable($table) && $ret;
-        unset($table); 
-        
+        unset($table);
+
         // Edit fields in smartsection_files
         $table = new SmartsectionTable('smartsection_files');
         $table->addAlteredField('itemid', "`itemid` INT( 11 ) DEFAULT '0' NOT NULL");
         $table->addAlteredField('fileid', "`fileid` INT( 11 )  NOT NULL AUTO_INCREMENT");
        	$ret = $dbupdater->updateTable($table) && $ret;
-        unset($table);         
+        unset($table);
         echo "</ul>";
 
-/// SMARTSECTION 1.0 ////////////////////////////////////////////////        
+/// SMARTSECTION 1.0 ////////////////////////////////////////////////
     case '1.0':
     	set_time_limit(60);
         printf("<h3>". _AM_SSECTION_DB_UPDATE_TO."</h3>", '1.01' );
         echo "<ul>";
-        
+
         // Edit fields in smartsection_items
         $table = new SmartsectionTable('smartsection_items');
         $table->addAlteredField('body', "`body` LONGTEXT NOT NULL");
        	$ret = $dbupdater->updateTable($table) && $ret;
-        unset($table); 
-        
-        echo "</ul>";          
-        
-/// SMARTSECTION 1.0.1 ////////////////////////////////////////////////      
+        unset($table);
+
+        echo "</ul>";
+
+/// SMARTSECTION 1.0.1 ////////////////////////////////////////////////
     case '1.01':
     	set_time_limit(60);
         printf("<h3>". _AM_SSECTION_DB_UPDATE_TO."</h3>", '1.02' );
         echo "<ul>";
-        
+
         // Create table smartsection_mimetypes
         $table = new SmartsectionTable('smartsection_mimetypes');
         $table->setStructure("CREATE TABLE %s (
@@ -296,64 +295,64 @@ function upgradeDB()
 		$table->setData("121, 'wmx', 'video/x-ms-wmx', 'Windows Media Player A/V Shortcut', 0, 0");
 		$table->setData("122, 'ice', 'x-conference-xcooltalk', 'Cooltalk Audio', 0, 0");
 		$table->setData("123, 'rar', 'application/octet-stream', 'WinRAR Compressed Archive', 0, 0");
-        
+
        	$ret = $ret && $dbupdater->updateTable($table);
         unset($table);
-        
-        echo "</ul>";       
-        
-/// SMARTSECTION 1.0.2 ////////////////////////////////////////////////      
+
+        echo "</ul>";
+
+/// SMARTSECTION 1.0.2 ////////////////////////////////////////////////
     case '1.02':
     	set_time_limit(60);
         printf("<h3>". _AM_SSECTION_DB_UPDATE_TO."</h3>", '1.03' );
         echo "<ul>";
-        
+
         // Add field Address in items table
         $table = new SmartsectionTable('smartsection_items');
         $table->addNewField('address', "varchar(255) NOT NULL default ''");
-        
+
        	$ret = $ret && $dbupdater->updateTable($table);
         unset($table);
-        
-        echo "</ul>";           
-    
 
-/// SMARTSECTION 1.0.3 ////////////////////////////////////////////////      
+        echo "</ul>";
+
+
+/// SMARTSECTION 1.0.3 ////////////////////////////////////////////////
        case '1.03':
     	set_time_limit(60);
         printf("<h3>". _AM_SSECTION_DB_UPDATE_TO."</h3>", '1.04' );
         echo "<ul>";
-        
+
         // Drop field adress in items table
         $table = new SmartsectionTable('smartsection_items');
         $table->addDropedField('address');
-                
+
        	$ret = $ret && $dbupdater->updateTable($table);
         unset($table);
-        
-        echo "</ul>";    
-        
-/// SMARTSECTION 1.0.4 ////////////////////////////////////////////////      
+
+        echo "</ul>";
+
+/// SMARTSECTION 1.0.4 ////////////////////////////////////////////////
        case '1.04':
     	set_time_limit(60);
         printf("<h3>". _AM_SSECTION_DB_UPDATE_TO."</h3>", '1.05' );
         echo "<ul>";
-        
-        echo "<li>No database changes are needed</li>";
-        
-        echo "</ul>";  
 
-/// SMARTSECTION 1.0.5 ////////////////////////////////////////////////      
+        echo "<li>No database changes are needed</li>";
+
+        echo "</ul>";
+
+/// SMARTSECTION 1.0.5 ////////////////////////////////////////////////
        case '1.05':
     	set_time_limit(60);
         printf("<h3>". _AM_SSECTION_DB_UPDATE_TO."</h3>", '1.1' );
         echo "<ul>";
-        
-		echo "<li>No database changes are needed</li>";
-        
-        echo "</ul>";     
 
-/// SMARTSECTION 1.1 ////////////////////////////////////////////////      
+		echo "<li>No database changes are needed</li>";
+
+        echo "</ul>";
+
+/// SMARTSECTION 1.1 ////////////////////////////////////////////////
        case '1.1':
     	set_time_limit(60);
         printf("<h3>". _AM_SSECTION_DB_UPDATE_TO."</h3>", '2.0' );
@@ -362,11 +361,11 @@ function upgradeDB()
         // Add field template
         $table = new SmartsectionTable('smartsection_categories');
         $table->addNewField('template', "varchar(255) NOT NULL default ''");
-        
+
        	$ret = $ret && $dbupdater->updateTable($table);
         unset($table);
-        
-        // Create mimetypes table if not already created 
+
+        // Create mimetypes table if not already created
         if (!smartsection_TableExists('smartsection_mimetypes')) {
 	        // Create table smartsection_mimetypes
 	        $table = new SmartsectionTable('smartsection_mimetypes');
@@ -379,7 +378,7 @@ function upgradeDB()
 	  							  mime_user int(1) NOT NULL default '0',
 	  							  KEY mime_id (mime_id)
 	  							  ) TYPE=MyISAM;");
-	
+
 	        $table->setData("1, 'bin', 'application/octet-stream', 'Binary File/Linux Executable', 0, 0");
 			$table->setData("2, 'dms', 'application/octet-stream', 'Amiga DISKMASHER Compressed Archive', 0, 0");
 			$table->setData("3, 'class', 'application/octet-stream', 'Java Bytecode', 0, 0");
@@ -503,43 +502,43 @@ function upgradeDB()
 			$table->setData("121, 'wmx', 'video/x-ms-wmx', 'Windows Media Player A/V Shortcut', 0, 0");
 			$table->setData("122, 'ice', 'x-conference-xcooltalk', 'Cooltalk Audio', 0, 0");
 			$table->setData("123, 'rar', 'application/octet-stream', 'WinRAR Compressed Archive', 0, 0");
-	        
+
 	       	$ret = $ret && $dbupdater->updateTable($table);
-	        unset($table);        	
+	        unset($table);
         }
-        
+
         // Add header template in categories
         $table = new SmartsectionTable('smartsection_categories');
         $table->addNewField('header', "TEXT NOT NULL");
-        
-       	$ret = $ret && $dbupdater->updateTable($table);
-        unset($table);        
-        
-        echo "</ul>";        
 
-        
-/// SMARTSECTION 2.0 ////////////////////////////////////////////////      
+       	$ret = $ret && $dbupdater->updateTable($table);
+        unset($table);
+
+        echo "</ul>";
+
+
+/// SMARTSECTION 2.0 ////////////////////////////////////////////////
        case '2.0':
     	set_time_limit(60);
         printf("<h3>". _AM_SSECTION_DB_UPDATE_TO."</h3>", '2.1' );
         echo "<ul>";
-        
+
         // Add fields in smartsection_categories
         $table = new SmartsectionTable('smartsection_categories');
         $table->addNewField('meta_keywords', "TEXT NOT NULL");
         $table->addNewField('meta_description', "TEXT NOT NULL");
         $table->addNewField('short_url', "VARCHAR(255) NOT NULL");
         $ret = $dbupdater->updateTable($table);
-        unset($table); 
-        
+        unset($table);
+
         // Add fields in smartsection_items
         $table = new SmartsectionTable('smartsection_items');
         $table->addNewField('meta_keywords', "TEXT NOT NULL");
         $table->addNewField('meta_description', "TEXT NOT NULL");
         $table->addNewField('short_url', "VARCHAR(255) NOT NULL");
         $ret = $dbupdater->updateTable($table);
-        unset($table);    
-        
+        unset($table);
+
         // Automatically create meta tag infos
         global $smartsection_category_handler, $smartsection_item_handler;
         $categoriesObj = $smartsection_category_handler->getObjects();
@@ -547,30 +546,30 @@ function upgradeDB()
 			$categoryObj->store();
 			echo "<li>Meta tags info automatically generated for category '<em>" . $categoryObj->name() . "</em>'</li>";
         }
-        
+
         $itemsObj = $smartsection_item_handler->getObjects();
         foreach ($itemsObj as $itemObj) {
 			$itemObj->store();
 			echo "<li>Meta tags info automatically generated for article '<em>" . $itemObj->title() . "</em>'</li>";
         }
-        
-        echo "</ul>";                   
-        
+
+        echo "</ul>";
+
 		case '2.1':
     	set_time_limit(60);
         printf("<h3>". _AM_SSECTION_DB_UPDATE_TO."</h3>", '2.11' );
         echo "<ul>";
-        
+
         // Add fields in smartsection_items
         $table = new SmartsectionTable('smartsection_items');
         $table->addNewField('partial_view', "int(1) NOT NULL default '0'");
         $ret = $dbupdater->updateTable($table);
-        unset($table); 
-        
-        echo "</ul>";            
-        
-    }     
-    
+        unset($table);
+
+        echo "</ul>";
+
+    }
+
     $newversion = round($xoopsModule->getVar('version') / 100, 2);
     //if successful, update smartsection_meta table with new ver
     if ($ret) {
@@ -579,9 +578,8 @@ function upgradeDB()
     } else {
         printf(_AM_SSECTION_DB_UPDATE_ERR, $newversion);
     }
-    
-    
-    smartsection_modFooter();
-    xoops_cp_footer(); 
+
+
+	smart_xoops_cp_footer();
 }
 ?>

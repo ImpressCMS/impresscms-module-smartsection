@@ -275,8 +275,5 @@ switch ($op) {
 
 	break;
 }
-smartsection_modFooter();
-
 smart_xoops_cp_footer();
-
 ?>

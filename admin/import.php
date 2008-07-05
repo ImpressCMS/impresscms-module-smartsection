@@ -120,8 +120,5 @@ switch ($op) {
 	break;
 }
 
-$modfooter = smartsection_modFooter();
-echo "<div align='center'>" . $modfooter . "</div>";
-xoops_cp_footer();
-
+smart_xoops_cp_footer();
 ?>

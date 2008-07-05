@@ -62,7 +62,5 @@ switch ($op) {
 
 	break;
 }
-smartsection_modFooter();
-xoops_cp_footer();
-
+smart_xoops_cp_footer();
 ?>

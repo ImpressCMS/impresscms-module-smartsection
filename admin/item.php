@@ -733,11 +733,11 @@ switch ($op) {
 			redirect_header("item.php", 2, _AM_SSECTION_ITEM_DELETE_ERROR . smartsection_formatErrors($itemObj->getErrors()));
 			exit;
 		}
-                // Removing tags information 
-                if (smartsection_tag_module_included()) { 
-            $tag_handler = xoops_getmodulehandler('tag', 'tag'); 
-            $tag_handler->updateByItem('', $itemid, 'smartsection', 0); 
-        } 
+                // Removing tags information
+                if (smartsection_tag_module_included()) {
+            $tag_handler = xoops_getmodulehandler('tag', 'tag');
+            $tag_handler->updateByItem('', $itemid, 'smartsection', 0);
+        }
 		redirect_header("item.php", 2, sprintf(_AM_SSECTION_ITEMISDELETED, $itemObj->title()));
 		exit();
 	} else {
@@ -973,7 +973,5 @@ switch ($op) {
 
 	break;
 }
-smartsection_modFooter();
-xoops_cp_footer();
-
+smart_xoops_cp_footer();
 ?>
