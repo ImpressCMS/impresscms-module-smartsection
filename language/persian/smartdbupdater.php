@@ -8,7 +8,7 @@
 * Translated by irxoops.org till 2.13 & updated and edited in 2.13 by stranger <www.impresscms.ir>
 */
 if (!defined("XOOPS_ROOT_PATH")) { 
- 	die("XOOPS root path not defined");
+ 	die("Root path not defined");
 }
 
 define("_SDU_IMPORT", "وارد کردن");

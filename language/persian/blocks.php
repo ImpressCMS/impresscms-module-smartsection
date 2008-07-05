@@ -9,7 +9,7 @@
 */
 
 /*global $xoopsConfig, $xoopsModule, $xoopsModuleConfig;
-If (isset($xoopsModuleConfig) && isset($xoopsModule) && $xoopsModule->getVar('dirname') == 'smartsection') {
+if (isset($xoopsModuleConfig) && isset($xoopsModule) && $xoopsModule->getVar('dirname') == 'smartsection') {
 	$itemType = $xoopsModuleConfig['itemtype'];
 } else {
 	$hModule = &xoops_gethandler('module');
