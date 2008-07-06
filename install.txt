@@ -17,7 +17,7 @@ For more information : http://smartfactory.ca/modules/smartfaq/faq.php?faqid=87
 How to install SmartSection
 ===========================
 
-SmartSection is installed as a regular XOOPS module, which means you should copy the complete /smartsection folder into the /modules directory of your website. Then, log in to your site as administrator, go to System Admin > Modules, look for the SmartSection icon in the list of uninstalled modules and click in the install icon. Follow the directions in the screen and you'll be ready to go.
+SmartSection is installed as a regular XOOPS/ImpressCMS module, which means you should copy the complete /smartsection folder into the /modules directory of your website. Then log in to your site as administrator, go to System Admin > Modules, look for the SmartSection icon in the list of uninstalled modules and click in the install icon. Follow the directions in the screen and you'll be ready to go.
 
 
 

@@ -25,7 +25,7 @@ http://community.impresscms.org/modules/newbb/viewforum.php?forum=71
 SmartSection on ImpressCMS
 ==========================
 
-SmartSection is fully functionnal on both XOOPS and ImpressCMS. Enjoy !
+SmartSection is fully functional on both XOOPS and ImpressCMS. Enjoy !
 
 
 .:: The SmartFactory ::.
