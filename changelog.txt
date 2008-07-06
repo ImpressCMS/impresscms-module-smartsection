@@ -1,7 +1,7 @@
 <b><u>=> Version 2.15 Alpha (Unreleased)</u></b>
 
 - Fixed: Printing and PDF Icons do not appear (McDonald/peter55)
-- Fixed: Clarified clone_info instructions (jfm)
+- Fixed: Clarified clone_info instructions (jfm/andrewvincent)
 - Fixed: Mismatched div tags in smartsection_items_spot  (iunderwood)
 
 <b><u>=> Version 2.14 Final (2008-07-05)</u></b>

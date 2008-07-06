@@ -41,3 +41,17 @@ In this example, SmartSection will be cloned into MySection
 - You can also edit the language constants defined in smartsection/language/ to reflect the new purpose of the module.
 
 - You can also edit the image images/module_logo.png to avoid confusion with the original module.
+
+Note for users of SmartObject Rating Function
+==================================
+
+If you wish to use the SmartObject Rating function, on your cloned module, you will need to do the following:
+
+- copy \modules\smartobject\plugins\smartsection.php to \modules\smartobject\plugins\temp.php
+
+- rename "temp.php" to the same name as your SmartSection clone (example: a clone called "article" = article.php)
+
+- edit this file, and rename "smartobject_plugin_smartsection" to the same name as your clone (example: "smartobject_plugin_article")
+
+The rating function will now work on your cloned module.
+
