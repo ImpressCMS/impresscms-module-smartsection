@@ -83,24 +83,6 @@ class SmartsectionItem extends XoopsObject
 				$this->assignVar($k, $v['value']);
 			}
 			$this->assignOtherProperties();
-		} else {
-			// it's a new item
-			// Check to see if $smartlanguage_tag_handler is available
-
-			// Hack by marcan for condolegal.smartfactory.ca
-		/*	$this->setVar('title', "[fr]entrez le texte en fran�ais[/fr][en]entrez le texte en anglais[/en]");
-			$this->setVar('summary', "[fr]entrez le texte en fran�ais[/fr][en]entrez le texte en anglais[/en]");
-			$this->setVar('body', "[fr]entrez le texte en fran�ais[/fr][en]entrez le texte en anglais[/en]");
-			// End of Hack by marcan for condolegal.smartfactory.ca
-
-			global $smartlanguage_tag_handler;
-			if (isset($smartlanguage_tag_handler)) {
-				$theLanguageTags = $smartlanguage_tag_handler->getAllTagsForInput();
-				$this->setVar('title', $theLanguageTags);
-				$this->setVar('summary', $theLanguageTags);
-				$this->setVar('body', $theLanguageTags);
-			}
-			*/
 		}
 	}
 
@@ -543,7 +525,7 @@ class SmartsectionItem extends XoopsObject
         // Print button
         $adminLinks .= '<a href="' . smartsection_seo_genUrl("print", $this->itemid(), $this->short_url()) . '"><img src="' . SMARTSECTION_URL . 'images/links/print.gif" title="' . _MD_SSECTION_PRINT . '" alt="' . _MD_SSECTION_PRINT . '"/></a>';
         $adminLinks .= " ";
-		
+
 		// Email button
 		$maillink = "mailto:?subject=" . sprintf(_MD_SSECTION_INTITEM, $xoopsConfig['sitename']) . "&amp;body=" . sprintf(_MD_SSECTION_INTITEMFOUND, $xoopsConfig['sitename']) . ": " . $this->getItemUrl();
 		$adminLinks .= '<a href="' . $maillink . '"><img src="' . SMARTSECTION_URL . 'images/links/friend.gif" title="' . _MD_SSECTION_MAIL . '" alt="' . _MD_SSECTION_MAIL . '"/></a>';
