@@ -10,7 +10,7 @@ if (!defined("XOOPS_ROOT_PATH")) {
 die("Root path not defined");
 }
 
-include_once XOOPS_ROOT_PATH.'/modules/smartsection/include/common.php';
+//include_once XOOPS_ROOT_PATH.'/modules/smartsection/include/common.php';
 
 // ITEM status
 define("_SSECTION_STATUS_NOTSET", -1);
@@ -88,9 +88,9 @@ class SmartsectionItem extends XoopsObject
 			// Check to see if $smartlanguage_tag_handler is available
 
 			// Hack by marcan for condolegal.smartfactory.ca
-		/*	$this->setVar('title', "[fr]entrez le texte en français[/fr][en]entrez le texte en anglais[/en]");
-			$this->setVar('summary', "[fr]entrez le texte en français[/fr][en]entrez le texte en anglais[/en]");
-			$this->setVar('body', "[fr]entrez le texte en français[/fr][en]entrez le texte en anglais[/en]");
+		/*	$this->setVar('title', "[fr]entrez le texte en franï¿½ais[/fr][en]entrez le texte en anglais[/en]");
+			$this->setVar('summary', "[fr]entrez le texte en franï¿½ais[/fr][en]entrez le texte en anglais[/en]");
+			$this->setVar('body', "[fr]entrez le texte en franï¿½ais[/fr][en]entrez le texte en anglais[/en]");
 			// End of Hack by marcan for condolegal.smartfactory.ca
 
 			global $smartlanguage_tag_handler;
@@ -1097,8 +1097,9 @@ class SmartsectionItemHandler extends XoopsObjectHandler
 		if (!$smartsection_file_handler->deleteItemFiles($item)) {
 			$item->setErrors('An error while deleting a file.');
 		}
+		$itemid = $item->itemid();
 
-		$sql = sprintf("DELETE FROM %s WHERE itemid = %u", $this->db->prefix("smartsection_items"), $item->itemid());
+		$sql = sprintf("DELETE FROM %s WHERE itemid = %u", $this->db->prefix("smartsection_items"), $itemid);
 
 		if (false != $force) {
 			$result = $this->db->queryF($sql);
@@ -1110,7 +1111,8 @@ class SmartsectionItemHandler extends XoopsObjectHandler
 			return false;
 		}
 
-		xoops_groupperm_deletebymoditem ($module_id, "item_read", $item->itemid());
+		xoops_groupperm_deletebymoditem ($module_id, "item_read", $itemid);
+		xoops_comment_delete($module_id, $itemid);
 		return true;
 	}
 

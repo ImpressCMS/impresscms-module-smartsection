@@ -1,5 +1,6 @@
-<b><u>=> Version 2.15 Alpha (Unreleased)</u></b>
+<b><u>=> Version 2.15 (Unreleased)</u></b>
 
+- Fixed : #2015863: Comments were not deleted when an article was. Thanks jfmoore! (malanciault)
 - Fixed: Printing and PDF Icons do not appear (McDonald/peter55)
 - Fixed: Clarified clone_info instructions (jfm/andrewvincent)
 - Fixed: Mismatched div tags in smartsection_items_spot  (iunderwood)
