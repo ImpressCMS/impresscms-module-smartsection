@@ -11,8 +11,6 @@ if (!defined("XOOPS_ROOT_PATH")) {
 die("XOOPS root path not defined");
 }
 
-include_once XOOPS_ROOT_PATH.'/modules/smartsection/include/common.php';
-
 // File status
 define("_SSECTION_STATUS_FILE_NOTSET", -1);
 define("_SSECTION_STATUS_FILE_ACTIVE", 1);

@@ -4,6 +4,8 @@ if (!defined("XOOPS_ROOT_PATH")) {
  	die("XOOPS root path not defined");
 }
 
+include_once XOOPS_ROOT_PATH.'/modules/smartsection/include/common.php';
+
 function xoops_module_update_smartsection($module) {
 
 	// Load SmartDbUpdater from the SmartObject Framework if present

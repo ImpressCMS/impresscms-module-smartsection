@@ -10,8 +10,6 @@ if (!defined("XOOPS_ROOT_PATH")) {
 die("Root path not defined");
 }
 
-//include_once XOOPS_ROOT_PATH.'/modules/smartsection/include/common.php';
-
 // ITEM status
 define("_SSECTION_STATUS_NOTSET", -1);
 define("_SSECTION_STATUS_ALL", 0);
