@@ -6,6 +6,8 @@
 - Fixed: Mismatched div tags in smartsection_items_spot  (iunderwood)
 - Fixed: Inclusion of common.php in loop was causing fatal erros on module update. Thansk jfmoore! (malanciault)
 
+- Changed: references to class/xoopsmodule.php to kernel/module.php (vaughan)
+
 <b><u>=> Version 2.14 Final (2008-07-05)</u></b>
 
 - Added : New PDF generator to be used on ICMS 1.1 with tcpdf (stranger)
