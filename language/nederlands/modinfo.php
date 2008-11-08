@@ -14,7 +14,7 @@
 global $xoopsModule;
 
 define("_MI_SSECTION_ADMENU1", "Index");
-define("_MI_SSECTION_ADMENU2", "Categorieën");
+define("_MI_SSECTION_ADMENU2", "CategorieÃ«n");
 define("_MI_SSECTION_ADMENU3", "Artikelen");
 define("_MI_SSECTION_ADMENU4", "Bevoegdheden");
 define("_MI_SSECTION_ADMENU5", "Blokken en Groepen");
@@ -49,8 +49,8 @@ define("_MI_SSECTION_CATLIST_IMG_W", "[FORMAT OPTIONS] Category list image width
 define("_MI_SSECTION_CATLIST_IMG_WDSC", "Specify the width of category images when listing the categories.");
 define("_MI_SSECTION_CATMAINIMG_W", "[FORMAT OPTIONS] Category main image width");
 define("_MI_SSECTION_CATMAINIMG_WDSC", "Specify the width of the category main image.");
-define('_MI_SSECTION_CATPERPAGE', '[OPMAAKOPTIES] Maximaal aantal categorieën per pagina (Gebruikerskant):');
-define('_MI_SSECTION_CATPERPAGEDSC', 'Maximaal aantal tegelijk te tonen topcategorieën per pagina aan de gebruikerskant.');
+define('_MI_SSECTION_CATPERPAGE', '[OPMAAKOPTIES] Maximaal aantal categorieÃ«n per pagina (Gebruikerskant):');
+define('_MI_SSECTION_CATPERPAGEDSC', 'Maximaal aantal tegelijk te tonen topcategorieÃ«n per pagina aan de gebruikerskant.');
 define("_MI_SSECTION_CLONE", "[BEVOEGDHEDEN] Artikelduplicatie toestaan ?");
 define("_MI_SSECTION_CLONEDSC", "Kies 'Ja' om gebruikers met de juiste bevoegdheden de mogelijkheid te geven een artikel te vermenigvuldigen.");
 define('_MI_SSECTION_COLLHEAD', "[OPMAAKOPTIES] Toon de inschuifbare balk:");
@@ -77,8 +77,8 @@ define('_MI_SSECTION_DISPLAYTYPE_FULL', 'Volledige weergave');
 define('_MI_SSECTION_DISPLAYTYPE_LIST', 'Gemarkeerde lijst');
 define('_MI_SSECTION_DISPLAYTYPE_SUMMARY', 'Overzicht');
 define("_MI_SSECTION_DISPLAYTYPE_SUMMARY", "Summary View");
-define('_MI_SSECTION_DISSBCATDSC', '[INHOUDOPTIES] Omschrijvingen subcategorieën weergeven ?');
-define('_MI_SSECTION_DISSBCATDSCDSC', "Kies 'Ja' om een beschrijving weer te geven van de subcategorieën in de index- en categoriepagina.");
+define('_MI_SSECTION_DISSBCATDSC', '[INHOUDOPTIES] Omschrijvingen subcategorieÃ«n weergeven ?');
+define('_MI_SSECTION_DISSBCATDSCDSC', "Kies 'Ja' om een beschrijving weer te geven van de subcategorieÃ«n in de index- en categoriepagina.");
 define('_MI_SSECTION_DISTYPE', "[OPMAAKOPTIES] Weergavetype voor artikelen:");
 define('_MI_SSECTION_DISTYPEDSC', "Als 'Overzicht' wordt gekozen, worden slechts de Titel, Datum en Aantal keer gelezen van elk item weergegeven in een geselecteerde categorie. Als 'Volledige weergave' is geselecteerd zal elk artikel worden weergegeven in een geselecteerde categorie.");
 define('_MI_SSECTION_FILEUPLOADDIR', 'Directory waar toegevoegde bestanden worden opgeslagen:');
@@ -166,7 +166,7 @@ define('_MI_SSECTION_MODULE_RELEASE_DATE', "Versie datum (Release Date)");
 define('_MI_SSECTION_MODULE_STATUS', "Status");
 define('_MI_SSECTION_MODULE_SUBMIT_BUG', "Stuur een bug in");
 define('_MI_SSECTION_MODULE_SUBMIT_FEATURE', "Stuur een verzoek voor een functie in");
-define('_MI_SSECTION_MODULE_SUPPORT', "Officiële ondersteuningssite");
+define('_MI_SSECTION_MODULE_SUPPORT', "OfficiÃ«le ondersteuningssite");
 define('_MI_SSECTION_NO_FOOTERS', 'Geen');
 define("_MI_SSECTION_ORDERBY", "[OPMAAKOPTIES] Sorteervolgorde");
 define("_MI_SSECTION_ORDERBY_DATE", "Datum Aflopend");
@@ -187,11 +187,11 @@ define('_MI_SSECTION_PRINTLOGOURLDSC', 'Url van het logo dat boven aan de pagina
 define("_MI_SSECTION_RECENTITEMS", "Recente items (Detail)");
 define("_MI_SSECTION_SHOW_RSS","[INHOUDOPTIONS] Weergave link voor RSS feed");
 define("_MI_SSECTION_SHOW_RSSDSC","");
-define("_MI_SSECTION_SHOW_SUBCATS", "[INHOUDOPTIES] Weergave subcategorieën");
-define("_MI_SSECTION_SHOW_SUBCATS_ALL", "Geef alle subcategorieën weer");
-define("_MI_SSECTION_SHOW_SUBCATS_DSC", "Kies dit indien u de subcategorieën wilt weergeven in de categorielijst op de indexpagina van de module");
-define("_MI_SSECTION_SHOW_SUBCATS_NO", "Geef de subcategorieën niet weer");
-define("_MI_SSECTION_SHOW_SUBCATS_NOTEMPTY", "Geef de subcategorieën weer die niet leeg zijn");
+define("_MI_SSECTION_SHOW_SUBCATS", "[INHOUDOPTIES] Weergave subcategorieÃ«n");
+define("_MI_SSECTION_SHOW_SUBCATS_ALL", "Geef alle subcategorieÃ«n weer");
+define("_MI_SSECTION_SHOW_SUBCATS_DSC", "Kies dit indien u de subcategorieÃ«n wilt weergeven in de categorielijst op de indexpagina van de module");
+define("_MI_SSECTION_SHOW_SUBCATS_NO", "Geef de subcategorieÃ«n niet weer");
+define("_MI_SSECTION_SHOW_SUBCATS_NOTEMPTY", "Geef de subcategorieÃ«n weer die niet leeg zijn");
 define("_MI_SSECTION_SUB_SMNAME1", "Stuur een artikel in");
 define("_MI_SSECTION_SUB_SMNAME2", "Populaire artikelen");
 define("_MI_SSECTION_SUBMITMSG", "[INHOUDOPTIES] Introductiebericht op de instuurpagina:");
@@ -212,7 +212,7 @@ define("_MI_SSECTION_WELCOMEDSC", "Indien deze optie ingesteld is op 'Ja' zal de
 define("_MI_SSECTION_WHOWHEN", "[INHOUDOPTIES] Weergave van afzender en datum?");
 define("_MI_SSECTION_WHOWHENDSC", "Kies 'Ja' om de afzender- en datuminformatie weer te geven in elk artikel");
 define("_MI_SSECTION_WYSIWYG", "[OPMAAKOPTIES] Editor type");
-define("_MI_SSECTION_WYSIWYGDSC", "Kies hier welke editor u graag wilt gebruiken. Hou er rekening mee dat, indien u een andere editor dan de XoopsEditor kiest, deze geïnstalleerd moet zijn op uw site.");
+define("_MI_SSECTION_WYSIWYGDSC", "Kies hier welke editor u graag wilt gebruiken. Hou er rekening mee dat, indien u een andere editor dan de XoopsEditor kiest, deze geÃ¯nstalleerd moet zijn op uw site.");
 
 define("_MI_SSECTION_PV_TEXT", "Partial view message");
 define("_MI_SSECTION_PV_TEXTDSC", "Message for articles that allows only partial view.");

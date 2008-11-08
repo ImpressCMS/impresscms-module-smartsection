@@ -27,7 +27,7 @@ include_once(XOOPS_ROOT_PATH . "/modules/smartsection/language/" . $xoopsConfig[
 */
 // Blocks
 
-define("_MB_SSECTION_ALLCAT", "Alle categorieën");
+define("_MB_SSECTION_ALLCAT", "Alle categorieÃ«n");
 define("_MB_SSECTION_AUTO_LAST_ITEMS", "Automatisch laten zien van meest recente item(s)?");
 define("_MB_SSECTION_CATEGORY", "Categorie");
 define("_MB_SSECTION_CHARS", "Lengte van de titel");
