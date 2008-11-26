@@ -11,6 +11,7 @@
 
 .smartsection_infotitle {margin-top: 8px; margin-bottom: 8px; font-size: 250%; line-height: 250%; font-weight: bold; display: block;}
 .smartsection_infotext  {margin-bottom: 8px; line-height: 130%; display: block;}
+.smartsection_itemheader {padding-left: 6px;}
 
 .smartsection_category_index_list{padding-top: 5px; padding-bottom: 5px; border-bottom: 1px solid;}
 .smartsection_categoryname {padding-bottom: 5px; vertical-align: middle; font-size: 120%; text-align: left; font-weight: bold; margin: 0; line-height: 120%;}
