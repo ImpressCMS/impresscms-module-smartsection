@@ -1,11 +1,13 @@
 <{include file='db:smartsection_header.html'}>
 
 <div class="item">
-	<h2><{$item.title}></h2>
+	<div class="smartsection_itemheader"
+		<h2><{$item.title}></h2>
 
-	<{if $display_whowhen_link}>
-		<small><{$item.who_when}> (<{$item.counter}> <{$lang_reads}>)</small>
-	<{/if}>
+		<{if $display_whowhen_link}>
+			<small><{$item.who_when}> (<{$item.counter}> <{$lang_reads}>)</small>
+		<{/if}>
+	</div>
 
 	<div class="itemBody">
 		<{if $item.image_path}>

@@ -700,8 +700,12 @@ class SmartsectionItem extends XoopsObject
 	  	}
 	  	if ($this->display_summary() && ($this->summary())) {
 			$ret .= $this->summary();
+
 		  	if (($body)) {
-			  	$ret .= "<br /><br />";
+			  	$ptagpos = strpos($ret, '<p>');
+			  	if ($ptagpos === false || $ptagpos > 4) {
+					$ret .= "<br /><br />";
+				}
 			  }
 		}
 		$ret .= str_replace('[pagebreak]', '<br /><br />', $body);
@@ -723,7 +727,10 @@ class SmartsectionItem extends XoopsObject
 
 		if ($this->display_summary() && ($this->summary()) && ($item_page_id < 1)) {
 			$ret .= $this->summary();
-			$ret .= "<br /><br />";
+		  	$ptagpos = strpos($ret, '<p>');
+		  	if ($ptagpos === false || $ptagpos > 4) {
+				$ret .= "<br /><br />";
+			}
 		}
 
 		if ($item_page_id == -1) {
