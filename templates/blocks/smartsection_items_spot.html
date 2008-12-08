@@ -14,16 +14,16 @@
 
 				<div>
 				    <{if $item.image_path}>
-				    	<img class="smartsection_item_image" src="<{$item.image_path}>"  align="right" alt="<{$item.clean_title}>" title="<{$item.clean_title}>" />
+				    	<img class="smartsection_item_image" src="<{$item.image_path}>"  align="<{$smarty.const._GLOBAL_RIGHT}>" alt="<{$item.clean_title}>" title="<{$item.clean_title}>" />
 				    <{/if}>
 				    <{$item.summary}>
 			    </div>
 			</div>
 			<div style="clear: both"> </div>
 				<{if $item.showline}>
-					<div style="font-size: 10px; text-align: right; border-bottom: 1px dotted #000000;">
+					<div style="font-size: 10px; text-align: <{$smarty.const._GLOBAL_RIGHT}>; border-bottom: 1px dotted #000000;">
 				<{else}>
-					<div style="font-size: 10px; text-align: right;">
+					<div style="font-size: 10px; text-align: <{$smarty.const._GLOBAL_RIGHT}>;">
 				<{/if}>
 			<a href="<{$item.itemurl}>"><{$block.lang_readmore}></a>
 			</div>

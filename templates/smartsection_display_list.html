@@ -28,7 +28,7 @@
 
 	<table border="0" width="90%" cellspacing="0" cellpadding="0" align="center" class = "outer">
   		<tr>
-			<td align="left" class="itemHead" width='60%'><b>&nbsp;&nbsp;<{$lang_title}></b></td>
+			<td align="<{$smarty.const._GLOBAL_LEFT}>" class="itemHead" width='60%'><b>&nbsp;&nbsp;<{$lang_title}></b></td>
 			<{if $display_date_col == 1}>
 				<td align="center" class="itemHead" width="30%"><b><{$lang_datesub}></b></td>
 			<{/if}>
@@ -40,14 +40,14 @@
 			<ul>
 				<{foreach item=item from=$items}>
 					<tr>
-					<td class ="odd"><div class ="smartsection_list" align="left"><li><{$item.titlelink}></li></div></td>
+					<td class ="odd"><div class ="smartsection_list" align="<{$smarty.const._GLOBAL_LEFT}>"><li><{$item.titlelink}></li></div></td>
 
 					<{if $display_date_col == 1}>
-						<td class="odd" align="left"><div class ="smartsection_list" align="center"><{$item.datesub}></div></td>
+						<td class="odd" align="<{$smarty.const._GLOBAL_LEFT}>"><div class ="smartsection_list" align="center"><{$item.datesub}></div></td>
 					<{/if}>
 
 					<{if $display_hits_col == 1}>
-						<td class="odd" align="left"><div class ="smartsection_list" align="center"><{$item.counter}></div></td>
+						<td class="odd" align="<{$smarty.const._GLOBAL_LEFT}>"><div class ="smartsection_list" align="center"><{$item.counter}></div></td>
 					<{/if}>
 
 				</tr>
@@ -57,7 +57,7 @@
 			<tr>
 		</tr>
 	</table>
-	<div align="right"><{$navbar}></div>
+	<div align="<{$smarty.const._GLOBAL_RIGHT}>"><{$navbar}></div>
 	<{if $collapsable_heading == 1}>
 		</div>
 	<{/if}>

@@ -253,7 +253,7 @@ echo "
 	<table width='100%' cellspacing='1' cellpadding='2' border='0' style='border-left: 1px solid silver; border-top: 1px solid silver; border-right: 1px solid silver;'>
 		<tr>
 			<td><span style='font-weight: bold; font-variant: small-caps;'>" . _AM_SSECTION_SHOWING . " " . $caption . "</span></td>
-			<td align='right'>" . _AM_SSECTION_SELECT_SORT . "
+			<td align='"._GLOBAL_RIGHT."'>" . _AM_SSECTION_SELECT_SORT . "
 				<select name='sortsel' onchange='submit()'>
 					<option value='itemid' $sorttxtitemid>" . _AM_SSECTION_ID . "</option>
 					<option value='title' $sorttxttitle>" . _AM_SSECTION_TITLE . "</option>
@@ -343,8 +343,8 @@ if ($numrows > 0) {
 
 		echo "<tr>";
 		echo "<td class='head' align='center'>" . $itemsObj[$i]->itemid() . "</td>";
-		echo "<td class='even' align='left'>" . $categoryObj->getCategoryLink() . "</td>";
-		echo "<td class='even' align='left'>" . $itemsObj[$i]->getItemLink() . "</td>";
+		echo "<td class='even' align='"._GLOBAL_LEFT."'>" . $categoryObj->getCategoryLink() . "</td>";
+		echo "<td class='even' align='"._GLOBAL_LEFT."'>" . $itemsObj[$i]->getItemLink() . "</td>";
 		echo "<td class='even' align='center'>" . $itemsObj[$i]->datesub() . "</td>";
 		echo "<td class='even' align='center'>" . $statustxt . "</td>";
 		echo "<td class='even' align='center'> ". $approve .$clone. $modify . $delete . "</td>";

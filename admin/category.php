@@ -327,7 +327,7 @@ switch ($op) {
 
 	echo "<table width='100%' cellspacing=1 cellpadding=3 border=0 class = outer>";
 	echo "<tr>";
-	echo "<td class='bg3' align='left'><b>" . _AM_SSECTION_ITEMCATEGORYNAME . "</b></td>";
+	echo "<td class='bg3' align='"._GLOBAL_LEFT."'><b>" . _AM_SSECTION_ITEMCATEGORYNAME . "</b></td>";
 	echo "<td width='60' class='bg3' width='65' align='center'><b>" . _AM_SSECTION_WEIGHT . "</b></td>";
 	echo "<td width='60' class='bg3' align='center'><b>" . _AM_SSECTION_ACTION . "</b></td>";
 	echo "</tr>";

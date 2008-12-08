@@ -23,7 +23,7 @@
 		<div id='bottomtable'>
 		<span class="smartsection_collaps_info"><{$lang_items_info}></span>
 	<{/if}>
-	<div align="right"><{$navbar}></div>
+	<div align="<{$smarty.const._GLOBAL_RIGHT}>"><{$navbar}></div>
 
 	<!-- Start item loop -->
 	<{foreach item=item from=$items}>
@@ -31,7 +31,7 @@
 	<{/foreach}>
 	<!-- End item loop -->
 
-	<div align="right"><{$navbar}></div>
+	<div align="<{$smarty.const._GLOBAL_RIGHT}>"><{$navbar}></div>
 	<{if $collapsable_heading == 1}>
 		</div>
 	<{/if}>

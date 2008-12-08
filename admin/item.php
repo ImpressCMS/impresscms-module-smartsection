@@ -45,8 +45,8 @@ function showfiles($itemObj)
 		echo "<table width='100%' cellspacing=1 cellpadding=3 border=0 class = outer>";
 		echo "<tr>";
 		echo "<td width='50' class='bg3' align='center'><b>ID</b></td>";
-		echo "<td width='150' class='bg3' align='left'><b>" . _AM_SSECTION_FILENAME . "</b></td>";
-		echo "<td class='bg3' align='left'><b>" . _AM_SSECTION_DESCRIPTION . "</b></td>";
+		echo "<td width='150' class='bg3' align='"._GLOBAL_LEFT."'><b>" . _AM_SSECTION_FILENAME . "</b></td>";
+		echo "<td class='bg3' align='"._GLOBAL_LEFT."'><b>" . _AM_SSECTION_DESCRIPTION . "</b></td>";
 		echo "<td width='60' class='bg3' align='center'><b>" . _AM_SSECTION_HITS . "</b></td>";
 		echo "<td width='100' class='bg3' align='center'><b>" . _AM_SSECTION_UPLOADED_DATE . "</b></td>";
 		echo "<td width='60' class='bg3' align='center'><b>" . _AM_SSECTION_ACTION . "</b></td>";
@@ -63,8 +63,8 @@ function showfiles($itemObj)
 			}
 			echo "<tr>";
 			echo "<td class='head' align='center'>" .$filesObj[$i]->getVar('fileid') . "</td>";
-			echo "<td class='odd' align='left'>" .$not_visible. $filesObj[$i]->getFileLink() . "</td>";
-			echo "<td class='even' align='left'>" . $filesObj[$i]->description() . "</td>";
+			echo "<td class='odd' align='"._GLOBAL_LEFT."'>" .$not_visible. $filesObj[$i]->getFileLink() . "</td>";
+			echo "<td class='even' align='"._GLOBAL_LEFT."'>" . $filesObj[$i]->description() . "</td>";
 			echo "<td class='even' align='center'>" . $filesObj[$i]->counter() . "";
 			echo "<td class='even' align='center'>" . $filesObj[$i]->datesub() . "</td>";
 			echo "<td class='even' align='center'> $modify $delete </td>";
@@ -469,8 +469,8 @@ if (SMARTSECTION_LEVEL >= 5 ) {
 	echo "<form name='form_name2' id='form_name2' action='pw_upload_file.php' method='post' enctype='multipart/form-data'>";
 	echo "<table cellspacing='1' width='100%' class='outer'>";
 	echo "<tr><th colspan='2'>"._AM_SSECTION_UPLOAD_FILE."</th></tr>";
-	echo "<tr valign='top' align='left'><td class='head'>"._AM_SSECTION_SEARCH_PW."</td><td class='even'><input type='file' name='fileupload' id='fileupload' size='30' /></td></tr>";
-	echo "<tr valign='top' align='left'><td class='head'><input type='hidden' name='MAX_FILE_SIZE' id='op' value='500000' /></td><td class='even'><input type='submit' name='submit' value='"._AM_SSECTION_UPLOAD."' /></td></tr>";
+	echo "<tr valign='top' align='"._GLOBAL_LEFT."'><td class='head'>"._AM_SSECTION_SEARCH_PW."</td><td class='even'><input type='file' name='fileupload' id='fileupload' size='30' /></td></tr>";
+	echo "<tr valign='top' align='"._GLOBAL_LEFT."'><td class='head'><input type='hidden' name='MAX_FILE_SIZE' id='op' value='500000' /></td><td class='even'><input type='submit' name='submit' value='"._AM_SSECTION_UPLOAD."' /></td></tr>";
 	echo "<input type='hidden' name='backto' value='$smartsection_current_page'/>";
 	echo "</table>";
     echo "</form>";
@@ -784,8 +784,8 @@ switch ($op) {
 	echo "<table width='100%' cellspacing=1 cellpadding=3 border=0 class = outer>";
 	echo "<tr>";
 	echo "<td width='40' class='bg3' align='center'><b>" . _AM_SSECTION_ITEMID . "</b></td>";
-	echo "<td width='20%' class='bg3' align='left'><b>" . _AM_SSECTION_ITEMCATEGORYNAME . "</b></td>";
-	echo "<td class='bg3' align='left'><b>" . _AM_SSECTION_TITLE . "</b></td>";
+	echo "<td width='20%' class='bg3' align='"._GLOBAL_LEFT."'><b>" . _AM_SSECTION_ITEMCATEGORYNAME . "</b></td>";
+	echo "<td class='bg3' align='"._GLOBAL_LEFT."'><b>" . _AM_SSECTION_TITLE . "</b></td>";
 	echo "<td width='90' class='bg3' align='center'><b>" . _AM_SSECTION_CREATED . "</b></td>";
 	echo "<td width='80' class='bg3' align='center'><b>" . _AM_SSECTION_ACTION . "</b></td>";
 	echo "</tr>";
@@ -800,8 +800,8 @@ switch ($op) {
 
 			echo "<tr>";
 			echo "<td class='head' align='center'>" . $itemsObj[$i]->itemid() . "</td>";
-			echo "<td class='even' align='left'>" . $categoryObj->getCategoryLink() . "</td>";
-			echo "<td class='even' align='left'><a href='" . XOOPS_URL . "/modules/" . $xoopsModule->dirname() . "/item.php?itemid=" . $itemsObj[$i]->itemid() . "'>" . $itemsObj[$i]->title() . "</a></td>";
+			echo "<td class='even' align='"._GLOBAL_LEFT."'>" . $categoryObj->getCategoryLink() . "</td>";
+			echo "<td class='even' align='"._GLOBAL_LEFT."'><a href='" . XOOPS_URL . "/modules/" . $xoopsModule->dirname() . "/item.php?itemid=" . $itemsObj[$i]->itemid() . "'>" . $itemsObj[$i]->title() . "</a></td>";
 			echo "<td class='even' align='center'>" . $itemsObj[$i]->datesub() . "</td>";
 			echo "<td class='even' align='center'> $approve $clone $modify $delete </td>";
 			echo "</tr>";
@@ -834,8 +834,8 @@ switch ($op) {
 	echo "<table width='100%' cellspacing=1 cellpadding=3 border=0 class = outer>";
 	echo "<tr>";
 	echo "<td width='40' class='bg3' align='center'><b>" . _AM_SSECTION_ITEMID . "</b></td>";
-	echo "<td width='20%' class='bg3' align='left'><b>" . _AM_SSECTION_ITEMCATEGORYNAME . "</b></td>";
-	echo "<td class='bg3' align='left'><b>" . _AM_SSECTION_TITLE . "</b></td>";
+	echo "<td width='20%' class='bg3' align='"._GLOBAL_LEFT."'><b>" . _AM_SSECTION_ITEMCATEGORYNAME . "</b></td>";
+	echo "<td class='bg3' align='"._GLOBAL_LEFT."'><b>" . _AM_SSECTION_TITLE . "</b></td>";
 	echo "<td width='90' class='bg3' align='center'><b>" . _AM_SSECTION_CREATED . "</b></td>";
 	echo "<td width='80' class='bg3' align='center'><b>" . _AM_SSECTION_ACTION . "</b></td>";
 	echo "</tr>";
@@ -849,8 +849,8 @@ switch ($op) {
 
 			echo "<tr>";
 			echo "<td class='head' align='center'>" . $itemsObj[$i]->itemid() . "</td>";
-			echo "<td class='even' align='left'>" . $categoryObj->getCategoryLink() . "</td>";
-			echo "<td class='even' align='left'><a href='" . XOOPS_URL . "/modules/" . $xoopsModule->dirname() . "/item.php?itemid=" . $itemsObj[$i]->itemid() . "'>" . $itemsObj[$i]->title() . "</a></td>";
+			echo "<td class='even' align='"._GLOBAL_LEFT."'>" . $categoryObj->getCategoryLink() . "</td>";
+			echo "<td class='even' align='"._GLOBAL_LEFT."'><a href='" . XOOPS_URL . "/modules/" . $xoopsModule->dirname() . "/item.php?itemid=" . $itemsObj[$i]->itemid() . "'>" . $itemsObj[$i]->title() . "</a></td>";
 			echo "<td class='even' align='center'>" . $itemsObj[$i]->datesub() . "</td>";
 			echo "<td class='even' align='center'> $clone $modify $delete </td>";
 			echo "</tr>";
@@ -882,8 +882,8 @@ switch ($op) {
 	echo "<table width='100%' cellspacing=1 cellpadding=3 border=0 class = outer>";
 	echo "<tr>";
 	echo "<td width='40' class='bg3' align='center'><b>" . _AM_SSECTION_ITEMID . "</b></td>";
-	echo "<td width='20%' class='bg3' align='left'><b>" . _AM_SSECTION_ITEMCATEGORYNAME . "</b></td>";
-	echo "<td class='bg3' align='left'><b>" . _AM_SSECTION_TITLE . "</b></td>";
+	echo "<td width='20%' class='bg3' align='"._GLOBAL_LEFT."'><b>" . _AM_SSECTION_ITEMCATEGORYNAME . "</b></td>";
+	echo "<td class='bg3' align='"._GLOBAL_LEFT."'><b>" . _AM_SSECTION_TITLE . "</b></td>";
 	echo "<td width='90' class='bg3' align='center'><b>" . _AM_SSECTION_CREATED . "</b></td>";
 	echo "<td width='80' class='bg3' align='center'><b>" . _AM_SSECTION_ACTION . "</b></td>";
 	echo "</tr>";
@@ -897,8 +897,8 @@ switch ($op) {
 
 			echo "<tr>";
 			echo "<td class='head' align='center'>" . $itemsObj[$i]->itemid() . "</td>";
-			echo "<td class='even' align='left'>" . $categoryObj->getCategoryLink() . "</td>";
-			echo "<td class='even' align='left'><a href='" . XOOPS_URL . "/modules/" . $xoopsModule->dirname() . "/item.php?itemid=" . $itemsObj[$i]->itemid() . "'>" . $itemsObj[$i]->title() . "</a></td>";
+			echo "<td class='even' align='"._GLOBAL_LEFT."'>" . $categoryObj->getCategoryLink() . "</td>";
+			echo "<td class='even' align='"._GLOBAL_LEFT."'><a href='" . XOOPS_URL . "/modules/" . $xoopsModule->dirname() . "/item.php?itemid=" . $itemsObj[$i]->itemid() . "'>" . $itemsObj[$i]->title() . "</a></td>";
 			echo "<td class='even' align='center'>" . $itemsObj[$i]->datesub() . "</td>";
 			echo "<td class='even' align='center'> $clone $modify $delete </td>";
 			echo "</tr>";
@@ -931,8 +931,8 @@ switch ($op) {
 	echo "<table width='100%' cellspacing=1 cellpadding=3 border=0 class = outer>";
 	echo "<tr>";
 	echo "<td width='40' class='bg3' align='center'><b>" . _AM_SSECTION_ITEMID . "</b></td>";
-	echo "<td width='20%' class='bg3' align='left'><b>" . _AM_SSECTION_ITEMCATEGORYNAME . "</b></td>";
-	echo "<td class='bg3' align='left'><b>" . _AM_SSECTION_TITLE . "</b></td>";
+	echo "<td width='20%' class='bg3' align='"._GLOBAL_LEFT."'><b>" . _AM_SSECTION_ITEMCATEGORYNAME . "</b></td>";
+	echo "<td class='bg3' align='"._GLOBAL_LEFT."'><b>" . _AM_SSECTION_TITLE . "</b></td>";
 	echo "<td width='90' class='bg3' align='center'><b>" . _AM_SSECTION_CREATED . "</b></td>";
 	echo "<td width='80' class='bg3' align='center'><b>" . _AM_SSECTION_ACTION . "</b></td>";
 	echo "</tr>";
@@ -946,8 +946,8 @@ switch ($op) {
 
 			echo "<tr>";
 			echo "<td class='head' align='center'>" . $itemsObj[$i]->itemid() . "</td>";
-			echo "<td class='even' align='left'>" . $categoryObj->getCategoryLink() . "</td>";
-			echo "<td class='even' align='left'><a href='" . XOOPS_URL . "/modules/" . $xoopsModule->dirname() . "/item.php?itemid=" . $itemsObj[$i]->itemid() . "'>" . $itemsObj[$i]->title() . "</a></td>";
+			echo "<td class='even' align='"._GLOBAL_LEFT."'>" . $categoryObj->getCategoryLink() . "</td>";
+			echo "<td class='even' align='"._GLOBAL_LEFT."'><a href='" . XOOPS_URL . "/modules/" . $xoopsModule->dirname() . "/item.php?itemid=" . $itemsObj[$i]->itemid() . "'>" . $itemsObj[$i]->title() . "</a></td>";
 			echo "<td class='even' align='center'>" . $itemsObj[$i]->datesub() . "</td>";
 			echo "<td class='even' align='center'> $clone $modify $delete </td>";
 			echo "</tr>";

@@ -11,7 +11,7 @@
 
 	<div class="itemBody">
 		<{if $item.image_path}>
-	    	<img class="smartsection_item_image" src="<{$item.image_path}>"  align="right" alt="<{$item.clean_title}>" title="<{$item.clean_title}>" />
+	    	<img class="smartsection_item_image" src="<{$item.image_path}>"  align="<{$smarty.const._GLOBAL_RIGHT}>" alt="<{$item.clean_title}>" title="<{$item.clean_title}>" />
 	    <{/if}>
 	    <{if $pagenav}>
 	    	<div class="smartsection_pagenav_top"><{$lang_page}>: <{$pagenav}></div>
@@ -41,11 +41,11 @@
 	<div class="pre_itemInfo">
 		<div class="itemInfo" style="height: 14px;">
 	  		<{if $display_comment_link && $item.cancomment}>
-				<span style="float: left;"><a href="<{$item.itemurl}>"><{$item.comments}> <{$lang_comments}></a></span>
+				<span style="float: <{$smarty.const._GLOBAL_LEFT}>;"><a href="<{$item.itemurl}>"><{$item.comments}> <{$lang_comments}></a></span>
 	  	  	<{else}>
-				<span style="float: left;">&nbsp;</span>
+				<span style="float: <{$smarty.const._GLOBAL_LEFT}>;">&nbsp;</span>
 	  	  	<{/if}>
-	  	  	<span style="float: right; text-align: right;"><{$item.adminlink}></span>
+	  	  	<span style="float: <{$smarty.const._GLOBAL_RIGHT}>; text-align: <{$smarty.const._GLOBAL_RIGHT}>;"><{$item.adminlink}></span>
 	  	  	<div style="height: 0; display: inline; clear: both;"></div>
 	  	</div>
 	</div>
@@ -58,7 +58,7 @@
 		<td colspan="4" class="itemHead"><b><{$lang_files_linked}></b></td>
 	</tr>
 	<tr class="even">
-		<td align="left" class="itemTitle"><b><{$lang_file_name}></b></td>
+		<td align="<{$smarty.const._GLOBAL_LEFT}>" class="itemTitle"><b><{$lang_file_name}></b></td>
 	    <td align="center" width="100px" class="itemTitle"><b><{$lang_datesub}></b></td>
 	    <td align="center" width="50px" class="itemTitle"><b><{$lang_hits}></b></td>
 	</tr>
@@ -66,7 +66,7 @@
 	<!-- BEGIN DYNAMIC BLOCK -->
   	<{foreach item=file from=$item.files}>
   	<tr>
- 		<td class="odd" align="left">
+ 		<td class="odd" align="<{$smarty.const._GLOBAL_LEFT}>">
 		<a href="<{$xoops_url}>/modules/smartsection/visit.php?fileid=<{$file.fileid}>" target="_blank"><img src="<{$smartsection_url}>images/icon/file.gif" title="<{$lang_download_file}>" alt="<{$lang_download_file}>"/>&nbsp;<b><{$file.name}></b></a>
 		<div><{$file.description}></div >
  		<td class="odd" align="center"><{$file.datesub}></td>
@@ -92,13 +92,13 @@
         <td class="itemHead" colspan="2"><b><{$lang_items_links}></b></td>
       </tr>
       <tr style="vertical-align: middle;">
-        <td class="odd" width="50%" align="left">
+        <td class="odd" width="50%" align="<{$smarty.const._GLOBAL_LEFT}>">
           <{if $previous_item_link}>
             <a href="<{$previous_item_url}>"><img style="vertical-align: middle;" src="<{$smartsection_images_url}>links/previous.gif" title="<{$lang_previous_item}>" alt="<{$lang_previous_item}>"/></a>
             <{$previous_item_link}>
           <{/if}>
         </td>
-        <td class="odd" width="50%" align="right">
+        <td class="odd" width="50%" align="<{$smarty.const._GLOBAL_RIGHT}>">
           <{if $next_item_link}>
             <{$next_item_link}>
             <a href="<{$next_item_url}>"><img style="vertical-align: middle;" src="<{$smartsection_images_url}>links/next.gif" title="<{$lang_next_item}>" alt="<{$lang_next_item}>"/></a>
@@ -110,7 +110,7 @@
 <{elseif $other_items == 'all'}>
   <table border="0" width="90%" cellspacing="1" cellpadding="3" align="center" class= "outer">
 	<tr>
-	  <td align="left" class="itemHead" width='65%'><b><{$lang_item}></b></td>
+	  <td align="<{$smarty.const._GLOBAL_LEFT}>" class="itemHead" width='65%'><b><{$lang_item}></b></td>
 		<{if $display_date_col == 1}>
 	    	<td align="center" class="itemHead" width="25%"><b><{$lang_datesub}></b></td>
 	    <{/if}>
@@ -121,12 +121,12 @@
   	    <!-- Start item loop -->
   	    <{foreach item=item from=$items}>
   		  <tr>
-  	   		  <td class="even" align="left"><{$item.titlelink}></td>
+  	   		  <td class="even" align="<{$smarty.const._GLOBAL_LEFT}>"><{$item.titlelink}></td>
 	    	  <{if $display_date_col == 1}>
- 	    		  <td class="odd" align="left"><div align="center"><{$item.datesub}></div></td>
+ 	    		  <td class="odd" align="<{$smarty.const._GLOBAL_LEFT}>"><div align="center"><{$item.datesub}></div></td>
 	    	  <{/if}>
 			  <{if $display_hits_col == 1}>
-	    		  <td class="odd" align="left"><div align="center"><{$item.counter}></div></td>
+	    		  <td class="odd" align="<{$smarty.const._GLOBAL_LEFT}>"><div align="center"><{$item.counter}></div></td>
 	    	  <{/if}>
 		  </tr>
   	    <{/foreach}>

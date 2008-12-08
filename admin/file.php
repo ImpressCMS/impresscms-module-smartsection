@@ -235,8 +235,8 @@ switch ($op) {
 	echo "<table width='100%' cellspacing=1 cellpadding=3 border=0 class = outer>";
 	echo "<tr>";
 	echo "<td width='40' class='bg3' align='center'><b>" . _AM_SSECTION_ITEMID . "</b></td>";
-	echo "<td width='20%' class='bg3' align='left'><b>" . _AM_SSECTION_ITEMCATEGORYNAME . "</b></td>";
-	echo "<td class='bg3' align='left'><b>" . _AM_SSECTION_TITLE . "</b></td>";
+	echo "<td width='20%' class='bg3' align='"._GLOBAL_LEFT."'><b>" . _AM_SSECTION_ITEMCATEGORYNAME . "</b></td>";
+	echo "<td class='bg3' align='"._GLOBAL_LEFT."'><b>" . _AM_SSECTION_TITLE . "</b></td>";
 	echo "<td width='90' class='bg3' align='center'><b>" . _AM_SSECTION_CREATED . "</b></td>";
 	echo "<td width='60' class='bg3' align='center'><b>" . _AM_SSECTION_ACTION . "</b></td>";
 	echo "</tr>";
@@ -249,8 +249,8 @@ switch ($op) {
 
 			echo "<tr>";
 			echo "<td class='head' align='center'>" . $itemsObj[$i]->itemid() . "</td>";
-			echo "<td class='even' align='left'>" . $categoryObj->name() . "</td>";
-			echo "<td class='even' align='left'><a href='" . XOOPS_URL . "/modules/" . $xoopsModule->dirname() . "/item.php?itemid=" . $itemsObj[$i]->itemid() . "'>" . $itemsObj[$i]->title() . "</a></td>";
+			echo "<td class='even' align='"._GLOBAL_LEFT."'>" . $categoryObj->name() . "</td>";
+			echo "<td class='even' align='"._GLOBAL_LEFT."'><a href='" . XOOPS_URL . "/modules/" . $xoopsModule->dirname() . "/item.php?itemid=" . $itemsObj[$i]->itemid() . "'>" . $itemsObj[$i]->title() . "</a></td>";
 			echo "<td class='even' align='center'>" . $itemsObj[$i]->datesub() . "</td>";
 			echo "<td class='even' align='center'> $modify $delete </td>";
 			echo "</tr>";

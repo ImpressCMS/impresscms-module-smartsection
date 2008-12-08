@@ -97,7 +97,7 @@ function list_blockinstances()
 			<th align='center'>"._AM_WEIGHT."</th>
 			<th align='center'>"._AM_VISIBLEIN."</th>
 			<th align='center'>"._AM_BCACHETIME."</th>
-			<th align='right'>"._AM_ACTION."</th>
+			<th align='"._GLOBAL_RIGHT."'>"._AM_ACTION."</th>
 		</tr>\n" ;
 
 	// get block instances
@@ -246,7 +246,7 @@ function list_blockinstances()
 					$cachetime_options
 				</select>
 			</td>
-			<td class='$class' align='right'>
+			<td class='$class' align='"._GLOBAL_RIGHT."'>
 				<a href='".XOOPS_URL."/modules/system/admin.php?fct=blocksadmin&amp;op=edit&amp;id=$i'>"._EDIT."</a>{$delete_link}
 				<input type='hidden' name='id[$i]' value='$i' />
 			</td>
@@ -267,10 +267,10 @@ function list_blockinstances()
 
 		echo "
 		<tr>
-			<td class='$class' align='left'>
+			<td class='$class' align='"._GLOBAL_LEFT."'>
 				".$myts->makeTboxData4Edit($block['name'])."
 			</td>
-			<td class='$class' align='left' colspan='4'>
+			<td class='$class' align='"._GLOBAL_LEFT."' colspan='4'>
 				$description4show
 			</td>
 			<td class='$class' align='center'>

@@ -1,19 +1,19 @@
-	<div align="right"><{$catnavbar}></div>
+	<div align="<{$smarty.const._GLOBAL_RIGHT}>"><{$catnavbar}></div>
 <table border="0" width="90%" cellspacing="1" cellpadding="0" align="center" class = "outer">
 	<tr>
-		<td align="left" class="itemHead"><b><{$lang_category_column}></b></td>
+		<td align="<{$smarty.const._GLOBAL_LEFT}>" class="itemHead"><b><{$lang_category_column}></b></td>
 		<{if $displayarticlescount}>
-			<td align="left" width="70px" class="itemHead"><b><{$lang_items}></b></td>
+			<td align="<{$smarty.const._GLOBAL_LEFT}>" width="70px" class="itemHead"><b><{$lang_items}></b></td>
 		<{/if}>
 		<{if $displaylastitem == 1}>
-			<td align="left" width="40%" class="itemHead"><b><{$lang_last_smartsection}></b></td>
+			<td align="<{$smarty.const._GLOBAL_LEFT}>" width="40%" class="itemHead"><b><{$lang_last_smartsection}></b></td>
 		<{/if}>
 	</tr>
 
 	<!-- Start categories loop -->
 	<{foreach item=category from=$categories}>
 		<tr>
-			<td class="even" align="left">
+			<td class="even" align="<{$smarty.const._GLOBAL_LEFT}>">
 				<{if $category.image_path}>
 					<{if $isAdmin == 1}>
 						<a href="<{$xoops_url}>/modules/smartsection/admin/category.php?op=mod&categoryid=<{$category.categoryid}>"><img src="<{$category.image_path}>" title="<{$lang_editcategory}>" alt="<{$lang_editcategory}>"/></a>&nbsp;
@@ -48,13 +48,13 @@
 				 	</td>
 				 <{/if}>
 				<{if $displaylastitem == 1}>
-					<td class="even" align="right"><{$category.last_title_link}></td>
+					<td class="even" align="<{$smarty.const._GLOBAL_RIGHT}>"><{$category.last_title_link}></td>
 				<{/if}>
 			</tr>
 			<{if $category.subcats}>
 		  		<{foreach item=subcat from=$category.subcats}>
 					<tr>
-	  					<td class="odd" align="left">
+	  					<td class="odd" align="<{$smarty.const._GLOBAL_LEFT}>">
 	  						<div style="padding-left: 10px;">
 							<{if $subcat.image_path}>
 	  							<{if $isAdmin == 1}>
@@ -80,7 +80,7 @@
 							<td class="odd" align="center"><{$subcat.total}></td>
 						<{/if}>
 						<{if $displaylastitem == 1}>
-							<td class="odd" align="right"><{$subcat.last_title_link}></td>
+							<td class="odd" align="<{$smarty.const._GLOBAL_RIGHT}>"><{$subcat.last_title_link}></td>
 						<{/if}>
 					</tr>
 				<{/foreach}>
@@ -88,5 +88,5 @@
 		<{/foreach}>
 	<!-- End categories loop -->
 </table>
-	<div align="right"><{$catnavbar}></div>
+	<div align="<{$smarty.const._GLOBAL_RIGHT}>"><{$catnavbar}></div>
 <!-- End sub categories loop -->

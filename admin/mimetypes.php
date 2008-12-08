@@ -423,26 +423,26 @@ function manage()
     $nav = new XoopsPageNav($mime_count, $limit, $start, 'start', "op=manage&amp;limit=$limit");
                          
     echo "<table width='100%' cellspacing='1' class='outer'>";
-    echo "<tr><td colspan='6' align='right'>";
+    echo "<tr><td colspan='6' align='"._GLOBAL_RIGHT."'>";
     echo "<form action='". SMARTSECTION_ADMIN_URL."/mimetypes.php?op=search' style='margin:0; padding:0;' method='post'>";
     echo "<table>";
     echo "<tr>";
-    echo "<td align='right'>". _AM_SSECTION_TEXT_SEARCH_BY . "</td>";
-    echo "<td align='left'><select name='search_by'>";
+    echo "<td align='"._GLOBAL_RIGHT."'>". _AM_SSECTION_TEXT_SEARCH_BY . "</td>";
+    echo "<td align='"._GLOBAL_LEFT."'><select name='search_by'>";
     foreach($aSearchBy as $value=>$text){
         ($sort == $value) ? $selected = "selected='selected'" : $selected = '';
         echo "<option value='$value' $selected>$text</option>";
     }
     echo "</select></td>";
-    echo "<td align='right'>"._AM_SSECTION_TEXT_SEARCH_TEXT."</td>";
-    echo "<td align='left'><input type='text' name='search_text' id='search_text' value='' /></td>";
+    echo "<td align='"._GLOBAL_RIGHT."'>"._AM_SSECTION_TEXT_SEARCH_TEXT."</td>";
+    echo "<td align='"._GLOBAL_LEFT."'><input type='text' name='search_text' id='search_text' value='' /></td>";
     echo "<td><input type='submit' name='mime_search' id='mime_search' value='"._AM_SSECTION_BUTTON_SEARCH."' /></td>";
     echo "</tr></table></form></td></tr>";
         
     echo "<tr><td colspan='6'>";
     echo "<form action='". SMARTSECTION_ADMIN_URL."/mimetypes.php?op=manage' style='margin:0; padding:0;' method='post'>";
     echo "<table width='100%'>";
-    echo "<tr><td align='right'>"._AM_SSECTION_TEXT_SORT_BY." 
+    echo "<tr><td align='"._GLOBAL_RIGHT."'>"._AM_SSECTION_TEXT_SORT_BY." 
                   <select name='sort'>";
                 foreach($aSortBy as $value=>$text){
                     ($sort == $value) ? $selected = "selected='selected'" : $selected = '';
@@ -591,26 +591,26 @@ function search()
         echo '<script type="text/javascript" src="'.SMARTSECTION_URL.'/include/functions.js"></script>';
         
         echo "<table width='100%' cellspacing='1' class='outer'>";
-            echo "<tr><td colspan='6' align='right'>";
+            echo "<tr><td colspan='6' align='"._GLOBAL_RIGHT."'>";
     echo "<form action='". SMARTSECTION_ADMIN_URL."/mimetypes.php?op=search' style='margin:0; padding:0;' method='post'>";
     echo "<table>";
     echo "<tr>";
-    echo "<td align='right'>". _AM_SSECTION_TEXT_SEARCH_BY . "</td>";
-    echo "<td align='left'><select name='search_by'>";
+    echo "<td align='"._GLOBAL_RIGHT."'>". _AM_SSECTION_TEXT_SEARCH_BY . "</td>";
+    echo "<td align='"._GLOBAL_LEFT."'><select name='search_by'>";
     foreach($aSearchBy as $value=>$text){
         ($search_field == $value) ? $selected = "selected='selected'" : $selected = '';
         echo "<option value='$value' $selected>$text</option>";
     }
     echo "</select></td>";
-    echo "<td align='right'>"._AM_SSECTION_TEXT_SEARCH_TEXT."</td>";
-    echo "<td align='left'><input type='text' name='search_text' id='search_text' value='$search_text' /></td>";
+    echo "<td align='"._GLOBAL_RIGHT."'>"._AM_SSECTION_TEXT_SEARCH_TEXT."</td>";
+    echo "<td align='"._GLOBAL_LEFT."'><input type='text' name='search_text' id='search_text' value='$search_text' /></td>";
     echo "<td><input type='submit' name='mime_search' id='mime_search' value='"._AM_SSECTION_BUTTON_SEARCH."' /></td>";
     echo "</tr></table></form></td></tr>";
         
     echo "<tr><td colspan='6'>";
     echo "<form action='". SMARTSECTION_ADMIN_URL."/mimetypes.php?op=search' style='margin:0; padding:0;' method='post'>";
     echo "<table width='100%'>";
-    echo "<tr><td align='right'>"._AM_SSECTION_TEXT_SORT_BY." 
+    echo "<tr><td align='"._GLOBAL_RIGHT."'>"._AM_SSECTION_TEXT_SORT_BY." 
                   <select name='sort'>";
                 foreach($aSortBy as $value=>$text){
                     ($sort == $value) ? $selected = "selected='selected'" : $selected = '';

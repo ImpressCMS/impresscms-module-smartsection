@@ -24,7 +24,7 @@
 
 <div id="pagelayer">
     <div style="text-align: center;"><img src="<{$printlogourl}>" border="0" alt="" /></div>
-    <div style="text-align: right; margin-top: 10px; border: 1px solid; padding: 2px;"><{$printheader}></div>
+    <div style="text-align: <{$smarty.const._GLOBAL_RIGHT}>; margin-top: 10px; border: 1px solid; padding: 2px;"><{$printheader}></div>
 
 	<{if !$noTitle}>	
 	  <div id="title"><{$item.title}></div>
@@ -42,7 +42,7 @@
 	 <{/if}>
  
   <{if $itemfooter}>
-  	<!--<div style="text-align: left; font-weight: bold; padding-top: 10px;"><{$itemfooter}></div>-->
+  	<!--<div style="text-align: <{$smarty.const._GLOBAL_LEFT}>; font-weight: bold; padding-top: 10px;"><{$itemfooter}></div>-->
   	<div style="text-align: center; font-weight: bold; border: 1px solid; padding: 2px; margin-top: 10px;"><{$itemfooter}></div>
   <{/if}>
 	  <br /><br /><br />

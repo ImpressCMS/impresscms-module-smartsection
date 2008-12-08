@@ -1,5 +1,8 @@
 <b><u>=> Version 2.15 (Unreleased)</u></b>
 
+- Added : smarty <{$smarty.const._GLOBAL_LEFT}> for templates. (stranger)
+- Added : smarty <{$smarty.const._GLOBAL_RIGHT}> for templates. (stranger)
+
 - Fixed : #2015863: Comments were not deleted when an article was. Thanks jfmoore! (malanciault)
 - Fixed: Printing and PDF Icons do not appear (McDonald/peter55)
 - Fixed: Clarified clone_info instructions (jfm/andrewvincent)

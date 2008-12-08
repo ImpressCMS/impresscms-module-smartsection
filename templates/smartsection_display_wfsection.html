@@ -72,7 +72,7 @@
 			<div id='bottomtable'>
 			<span class="smartsection_collaps_info"><{$lang_items_info}></span>
 		<{/if}>
-		<div align="right"><{$category.navbar}></div>
+		<div align="<{$smarty.const._GLOBAL_RIGHT}>"><{$category.navbar}></div>
 		
 		<div class="item">
 			<{foreach item=item from=$items}> 
@@ -94,8 +94,8 @@
 				</table>
 				<table>
 					<tr>
-						<td style="text-align: right;" align="right">
-							<a href="javascript:openWithSelfMain('<{$xoops_url}>/modules/smartsection/pop.php?itemid=<{$item.itemid}>', 'smartpopup', 700, 519);"><img src="<{$xoops_url}>/images/press_room_go.gif" alt="" style="vertical-align: bottom;" align="right"></a>
+						<td style="text-align: <{$smarty.const._GLOBAL_RIGHT}>;" align="<{$smarty.const._GLOBAL_RIGHT}>">
+							<a href="javascript:openWithSelfMain('<{$xoops_url}>/modules/smartsection/pop.php?itemid=<{$item.itemid}>', 'smartpopup', 700, 519);"><img src="<{$xoops_url}>/images/press_room_go.gif" alt="" style="vertical-align: bottom;" align="<{$smarty.const._GLOBAL_RIGHT}>"></a>
 						</td>
 					</tr>
 					<tr></tr>
@@ -103,7 +103,7 @@
 			<{/foreach}>
 		</div>
 
-		<div align="right"><{$category.navbar}></div>		
+		<div align="<{$smarty.const._GLOBAL_RIGHT}>"><{$category.navbar}></div>		
 		
 		<{$press_room_footer}>
 		
