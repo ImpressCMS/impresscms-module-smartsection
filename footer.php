@@ -18,7 +18,7 @@ $xoopsTpl->assign("isAdmin", $smartsection_isAdmin);
 $xoopsTpl->assign('smartsection_url', SMARTSECTION_URL);
 $xoopsTpl->assign('smartsection_images_url', SMARTSECTION_IMAGES_URL);
 
-$xoopsTpl->assign("xoops_module_header", '<link rel="stylesheet" type="text/css" href="' . SMARTSECTION_URL . 'module.css" />' .
+$xoopsTpl->assign("xoops_module_header", '<link rel="stylesheet" type="text/css" href="' . SMARTSECTION_URL . 'module'.(( defined("_ADM_USE_RTL") && _ADM_USE_RTL )?'_rtl':'').'.css" />' .
 		'<link rel="alternate" type="application/rss+xml" title="'.$xoopsModule->getVar("name").'" href="' . SMARTSECTION_URL . '/backend.php" />');
 
 $xoopsTpl->assign('lang_total', _MD_SSECTION_TOTAL_SMARTITEMS);
