@@ -2,6 +2,7 @@
 
 - Added : smarty <{$smarty.const._GLOBAL_LEFT}> for templates. (stranger)
 - Added : smarty <{$smarty.const._GLOBAL_RIGHT}> for templates. (stranger)
+- Added : Using ImpressCMS PDF Generator, if we are using 1.2. (stranger)
 
 - Fixed : #2015863: Comments were not deleted when an article was. Thanks jfmoore! (malanciault)
 - Fixed: Printing and PDF Icons do not appear (McDonald/peter55)

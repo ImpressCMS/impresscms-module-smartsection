@@ -516,7 +516,7 @@ class SmartsectionItem extends XoopsObject
 		}
 		if (SMARTSECTION_LEVEL > 0) {
             // PDF button
-            $adminLinks .= "<a href='" . SMARTSECTION_URL . "makepdf.php?itemid=" . $this->itemid() . "'><img src='" . SMARTSECTION_URL . "images/links/pdf.gif' title='" . _MD_SSECTION_PDF . "' alt='" . _MD_SSECTION_PDF . "'/></a>";
+            $adminLinks .= "<a href='" . SMARTSECTION_URL . (( ICMS_VERSION_BUILD > 19 )?"":"make")."pdf.php?itemid=" . $this->itemid() . "'><img src='" . SMARTSECTION_URL . "images/links/pdf.gif' title='" . _MD_SSECTION_PDF . "' alt='" . _MD_SSECTION_PDF . "'/></a>";
             $adminLinks .= " ";
         }
 
