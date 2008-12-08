@@ -28,7 +28,7 @@ include_once(XOOPS_ROOT_PATH . "/modules/smartsection/language/" . $xoopsConfig[
 // Blocks
 
 define("_MB_SSECTION_ALLCAT", "تمام بخش‌ها");
-define("_MB_SSECTION_AUTO_LAST_ITEMS", "نمایش خودكار آخرین مقالات؟");
+define("_MB_SSECTION_AUTO_LAST_ITEMS", "نمایش خودکار آخرین مقالات؟");
 define("_MB_SSECTION_CATEGORY", "بخش");
 define("_MB_SSECTION_CHARS", "طول عنوان");
 define("_MB_SSECTION_COMMENTS", "توضیحات");
@@ -41,15 +41,15 @@ define("_MB_SSECTION_DISPLAY_TYPE_BLOCK", "کدام قسمت مسدود است؟
 define("_MB_SSECTION_DISPLAY_TYPE_BULLET", "هر عنوان مانند یک گلوله است");
 define("_MB_SSECTION_DISPLAY_WHO_AND_WHEN", "نمایش آگهی و تاریخ?");
 define("_MB_SSECTION_FULLITEM", "خواندن متن کامل مقاله");
-define("_MB_SSECTION_HITS", "تعداد بازدید ها");
+define("_MB_SSECTION_HITS", "تعداد بازدید‌ها");
 define("_MB_SSECTION_ITEMS", "مقالات");
 define("_MB_SSECTION_LAST_ITEMS_COUNT", "اگر بله, چند مقاله نمایش داده شود؟");
 define("_MB_SSECTION_LENGTH", " ویژگیها");
 define("_MB_SSECTION_ORDER", "نوع چینش نمایش");
 define("_MB_SSECTION_POSTEDBY", "منتشر شده توسط");
 define("_MB_SSECTION_READMORE", "ادامه دارد ...");
-define("_MB_SSECTION_READS", "خوانده ها");
-define("_MB_SSECTION_SELECT_ITEMS", "اگر نه، مقالاتی را كه باید نمایش داده شوند انتخاب كنید :");
+define("_MB_SSECTION_READS", "خوانده‌ها");
+define("_MB_SSECTION_SELECT_ITEMS", "اگر نه، مقالاتی را که باید نمایش داده شوند انتخاب کنید :");
 define("_MB_SSECTION_SELECTCAT", "نمایش مقالات:");
 define("_MB_SSECTION_VISITITEM", "دیدن کردن از");
 define("_MB_SSECTION_WEIGHT", "لیست شده با وزن");
@@ -62,8 +62,8 @@ define("_MB_SSECTION_DESC", "نزولی");
 define("_MB_SSECTION_SHOWITEMS", "موارد را نشان بده");
 //--/bd
 
-define("_MB_SSECTION_FILES", "پرونده ها");
-define("_MB_SSECTION_DIRECTDOWNLOAD", "لینک مستقیم به پرونده ها به جای لینک به مقالات؟");
+define("_MB_SSECTION_FILES", "پرونده‌ها");
+define("_MB_SSECTION_DIRECTDOWNLOAD", "لینک مستقیم به پرونده‌ها به جای لینک به مقالات؟");
 define("_MB_SSECTION_FROM", "انتخاب مقالات <br />از ");
 define("_MB_SSECTION_UNTIL", "&nbsp;&nbsp;تا");
 define("_MB_SSECTION_DATE_FORMAT", "نوع تاریخ باید بر اساس mm/dd/yyyy باشد");
