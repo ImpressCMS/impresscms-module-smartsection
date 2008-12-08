@@ -42,7 +42,7 @@ if (!(smartsection_itemAccessGranted($itemObj))) {
 	exit;
 }
 
-require_once ICMS_PDF_LIB_PATH.'/tcpdf.php';
+require_once XOOPS_ROOT_PATH.'/include/pdf.php';
 $filename = XOOPS_ROOT_PATH.'/modules/smartsection/'.$xoopsConfig['language'].'/main.php';
 if (file_exists( $filename)) {
 	include_once $filename;
@@ -50,51 +50,11 @@ if (file_exists( $filename)) {
 	include_once XOOPS_ROOT_PATH.'/modules/smartsection/language/english/main.php';
 }
 
-$filename = ICMS_PDF_LIB_PATH.'/config/lang/'._LANGCODE.'.php';
-if(file_exists($filename)) {
-	include_once $filename;
-} else {
-	include_once ICMS_PDF_LIB_PATH.'/config/lang/en.php';
-}
-
 $dateformat = $itemObj->datesub();
 $sender_inform = sprintf(_MD_SSECTION_WHO_WHEN, $itemObj->posterName(), $itemObj->datesub());
 $content = '<b><i><u><a href="'.XOOPS_URL.'/modules/smartsection/item.php?itemid='.$itemid.'" title="'.$myts->undoHtmlSpecialChars($itemObj->title()).'">'.$myts->undoHtmlSpecialChars($itemObj->title()).'</a></u></i></b><br /><b>'._MD_SSECTION_CATEGORY.' : <a href="'.XOOPS_URL.'/modules/smartsection/category.php?categoryid='.$itemObj->categoryid().'" title="'.$myts->undoHtmlSpecialChars($categoryObj->name()).'">'.$myts->undoHtmlSpecialChars($categoryObj->name()).'</a></b><br /><b>'.$sender_inform.'</b><br />'.$myts->undoHtmlSpecialChars($itemObj->plain_maintext()).'';
-$pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true);
-
 $doc_title = $myts->undoHtmlSpecialChars($itemObj->title());
 $doc_keywords = 'ICMS';
 
-// set document information
-$pdf->SetCreator(PDF_CREATOR);
-$pdf->SetAuthor(PDF_AUTHOR);
-$pdf->SetTitle($doc_title);
-$pdf->SetSubject($doc_title);
-$pdf->SetKeywords($doc_keywords);
-
-$firstLine = $xoopsConfig['sitename'];
-$secondLine =  $xoopsConfig['slogan'];
-$pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, $firstLine, $secondLine);
-
-//set margins
-$pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
-//set auto page breaks
-$pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
-$pdf->SetHeaderMargin(PDF_MARGIN_HEADER);
-$pdf->SetFooterMargin(PDF_MARGIN_FOOTER);
-$pdf->setImageScale(PDF_IMAGE_SCALE_RATIO); //set image scale factor
-
-$pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
-$pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
-
-$pdf->setLanguageArray($l); //set language items
-
-// set font 
-$pdf -> SetFont("dejavusans", "BI", 16);
-
-//initialize document
-$pdf->AliasNbPages();
-$pdf->AddPage();
-$pdf->writeHTML($content, true, 0);
-$pdf->Output();
+$content = Generate_PDF ($content, $doc_title, $doc_keywords);
 ?>
