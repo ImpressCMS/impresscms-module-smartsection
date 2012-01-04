@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id$
+* $Id: modinfo.php 3457 2008-07-05 14:29:24Z gibaphp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU

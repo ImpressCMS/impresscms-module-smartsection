@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id$
+* $Id: backend.php 8164 2009-03-17 19:51:42Z sato $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -33,9 +33,9 @@ if (!$tpl->is_cached('db:smartsection_rss.html')) {
 		$xoopsConfig['slogan'] = $myts->formatForML($xoopsConfig['slogan']);
 		$channel_category =  $myts->formatForML($channel_category);
 	}
-	$tpl->assign('channel_title', xoops_utf8_encode(htmlspecialchars($xoopsConfig['sitename'], ENT_QUOTES)));
+	$tpl->assign('channel_title', $xoopsConfig['sitename']);
 	$tpl->assign('channel_link', SMARTSECTION_URL);
-	$tpl->assign('channel_desc', xoops_utf8_encode(htmlspecialchars($xoopsConfig['slogan'], ENT_QUOTES)));
+	$tpl->assign('channel_desc', $xoopsConfig['slogan']);
 	$tpl->assign('channel_lastbuild', formatTimestamp(time(), 'rss'));
 	$tpl->assign('channel_webmaster', $xoopsConfig['adminmail']);
 	$tpl->assign('channel_editor', $xoopsConfig['adminmail']);
@@ -44,7 +44,7 @@ if (!$tpl->is_cached('db:smartsection_rss.html')) {
 		$channel_category .= " > " . $categoryObj->name();
 	}
 
-	$tpl->assign('channel_category', xoops_utf8_encode(htmlspecialchars($channel_category)));
+	$tpl->assign('channel_category', htmlspecialchars($channel_category));
 	$tpl->assign('channel_generator', 'SmartSection');
 	$tpl->assign('channel_language', _LANGCODE);
 	$tpl->assign('image_url', XOOPS_URL.'/images/logo.gif');
@@ -65,11 +65,11 @@ if (!$tpl->is_cached('db:smartsection_rss.html')) {
 		$count = $sarray;
 		foreach ($sarray as $item) {
 			$tpl->append('items',
-			      array('title' => xoops_utf8_encode(htmlspecialchars($item->title(), ENT_QUOTES)),
+			      array('title' => $item->title(),
 			            'link' => $item->getItemUrl(),
 			            'guid' => $item->getItemUrl(),
 			            'pubdate' => formatTimestamp($item->getVar('datesub'), 'rss'),
-			            'description' => xoops_utf8_encode(htmlspecialchars($item->summary(), ENT_QUOTES))));
+						'description' => htmlspecialchars($item->summary())));
 		}
 	}
 }

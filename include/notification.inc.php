@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id$
+* $Id: notification.inc.php 8604 2009-06-28 16:03:39Z Phoenyx $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -43,7 +43,7 @@ function smartsection_notify_iteminfo($category, $item_id)
 
     if ($category == 'item') {
         // Assume we have a valid story id
-        $sql = 'SELECT title, short_url FROM ' . $xoopsDB->prefix('smartsection_item') . ' WHERE itemid = ' . $item_id;
+        $sql = 'SELECT title, short_url FROM ' . $xoopsDB->prefix('smartsection_items') . ' WHERE itemid = ' . $item_id;
         $result = $xoopsDB->query($sql); // TODO: error check
         $result_array = $xoopsDB->fetchArray($result);
         $item['name'] = $result_array['title'];

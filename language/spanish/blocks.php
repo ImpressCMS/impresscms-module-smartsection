@@ -1,7 +1,7 @@
 <?php // Traducción de www.riosoft.es | www.rioxoops.es
 //Revisión y actualización por debianus
 /**
-* $Id$
+* $Id: blocks.php 5406 2008-10-05 20:39:40Z juancj $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU

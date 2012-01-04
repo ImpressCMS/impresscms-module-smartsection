@@ -1,6 +1,6 @@
 <?php
 /*
- * $Id$
+ * $Id: seo.php 8523 2009-06-12 20:57:39Z pesianstranger $
  * Module: SmartSection
  * Author: Sudhaker Raj <http://xoops.biz>
  * Licence: GNU
@@ -16,7 +16,7 @@ if (empty($seoOp))
 	Sample URL for path-info
 	http://localhost/modules/smartsection/seo.php/item.2/can-i-turn-the-ads-off.html
 	*/
-	$data = explode("/",$HTTP_SERVER_VARS['PATH_INFO']);
+	$data = explode("/",$_SERVER['PATH_INFO']);
 
 	$seoParts = explode('.', $data[1]);
 	$seoOp = $seoParts[0];

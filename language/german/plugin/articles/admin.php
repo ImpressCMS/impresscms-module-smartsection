@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id$
+* $Id: admin.php 3149 2008-06-22 21:46:00Z xoops-magazine $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU

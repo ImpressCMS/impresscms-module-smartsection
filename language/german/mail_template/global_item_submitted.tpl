@@ -1,23 +1,23 @@
-Hello {X_UNAME},
+Hallo {X_UNAME},
 
-The following item has been submitted in the {MODULE_NAME} module of {X_SITENAME} :
+Der folgende Beitrag wurde im Modul {MODULE_NAME} auf der Seite {X_SITENAME} eingereicht:
 
 "{ITEM_NAME}"
 
-You can review this item here :
+Sie können diesen Beitrag hier anschauen:
 {WAITINGFILES_URL}
 
 -----------
 
-You are receiving this message because you selected to be notified when new items are submitted in the {MODULE_NAME} module of our site.
+Sie erhalten diese Nachricht, da Sie ausgewählt hatten, benachtrichtigt zu werden, wenn ein neuer Beitrag in der Kategorie "{CATEGORY_NAME}" des Moduls {MODULE_NAME} auf unserer Seite veröffentlicht wird.
 
-If this is an error or you wish not to receive further notifications, please update your subscriptions by visiting the link below:
+Wenn dies ein Fehler ist oder Sie keine weiteren Benachrichtigungen wünschen, aktualisieren Sie bitte ihre Benachrichtigungsoptionen in dem Sie dem nachfolgenden Link folgen:
 {X_UNSUBSCRIBE_URL}
 
-Please do not reply to this message.
+Bitte antworten Sie nicht auf diese Nachricht.
 
 -----------
 
 {X_SITENAME} ({X_SITEURL}) 
-The Webmaster
+Der Webmaster
 {X_ADMINMAIL}

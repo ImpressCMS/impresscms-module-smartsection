@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id$
+* $Id: mimetypes.php 7494 2008-12-08 12:47:24Z pesian_stranger $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Credits: This file comes from xHelp, developped by 3Dev. Thanks guys !

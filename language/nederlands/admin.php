@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id$
+* $Id: admin.php 6561 2008-11-08 13:24:50Z mcdonald3072 $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Dutch translation: Maurits Lamers <maurits@weidestraat.nl>

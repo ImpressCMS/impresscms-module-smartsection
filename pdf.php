@@ -2,7 +2,7 @@
 /**
 * PDF class
 *
-* System tool that allow's you to generate PDF files from your articles
+* System tool that allows you to generate PDF files from your articles
 *
 * @copyright	The ImpressCMS Project http://www.impresscms.org/
 * @license		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
@@ -41,6 +41,9 @@ if (!(smartsection_itemAccessGranted($itemObj))) {
 	redirect_header("javascript:history.go(-1)", 1, _NOPERM);
 	exit;
 }
+
+// Moved the code to create a PDF file to a central location
+// So other modules can benefit too ;-)
 
 require_once XOOPS_ROOT_PATH.'/include/pdf.php';
 $filename = XOOPS_ROOT_PATH.'/modules/smartsection/'.$xoopsConfig['language'].'/main.php';

@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id$
+* $Id: footer.php 7496 2008-12-08 12:58:45Z pesian_stranger $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU

@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id$
+* $Id: item.php 8523 2009-06-12 20:57:39Z pesianstranger $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -205,7 +205,9 @@ $smartsection_metagen = new SmartsectionMetagen($itemObj->getVar('title'), $item
 $smartsection_metagen->createMetaTags();
 
 //SmartObject Rating feature
-if (file_exists(XOOPS_ROOT_PATH . '/modules/smartobject/include/rating.rate.php')) {
+if (file_exists(XOOPS_ROOT_PATH . '/include/rating.rate.php')) {
+	include_once(XOOPS_ROOT_PATH . '/include/rating.rate.php');
+}elseif (file_exists(XOOPS_ROOT_PATH . '/modules/smartobject/include/rating.rate.php')) {
 	include_once(XOOPS_ROOT_PATH . '/modules/smartobject/include/rating.rate.php');
 }
 

@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id$
+* $Id: admin_header.php 5181 2008-09-27 15:25:28Z m0nty_ $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU

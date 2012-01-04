@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id$
+* $Id: file.php 3993 2008-08-04 12:50:43Z malanciault $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -10,6 +10,8 @@
 if (!defined("XOOPS_ROOT_PATH")) {
 die("XOOPS root path not defined");
 }
+
+//include_once XOOPS_ROOT_PATH.'/modules/smartsection/include/common.php';
 
 // File status
 define("_SSECTION_STATUS_FILE_NOTSET", -1);

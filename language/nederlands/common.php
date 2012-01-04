@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id$
+* $Id: common.php 3459 2008-07-05 15:09:50Z gibaphp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Dutch translation: Maurits Lamers <maurits@weidestraat.nl>

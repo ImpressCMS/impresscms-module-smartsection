@@ -1,14 +1,17 @@
 <?php
 
 /**
-* $Id$
+* $Id: item.php 7505 2008-12-08 16:20:48Z pesian_stranger $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
 */
 if (!defined("XOOPS_ROOT_PATH")) {
-die("Root path not defined");
+die("ImpressCMS Root path not defined");
 }
+
+//include_once XOOPS_ROOT_PATH.'/modules/smartsection/include/common.php';
+include_once XOOPS_ROOT_PATH.'/modules/smartsection/include/functions.php';
 
 // ITEM status
 define("_SSECTION_STATUS_NOTSET", -1);

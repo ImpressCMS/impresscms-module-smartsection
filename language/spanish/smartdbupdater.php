@@ -21,7 +21,7 @@ define("_SDU_MSG_CREATE_TABLE", "Tabla %s creada");
 define("_SDU_MSG_CREATE_TABLE_ERR", "Error creando la tabla %s");
 define("_SDU_MSG_NEWFIELD", "Se añadió correctamente el campo %s");
 define("_SDU_MSG_NEWFIELD_ERR", "Error al añadir el campo %s");
-define("_SDU_NEEDUPDATE", "Su base de datos está obsoleta. Por favor, actualice las tablas.<br><b>Nota : Le recomendamos encarecidamente que haga copia de seguridad de todas las tablas antes de seguir con el proceso de actualización.</b><br>");
+define("_SDU_NEEDUPDATE", "Su base de datos está obsoleta. Por favor, actualice las tablas.<br><b>Aviso: le recomendamos encarecidamente que haga copia de seguridad de todas las tablas antes de seguir con el proceso de actualización.</b><br>");
 define("_SDU_NOUPDATE", "Su base de datos está actualizada. No es necesaria ninguna actualización.");
 define("_SDU_UPDATE_DB", "Actualizando la base de datos");
 define("_SDU_UPDATE_ERR", "Errores al actualizar a la versión %s");

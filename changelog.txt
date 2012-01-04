@@ -5,11 +5,16 @@
 - Added : Using ImpressCMS PDF Generator, if we are using 1.2. (stranger)
 - Added : Fully supporting RTL. (stranger)
 
+- Fixed : #61: Spotlight "More text" error fixed (Mowaffaq)
+- Fixed : #60: Page navigation error (chnwalkman)
 - Fixed : #2015863: Comments were not deleted when an article was. Thanks jfmoore! (malanciault)
-- Fixed: Printing and PDF Icons do not appear (McDonald/peter55)
-- Fixed: Clarified clone_info instructions (jfm/andrewvincent)
-- Fixed: Mismatched div tags in smartsection_items_spot  (iunderwood)
-- Fixed: Inclusion of common.php in loop was causing fatal erros on module update. Thansk jfmoore! (malanciault)
+- Fixed : Printing and PDF Icons do not appear (McDonald/peter55)
+- Fixed : Clarified clone_info instructions (jfm/andrewvincent)
+- Fixed : Mismatched div tags in smartsection_items_spot  (iunderwood)
+- Fixed : Inclusion of common.php in loop was causing fatal erros on module update. Thansk jfmoore! (malanciault)
+- Fixed : Set META generator to ImpressCMS (sato-san)
+- Fixed : #12: SmartSection comment notification: [Item Name Not Available] (Phoenyx)
+- Fixed : #151: Call to a member function on a non-object in /modules/smartsection/category.php on line 475 (Phoenyx)
 
 - Changed: references to class/xoopsmodule.php to kernel/module.php (vaughan)
 

@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id$
+* $Id: displayitems.php 7494 2008-12-08 12:47:24Z pesian_stranger $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU

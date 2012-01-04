@@ -1,21 +1,21 @@
-Hello {X_UNAME},
+Hallo {X_UNAME},
 
-The category '{CATEGORY_NAME}' has been created in the {MODULE_NAME} module at {X_SITENAME}.
+Die Kategorie '{CATEGORY_NAME}' wurde im Modul {MODULE_NAME} auf {X_SITENAME} erstellt.
 
-Follow this link to view the content of thie newly created category:
+Folgen Sie dem Link, um den Inhalt der neu erstellten Kategorie anzuschauen:
 {CATEGORY_URL}
 
 -----------
 
-You are receiving this message because you selected to be notified when new categories are added to the {MODULE_NAME} module of our site.
+Sie erhalten diese Nachricht, da Sie ausgewählt hatten, benachtrichtigt zu werden, wenn ein neuer Beitrag in der Kategorie "{CATEGORY_NAME}" des Moduls {MODULE_NAME} auf unserer Seite veröffentlicht wird.
 
-If this is an error or you wish not to receive further  notifications, please update your subscriptions by visiting the link below:
+Wenn dies ein Fehler ist oder Sie keine weiteren Benachrichtigungen wünschen, aktualisieren Sie bitte ihre Benachrichtigungsoptionen in dem Sie dem nachfolgenden Link folgen:
 {X_UNSUBSCRIBE_URL}
 
-Please do not reply to this message.
+Bitte antworten Sie nicht auf diese Nachricht.
 
 -----------
 
 {X_SITENAME} ({X_SITEURL}) 
-The Webmaster
+Der Webmaster
 {X_ADMINMAIL}

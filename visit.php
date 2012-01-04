@@ -1,6 +1,6 @@
 <?php
 /**
-* $Id$
+* $Id: visit.php 1446 2008-04-06 03:32:46Z malanciault $
 * Module: SmartSection
 * Author: marcan <marcan@notrevie.ca>
 * Licence: GNU

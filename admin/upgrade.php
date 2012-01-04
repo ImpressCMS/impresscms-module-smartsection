@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id$
+* $Id: upgrade.php 3436 2008-07-05 10:49:26Z malanciault $
 * Module: SmartClient
 * Author: The SmartFactory <www.smartfactory.ca>
 * Credit : Thanks to the xHelp development team :-)

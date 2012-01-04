@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id$
+* $Id: print.php 3471 2008-07-05 22:54:08Z andrewvincent $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU

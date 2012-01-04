@@ -1,5 +1,5 @@
 <?php
-//$Id$
+//$Id: mimetype.php 331 2007-12-23 16:01:11Z malanciault $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //

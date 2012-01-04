@@ -1,6 +1,6 @@
 <?php
 /**
-* $Id$
+* $Id: news.php 331 2007-12-23 16:01:11Z malanciault $
 * Module: SmartFAQ
 * Author: Marius Scurtescu <mariuss@romanians.bc.ca>
 * Licence: GNU

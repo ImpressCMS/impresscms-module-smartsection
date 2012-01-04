@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id$
+* $Id: index.php 8258 2009-04-12 12:05:14Z davidimpress $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -51,7 +51,7 @@ $subcats = $smartsection_category_handler->getSubCats($categoriesObj);
 $totalItems = $smartsection_category_handler->publishedItemsCount();
 
 // real total count of items
-$real_total_items = $smartsection_item_handler->getCount();
+$real_total_items = $smartsection_item_handler->getItemsCount(-1, array(_SSECTION_STATUS_PUBLISHED));
 
 if ($xoopsModuleConfig['displaylastitem'] == 1) {
 	// Get the last item in each category

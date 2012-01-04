@@ -19,8 +19,8 @@ class SmartsectionForm_EditCategory extends XoopsThemeForm {
 		$member_handler =& xoops_gethandler('member');
 		$this->userGroups = $member_handler->getGroupList();
 		
-		$this->XoopsThemeForm( _AM_SSECTION_CATEGORY, "op", xoops_getenv('PHP_SELF') );
-		$this->setExtra('enctype="multipart/form-data"');
+		$form = new XoopsThemeForm( _AM_SSECTION_CATEGORY, "op", xoops_getenv('PHP_SELF') );
+		$form->setExtra('enctype="multipart/form-data"');
 
 		$this->createElements();
 		$this->createButtons();

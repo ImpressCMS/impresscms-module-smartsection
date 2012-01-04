@@ -1,7 +1,7 @@
 <?php  // Traducción de www.riosoft.es | www.rioxoops.es. Cambios menores por debianus
 //Revisión y actualización por debianus
 /**
-* $Id$
+* $Id: main.php 8948 2009-11-25 18:28:24Z debianus $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -23,7 +23,7 @@ define("_MD_SSECTION_CATEGORY", "Categoría");
 define("_MD_SSECTION_CATEGORY_DSC", "Categoría del artículo.");
 define("_MD_SSECTION_CATEGORY_EDIT", "Modificar categoría");
 define("_MD_SSECTION_CATEGORY_SUMMARY", "Sumario de %s");
-define("_MD_SSECTION_CATEGORY_SUMMARY_DESC", "A continuación se muestra una lista de todos los artículos que conforman esta categoría. Haga clic sobre cualquier título para tener acceso a su lectura.");
+define("_MD_SSECTION_CATEGORY_SUMMARY_DESC", "A continuación se muestra una lista de todos los artículos que conforman esta categoría. Haga clic sobre cualquier título para leer su contenido.");
 define("_MD_SSECTION_CATEGORY_SUMMARY_INFO", "Subcategorías incluidas en %s.");
 define("_MD_SSECTION_CLEAR", "Limpiar");
 define("_MD_SSECTION_CLONE", "Duplicar artículo");
@@ -35,7 +35,7 @@ define("_MD_SSECTION_DELETE", "Borrar artículo");
 define("_MD_SSECTION_DESCRIPTION", "Descripción");
 define("_MD_SSECTION_DOHTML", "Permitir etiquetas HTML ");
 define("_MD_SSECTION_DOIMAGE", "Permitir imágenes");
-define("_MD_SSECTION_DOLINEBREAK", "Permitir 'linebreak'");
+define("_MD_SSECTION_DOLINEBREAK", "Permitir <em>linebreak</em>");
 define("_MD_SSECTION_DOSMILEY", "Permitir cartias ");
 define("_MD_SSECTION_DOWNLOAD_FILE", "Descargar este archivo");
 define("_MD_SSECTION_DOXCODE", "Permitir códigos de ImpresCMS");
@@ -48,7 +48,7 @@ define("_MD_SSECTION_FILE_ADD", "Añadiendo un archivo");
 define("_MD_SSECTION_FILE_ADDING", "Añadiendo un nuevo archivo");
 define("_MD_SSECTION_FILE_ADDING_DSC", "Por favor, cumplimente el siguiente formulario si desea añadir un nuevo archivo a este artículo.");
 define("_MD_SSECTION_FILE_DESCRIPTION", "Descripción");
-define("_MD_SSECTION_FILE_DESCRIPTION_DSC", "Descripción del archivo a subir.");
+define("_MD_SSECTION_FILE_DESCRIPTION_DSC", "Descripción del archivo a enviar.");
 define("_MD_SSECTION_FILE_EDITING", "Modificando un archivo");
 define("_MD_SSECTION_FILE_EDITING_DSC", "Podrá modificar este archivo. Las modificaciones serán visibles para los usuarios.");
 define("_MD_SSECTION_FILE_EDITING_ERROR", "Ocurrió un error mientras se actualizaba el archivo.");
@@ -56,14 +56,14 @@ define("_MD_SSECTION_FILE_EDITING_SUCCESS", "El archivo fue modificado satisfact
 define("_MD_SSECTION_FILE_INFORMATIONS", "Detalles del archivo");
 define("_MD_SSECTION_FILE_NAME_DSC", "Nombre que se usará para identificar al archivo.");
 define("_MD_SSECTION_FILE_STATUS", "¿Archivo visible?");
-define("_MD_SSECTION_FILE_STATUS_DSC", "Si elige 'No', el archivo no será visible para los usuarios.");
-define("_MD_SSECTION_FILE_TO_UPLOAD", "Archivo a subir :");
+define("_MD_SSECTION_FILE_STATUS_DSC", "Si elige <em>No</em>, el archivo no será visible para los usuarios.");
+define("_MD_SSECTION_FILE_TO_UPLOAD", "Archivo a enviar:");
 define("_MD_SSECTION_FILE_TYPE", "Tipo de archivo");
-define("_MD_SSECTION_FILE_UPLOAD_ANOTHER", "Subir de nuevo");
+define("_MD_SSECTION_FILE_UPLOAD_ANOTHER", "Enviar de nuevo");
 define("_MD_SSECTION_FILENAME", "Nombre del archivo");
 define("_MD_SSECTION_FILES_LINKED", "Archivos enlazados a este artículo");
 define("_MD_SSECTION_FILEUPLOAD_ERROR", "Ocurrió un error mientras se subía el archivo.");
-define("_MD_SSECTION_FILEUPLOAD_SUCCESS", "El archivo fue subido satisfactoriamente.");
+define("_MD_SSECTION_FILEUPLOAD_SUCCESS", "El archivo fue almacenado satisfactoriamente.");
 define("_MD_SSECTION_FINDITEMHERE", "Buscar este artículo en: ");
 define("_MD_SSECTION_GOODDAY", "Saludos, ");
 define("_MD_SSECTION_HITS", "Lecturas");
@@ -71,7 +71,7 @@ define("_MD_SSECTION_HITSDETAIL", "" . "Este artículo ha sido leído");
 define("_MD_SSECTION_HOME", "Inicio");
 define("_MD_SSECTION_IMAGE_ITEM", "Imagen del artículo");
 define("_MD_SSECTION_IMAGE_ITEM_DSC", "Imagen que representa al artículo");
-define("_MD_SSECTION_IMAGE_UPLOAD", "Subir imagen");
+define("_MD_SSECTION_IMAGE_UPLOAD", "Enviar imagen");
 define("_MD_SSECTION_IMAGE_UPLOAD_DSC", "Elija una imagen en su ordenador. Esta imagen será subida al sitio y configurada como la imagen de la categoría.");
 define("_MD_SSECTION_IMAGE_UPLOAD_ITEM_DSC", "Elija una imagen en su ordenador. <br />Dicha imagen será subida al sitio <br />y configurada como imagen del artículo.");
 define("_MD_SSECTION_INDEX_CATEGORIES_SUMMARY", "Sumario de las categorías");
@@ -89,7 +89,7 @@ define("_MD_SSECTION_ITEMMODIFIED", "El artículo ha sido modificado");
 define("_MD_SSECTION_ITEMS", "Artículos");
 define("_MD_SSECTION_ITEMS_INFO", "Aquí tiene los artículos pertenecientes a esta categoría.");
 define("_MD_SSECTION_ITEMS_LINKS", "Explorar artículos");
-define("_MD_SSECTION_ITEMS_TITLE", "Artículos incluidos en %s");
+define("_MD_SSECTION_ITEMS_TITLE", "Artículos incluidos en: %s");
 define("_MD_SSECTION_LAST_SMARTITEM", "Último artículo publicado");
 define("_MD_SSECTION_MAIL", "Enviar artículo");
 define("_MD_SSECTION_MAINHEAD", "Recibido en el");
@@ -117,7 +117,7 @@ define("_MD_SSECTION_POSTEDBY", "Publicado por %s el %s");
 define("_MD_SSECTION_PREVIEW", "Previsualizar");
 define("_MD_SSECTION_PREVIOUS_ITEM", "Artículo anterior");
 define("_MD_SSECTION_PRINT", "Imprimir artículo");
-define("_MD_SSECTION_PRINTERFRIENDLY", "Imprimir este artículo en vista de impresión");
+define("_MD_SSECTION_PRINTERFRIENDLY", "Imprimir este artículo");
 define("_MD_SSECTION_READMORE", "Leer más...");
 define("_MD_SSECTION_READS", "lecturas");
 define("_MD_SSECTION_RSSFEED","Fuente RSS");
@@ -139,12 +139,12 @@ define("_MD_SSECTION_TITLE", "Títulos");
 define("_MD_SSECTION_TITLE_REQ", "Título*");
 define("_MD_SSECTION_TOTAL_SMARTITEMS", "Artículos totales");
 define("_MD_SSECTION_UNKNOWNERROR", "ERROR. Redireccionándole al punto de partida.");
-define("_MD_SSECTION_UPLOAD", "Subir");
-define("_MD_SSECTION_UPLOAD_FILE", "Subir un archivo");
+define("_MD_SSECTION_UPLOAD", "Enviar");
+define("_MD_SSECTION_UPLOAD_FILE", "Enviar un archivo");
 define("_MD_SSECTION_VIEW_MORE", "Leer el artículo completo");
 define("_MD_SSECTION_WEIGHT", "Posición");
 define("_MD_SSECTION_WHO_WHEN", "Publicado por %s el %s");
 define("_MD_SSECTION_YES", "Sí");
 //Añadido en la versión 2.14
-define('_MD_SSECTION_PRINT_CLOSE', 'Cerrar esta ventana');
+define("_MD_SSECTION_PRINT_CLOSE", "Cerrar esta ventana");
 ?>

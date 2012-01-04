@@ -1,13 +1,13 @@
 <?php
 
 /**
-* $Id$
+* $Id: mygrouppermform.php 7494 2008-12-08 12:47:24Z pesian_stranger $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
 */
 
-// $Id$
+// $Id: mygrouppermform.php 7494 2008-12-08 12:47:24Z pesian_stranger $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000-2003 XOOPS.org                           //

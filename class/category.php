@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id$
+* $Id: category.php 8624 2009-07-02 18:40:56Z Phoenyx $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -10,6 +10,8 @@
 if (!defined("XOOPS_ROOT_PATH")) {
 	die("XOOPS root path not defined");
 }
+
+include_once XOOPS_ROOT_PATH.'/modules/smartsection/include/common.php';
 
 class SmartsectionCategory extends XoopsObject
 {
@@ -457,22 +459,23 @@ class SmartsectionCategoryHandler extends XoopsObjectHandler
 			return false;
 		}
 
-		// Auto create meta tags if empty
-		if (!$category->meta_keywords() || !$category->meta_description()) {
+		// Workaround for Bug Report #404 : Call to a member function generateSeoTitle() on a non-object
+		// I will comment this, since I see another fix for bug #404 in the code below
+		//$smartobject_metagen = new SmartsectionMetagen($category->name(), $category->getVar('meta_keywords'), $category->getVar('description'));
+
+
+		// Auto create meta tags and short_url if empty
+		if (!$category->meta_keywords() || !$category->meta_description() || !$category->short_url()) {
 			$smartobject_metagen = new SmartsectionMetagen($category->name(), $category->getVar('meta_keywords'), $category->getVar('description'));
 			if (!$category->meta_keywords()) {
 				$category->setVar('meta_keywords', $smartobject_metagen->_keywords);
 			}
-
 			if (!$category->meta_description()) {
 				$category->setVar('meta_description', $smartobject_metagen->_description);
 			}
-
-		}
-
-		// Auto create short_url if empty
-		if (!$category->short_url()) {
-			$category->setVar('short_url', $smartobject_metagen->generateSeoTitle($category->name('n'), false));
+			if (!$category->short_url()) {
+				$category->setVar('short_url', $smartobject_metagen->generateSeoTitle($category->name('n'), false));
+			}
 		}
 
 		if (!$category->isDirty()) {

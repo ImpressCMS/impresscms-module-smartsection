@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id$
+* $Id: xoops_version.php 8931 2009-11-19 23:30:52Z davidimpress $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
